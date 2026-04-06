@@ -37,12 +37,12 @@ Inventory Tracker:
 Ein Gewichtssensor im Rucksack, der genau registriert, wann und wieviel Brot entnommen wird. 
  
 
-Assumptions:
+Assumptions
 Technologie-Akzeptanz: Wir nehmen an, dass Sam und Frodo bereit sind, einem digitalen Gerät zu vertrauen, obwohl sie aus dem eher technikfernen Auenland kommen. 
 Konstante Nährwerte: Wir gehen davon aus, dass ein Stück Lembas immer die gleiche Menge an Energie liefert und die Hobbits einen messbaren Grundumsatz an Kalorien haben. 
 Hardware-Haltbarkeit: Wir setzen voraus, dass das Gerät robust genug ist, um Stürze, Matsch, Wasser und die Hitze in der Nähe von Mordor auszuhalten. 
 
-Constraints: 
+Constraints
 Energiequelle: In Mittelerde gibt es keine Steckdosen. Das System muss also über Solarzellen (schwierig bei Saurons Staubwolken) oder kinetische Energie (durch das Gehen) geladen werden. 
 Unzuverlässige Informationen: Da die genaue Entfernung zum Schicksalsberg nicht auf Google Maps steht, basieren alle Berechnungen auf Schätzungen. Wenn der Weg durch einen Umweg länger wird,
 stimmen die Rationspläne nicht mehr. 
