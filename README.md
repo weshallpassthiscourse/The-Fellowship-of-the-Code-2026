@@ -1,11 +1,11 @@
 # The-Fellowship-of-the-Code-2026
-The Fellowship Companion (WayBread Watcher)
+## **The Fellowship Companion (WayBread Watcher)**
 
-The Fellowship of the Code – A Developer's Tale
+### The Fellowship of the Code – A Developer's Tale
 
 "Lembas! Elvish waybread. One small bite is enough to fill the stomach of a grown man" - Legolas
 
-Table of Contents
+#### Table of Contents
 
 The Fellowship Companion
 Purpose of The Fellowship Companion (TFC)
@@ -15,7 +15,7 @@ Key Features of The Fellowship Companion
 Changelog
 
 
-Purpose of The Fellowship Companion (TFC)
+#### Purpose of The Fellowship Companion (TFC)
 
 We are 6 hobbits on our great journey from the Shire to Mordor. Along the way, we need a system to support our survival.
 The Fellowship Companion is a evolving digital tool we build together. It is not perfect, it is not finished - it evolves as we travel.
@@ -25,7 +25,7 @@ What we build: The "WayBread Watcher" - an intelligent ration manager tool that 
 Why we build it: Because everyone knows that hobbits cannot go long without food (we do need our second or third breakfast sometimes, after all!). We build it so our mission to Mount Doom doesn't fail due to starvation, and so we can understand the mindset, logic, design, and practice of developers along the way.
 
 
-Rules of our Journey
+#### Rules of our Journey
 
 All artifacts live in this GitHub repo.
 Gandalf (the AI) is our companion: we may ask him for help, but we always reflect on our decisions in The Red Book.
@@ -33,28 +33,28 @@ Peer sharing is optional but highly recommended: it keeps the Fellowship alive.
 The Red Book of Westmark (README.md + chapters/) is our reflection log and living changelog.
 Chapters
 
-Chapter I - Setting Out
+**Chapter I - Setting Out**
 “I will take the Ring, though I do not know the way.” - Frodo
 Go to Chapter I → https://github.com/weshallpassthiscourse/The-Fellowship-of-the-Code-2026/blob/08d3c7f05e6d44ad797ccc406b316a6ddca2c803/chapters/chapter-1-setting-out.md
 
-Chapter II - Paths & Choices
+**Chapter II - Paths & Choices**
 “All we have to decide is what to do with the time that is given us.” - Gandalf
 Go to Chapter II → https://github.com/weshallpassthiscourse/The-Fellowship-of-the-Code-2026/blob/3bf93424d0007e1add87d43e5335dab63a09dd80/chapters/chapter-2-paths-and-choices.md
 
-Chapter III - Making It Visible
+**Chapter III - Making It Visible**
 “I like less than half of you half as well as you deserve.” - Bilbo
 Go to Chapter III → https://github.com/weshallpassthiscourse/The-Fellowship-of-the-Code-2026/blob/6a89e135379c3ece6e88c7d0df546c45b43299c8/chapters/chapter-3-making-it-visible.md
 
-Chapter IV - When Things React
+**Chapter IV - When Things React**
 “Even the wise cannot see all ends.” - Gandalf
 Go to Chapter IV → https://github.com/weshallpassthiscourse/The-Fellowship-of-the-Code-2026/blob/c617730178a59497267e272639ccf463e22998b5/chapters/chapter-4-when-things-react.md
 
-Chapter V - The Tale Continues
+**Chapter V - The Tale Continues**
 “The tale grew in the telling.” - Bilbo
 Go to Chapter V → https://github.com/weshallpassthiscourse/The-Fellowship-of-the-Code-2026/blob/7e5292bd38ba8927c8c12e7d31bce331c1630e79/chapters/chapter-5-the-tale-continues.md
 
 
-Key Features of The Fellowship Companion
+#### Key Features of The Fellowship Companion
 
 Profile Management: Creation and maintenance of user profiles with species-specific base consumption rates (e.g., higher caloric needs for Hobbits, lower needs for Elves).
 Resource Management: Automatic daily calculation of consumption and required demand for Lembas bread and water based on group composition and activity level.
