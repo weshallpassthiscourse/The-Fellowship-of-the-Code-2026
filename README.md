@@ -35,7 +35,7 @@ Chapters
 
 Chapter I - Setting Out
 “I will take the Ring, though I do not know the way.” - Frodo
-Go to Chapter I →chapters/chapter-1
+Go to Chapter I → https://github.com/weshallpassthiscourse/The-Fellowship-of-the-Code-2026/tree/773927d1fcfc11f8294aac2b1a66864f90833b8f/chapters/chapter-1
 
 Chapter II - Paths & Choices
 “All we have to decide is what to do with the time that is given us.” - Gandalf
