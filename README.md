@@ -7,12 +7,12 @@
 
 #### Table of Contents
 
-The Fellowship Companion
-Purpose of The Fellowship Companion (TFC)
-Rules of our Journey
-Chapters
-Key Features of The Fellowship Companion
-Changelog
++ The Fellowship Companion
++ Purpose of The Fellowship Companion (TFC)
++ Rules of our Journey
++ Chapters
++ Key Features of The Fellowship Companion
++ Changelog
 
 
 #### Purpose of The Fellowship Companion (TFC)
@@ -63,10 +63,10 @@ Security: "Gollum-Proofing" through biometric locks on our supply bags (accessib
 Tracking: An automatic inventory tracker utilizing weight sensors in the backpack to register exactly when and how much bread is taken.
 
 
-Changelog
+#### Changelog
 
 This is our general changelog (e.g., new chapter contents added, rules changed, or major system revisions).
 
-06.04.2026: Initial Setup of GitHub Repository. Template added to README.md. Artifact 1 created (WayBread Watcher).
-07.04.2026: Template personalized to our project.
++ 06.04.2026: Initial Setup of GitHub Repository. Template added to README.md. Artifact 1 created (WayBread Watcher).
++ 07.04.2026: Template personalized to our project.
 
