@@ -60,9 +60,13 @@ Go to Chapter V → https://github.com/weshallpassthiscourse/The-Fellowship-of-t
 #### Key Features of The Fellowship Companion
 
 Profile Management: Creation and maintenance of user profiles with species-specific base consumption rates (e.g., higher caloric needs for Hobbits, lower needs for Elves).
+
 Resource Management: Automatic daily calculation of consumption and required demand for Lembas bread and water based on group composition and activity level.
+
 Decision Support: An early warning system that alerts us when our supplies drop to a critical level (e.g., less than 3 days of food remaining).
+
 Security: "Gollum-Proofing" through biometric locks on our supply bags (accessible only via Sam's fingerprint or facial scan).
+
 Tracking: An automatic inventory tracker utilizing weight sensors in the backpack to register exactly when and how much bread is taken.
 
 
