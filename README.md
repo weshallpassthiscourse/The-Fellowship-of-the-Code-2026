@@ -15,7 +15,7 @@
 + Chapters
 + Key Features of The Fellowship Companion
 + Changelog
-
+---
 
 #### Purpose of The Fellowship Companion (TFC)
 
@@ -28,6 +28,7 @@ What we build: The "WayBread Watcher" - an intelligent ration manager tool that 
 
 Why we build it: Because everyone knows that hobbits cannot go long without food (we do need our second or third breakfast sometimes, after all!). We build it so our mission to Mount Doom doesn't fail due to starvation, and so we can understand the mindset, logic, design, and practice of developers along the way.
 
+---
 
 #### Rules of our Journey
 
@@ -36,40 +37,41 @@ Gandalf (the AI) is our companion: we may ask him for help, but we always reflec
 Peer sharing is optional but highly recommended: it keeps the Fellowship alive.
 The Red Book of Westmark (README.md + chapters/) is our reflection log and living changelog.
 
+---
 
 #### Chapters
 
 
-**Chapter I - Setting Out**
+*Chapter I - Setting Out*
 “I will take the Ring, though I do not know the way.” - Frodo
 
 [Go to Chapter I ](chapters/chapter-1-setting-out.md) 
 
 
-**Chapter II - Paths & Choices**
+*Chapter II - Paths & Choices*
 “All we have to decide is what to do with the time that is given us.” - Gandalf
 
 [Go to Chapter II ](chapters/chapter-2-paths-and-choices.md) 
 
 
 
-**Chapter III - Making It Visible**
+*Chapter III - Making It Visible*
 “I like less than half of you half as well as you deserve.” - Bilbo
 
 [Go to Chapter III ](chapters/chapter-4-when-things-react.md)
 
 
-**Chapter IV - When Things React**
+*Chapter IV - When Things React*
 “Even the wise cannot see all ends.” - Gandalf
 
 [Go to Chapter IV ](chapters/chapter-4-when-things-react.md) 
 
-**Chapter V - The Tale Continues**
+*Chapter V - The Tale Continues*
 “The tale grew in the telling.” - Bilbo
 
 [Go to Chapter V ](chapters/chapter-5-the-tale-continues.md)
 
-
+---
 
 #### Key Features of The Fellowship Companion
 
@@ -83,6 +85,7 @@ Security: "Gollum-Proofing" through biometric locks on our supply bags (accessib
 
 Tracking: An automatic inventory tracker utilizing weight sensors in the backpack to register exactly when and how much bread is taken.
 
+---
 
 #### Changelog
 
