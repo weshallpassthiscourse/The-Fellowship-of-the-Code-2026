@@ -1,6 +1,6 @@
 # **The Fellowship Companion - Artifact I: Situation & Intent**
 
-## **Waybread Watcher (App)**
+## **WayBread Watcher (App)**
 
  
 ### Situation
