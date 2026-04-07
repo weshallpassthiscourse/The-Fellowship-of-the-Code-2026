@@ -47,7 +47,7 @@ Go to Chapter III → https://github.com/weshallpassthiscourse/The-Fellowship-of
 
 Chapter IV - When Things React
 “Even the wise cannot see all ends.” - Gandalf
-Go to Chapter IV →
+Go to Chapter IV → https://github.com/weshallpassthiscourse/The-Fellowship-of-the-Code-2026/blob/c617730178a59497267e272639ccf463e22998b5/chapters/chapter-4-when-things-react.md
 
 Chapter V - The Tale Continues
 “The tale grew in the telling.” - Bilbo
