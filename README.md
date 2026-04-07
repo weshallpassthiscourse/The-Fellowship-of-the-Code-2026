@@ -53,7 +53,7 @@ Chapters
 
 **Chapter III - Making It Visible**
 “I like less than half of you half as well as you deserve.” - Bilbo
-chapters/chapter-3-making-it-visible.md
+
 [Go to Chapter III ](chapters/chapter-4-when-things-react.md)
 
 
@@ -64,7 +64,8 @@ chapters/chapter-3-making-it-visible.md
 
 **Chapter V - The Tale Continues**
 “The tale grew in the telling.” - Bilbo
-Go to Chapter V → https://github.com/weshallpassthiscourse/The-Fellowship-of-the-Code-2026/blob/7e5292bd38ba8927c8c12e7d31bce331c1630e79/chapters/chapter-5-the-tale-continues.md
+
+[Go to Chapter V ](chapters/chapter-5-the-tale-continues.md)
 
 
 
