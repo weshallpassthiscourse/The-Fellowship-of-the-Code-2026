@@ -39,7 +39,7 @@ Go to Chapter I → https://github.com/weshallpassthiscourse/The-Fellowship-of-t
 
 Chapter II - Paths & Choices
 “All we have to decide is what to do with the time that is given us.” - Gandalf
-Go to Chapter II →
+Go to Chapter II → https://github.com/weshallpassthiscourse/The-Fellowship-of-the-Code-2026/blob/3bf93424d0007e1add87d43e5335dab63a09dd80/chapters/chapter-2-paths-and-choices.md
 
 Chapter III - Making It Visible
 “I like less than half of you half as well as you deserve.” - Bilbo
