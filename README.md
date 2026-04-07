@@ -21,7 +21,7 @@
 
 We are 6 hobbits on our great journey from the Shire to Mordor. Along the way, we need a system to support our survival.
 The Fellowship Companion is a evolving digital tool we build together. It is not perfect, it is not finished - it evolves as we travel.  
-Who we are: The Fellowship - a group of 6 hobbits working together. Maxwise (Max), Leodora (Leonie), Timobald (Timon), Eveybell (Evelyn), Helanor (Helena) and Kathirose (Kathi).  
+Who we are: The Fellowship - a group of 6 hobbits working together. *Maxwise* (Max), *Leodora* (Leonie), *Timobald* (Timon), *Eveybell* (Evelyn), *Helanor* (Helena) and *Kathirose* (Kathi).  
 What we build: The "WayBread Watcher" - an intelligent ration manager tool that helps manage our journey and resources and protects our food from Gollum.  
 Why we build it: Because everyone knows that hobbits cannot go long without food (we do need our second or third breakfast sometimes, after all!). We build it so our mission to Mount Doom doesn't fail due to starvation, and so we can understand the mindset, logic, design, and practice of developers along the way.
 
