@@ -10,11 +10,11 @@
 #### Table of Contents
 
 + [The Fellowship Companion](#the-fellowship-companion-waybread-watcher)
-  + Purpose of The Fellowship Companion (TFC)
-  + Rules of our Journey
-  + Chapters
-  + Key Features of The Fellowship Companion
-  + Changelog
+  + [Purpose of The Fellowship Companion (TFC)](#purpose-of-the-fellowship-companion-tfc)
+  + [Rules of our Journey](#rules-of-our-journey)
+  + [Chapters](#chapters)
+  + [Key Features of The Fellowship Companion](#key-features-of-the-fellowship-companion)
+  + [Changelog](#changelog)
 ---
 
 #### Purpose of The Fellowship Companion (TFC)
