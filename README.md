@@ -35,7 +35,7 @@ Chapters
 
 Chapter I - Setting Out
 “I will take the Ring, though I do not know the way.” - Frodo
-Go to Chapter I →
+Go to Chapter I →chapters/chapter-1
 
 Chapter II - Paths & Choices
 “All we have to decide is what to do with the time that is given us.” - Gandalf
