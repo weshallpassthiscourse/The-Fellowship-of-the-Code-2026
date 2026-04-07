@@ -53,7 +53,8 @@ Chapters
 
 **Chapter III - Making It Visible**
 “I like less than half of you half as well as you deserve.” - Bilbo
-Go to Chapter III → https://github.com/weshallpassthiscourse/The-Fellowship-of-the-Code-2026/blob/6a89e135379c3ece6e88c7d0df546c45b43299c8/chapters/chapter-3-making-it-visible.md
+chapters/chapter-3-making-it-visible.md
+[Go to Chapter III ](chapters/chapter-4-when-things-react.md)
 
 
 **Chapter IV - When Things React**
