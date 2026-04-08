@@ -4,7 +4,7 @@
 
 ### The Fellowship of the Code – A Developer's Tale
 
-"Lembas! Elvish waybread. One small bite is enough to fill the stomach of a grown man" - Legolas
+>"Lembas! Elvish waybread. One small bite is enough to fill the stomach of a grown man" - Legolas
 
 
 #### Table of Contents
