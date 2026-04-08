@@ -20,24 +20,24 @@ Die Hobbits behalten genug Kraft für den letzten Aufstieg am Schicksalsberg und
 
 ### System Capabilities 
 
-Verwaltung verschiedener Profile: Das System muss die Erstellung und Pflege von Nutzerprofilen mit spezies-spezifischen Basis-Verbrauchsraten (z.B. erhöhter Bedarf für Hobbits, reduzierter Bedarf für Elben) ermöglichen. 
-Verbrauchs- und Bedarfsrechnung: Das System muss die Vorräte basierend auf der Gruppenzusammensetzung, dem täglichen Aktivitätslevel und dem Schwierigkeitsgrad des Geländes in Tagesschrittenautomatisch berechnen und abziehen können. 
-Frühwarnsystem: Das System muss Warnungen ausgeben, wenn der berechnete Restvorrat für eine spezifische Person oder die Gesamtgruppe einen kritischen Schwellenwert (z.B. Vorratsreichweite unter 3 Tage) unterschreitet. 
+Verwaltung verschiedener Profile: Das System muss die Erstellung und Pflege von Nutzerprofilen mit spezies-spezifischen Basis-Verbrauchsraten (z.B. erhöhter Bedarf für Hobbits, reduzierter Bedarf für Elben) ermöglichen.  
+Verbrauchs- und Bedarfsrechnung: Das System muss die Vorräte basierend auf der Gruppenzusammensetzung, dem täglichen Aktivitätslevel und dem Schwierigkeitsgrad des Geländes in Tagesschrittenautomatisch berechnen und abziehen können.  
+Frühwarnsystem: Das System muss Warnungen ausgeben, wenn der berechnete Restvorrat für eine spezifische Person oder die Gesamtgruppe einen kritischen Schwellenwert (z.B. Vorratsreichweite unter 3 Tage) unterschreitet.  
 Gollum-Proofing: Ein digitaler Verschluss für den Proviantbeutel, der nur durch Sams Fingerabdruck oder Gesichtsscan geöffnet werden kann mit Zeitangaben. 
 Inventory Tracker: Ein Gewichtssensor im Rucksack, der genau registriert, wann und wieviel Brot entnommen wird. 
  
 
 ### Assumptions
 
-Technologie-Akzeptanz: Wir nehmen an, dass Sam und Frodo bereit sind, einem digitalen Gerät zu vertrauen, obwohl sie aus dem eher technikfernen Auenland kommen. 
-Konstante Nährwerte: Wir gehen davon aus, dass ein Stück Lembas immer die gleiche Menge an Energie liefert und die Hobbits einen messbaren Grundumsatz an Kalorien haben. 
+Technologie-Akzeptanz: Wir nehmen an, dass Sam und Frodo bereit sind, einem digitalen Gerät zu vertrauen, obwohl sie aus dem eher technikfernen Auenland kommen.  
+Konstante Nährwerte: Wir gehen davon aus, dass ein Stück Lembas immer die gleiche Menge an Energie liefert und die Hobbits einen messbaren Grundumsatz an Kalorien haben.  
 Hardware-Haltbarkeit: Wir setzen voraus, dass das Gerät robust genug ist, um Stürze, Matsch, Wasser und die Hitze in der Nähe von Mordor auszuhalten. 
 
 ### Constraints
 
-Energiequelle: In Mittelerde gibt es keine Steckdosen. Das System muss also über Solarzellen (schwierig bei Saurons Staubwolken) oder kinetische Energie (durch das Gehen) geladen werden.
-Unzuverlässige Informationen: Da die genaue Entfernung zum Schicksalsberg nicht auf Google Maps steht, basieren alle Berechnungen auf Schätzungen. Wenn der Weg durch einen Umweg länger wird, stimmen die Rationspläne nicht mehr. 
-Offline-Betrieb: In Mittelerde existiert keinerlei Netzwerkverbindung (weder Mobilfunk noch WLAN). Die Anwendung und alle Datenstrukturen müssen vollständig lokal und offline auf dem Gerät funktionieren (“Edge Computing”). 
-Manuelle Dateneingabe: Sam muss beim Packen des Rucksacks angeben, was er mitnimmt. Jedes Mal, wenn er Brot oder Wasser oder etwas anderes herausnimmt, muss er antippen, um was es sich handelt. Durch Stress und körperliche Belastung kann es sein, dass Sam das falsche Nahrungsmittel antippt, und somit stimmen die Werte und Daten nicht mehr. 
+Energiequelle: In Mittelerde gibt es keine Steckdosen. Das System muss also über Solarzellen (schwierig bei Saurons Staubwolken) oder kinetische Energie (durch das Gehen) geladen werden.  
+Unzuverlässige Informationen: Da die genaue Entfernung zum Schicksalsberg nicht auf Google Maps steht, basieren alle Berechnungen auf Schätzungen. Wenn der Weg durch einen Umweg länger wird, stimmen die Rationspläne nicht mehr.  
+Offline-Betrieb: In Mittelerde existiert keinerlei Netzwerkverbindung (weder Mobilfunk noch WLAN). Die Anwendung und alle Datenstrukturen müssen vollständig lokal und offline auf dem Gerät funktionieren (“Edge Computing”).  
+Manuelle Dateneingabe: Sam muss beim Packen des Rucksacks angeben, was er mitnimmt. Jedes Mal, wenn er Brot oder Wasser oder etwas anderes herausnimmt, muss er antippen, um was es sich handelt. Durch Stress und körperliche Belastung kann es sein, dass Sam das falsche Nahrungsmittel antippt, und somit stimmen die Werte und Daten nicht mehr.  
 Hardware-Limitationen für Tarnung: Das Gerät darf in der Wildnis nachts keine starken Lichtemissionen erzeugen (strikter Dark-Mode erforderlich), um das Risiko der Entdeckung durch Späher zu minimieren. 
  
