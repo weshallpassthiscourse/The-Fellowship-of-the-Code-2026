@@ -15,14 +15,20 @@
 
 ### 📝 Summary
 
-Adapt to your project...
-
-This chapter focuses on [one specific requirement or artifact] of The Fellowship Companion. It shows what was added, why it was added, and how it fits into the larger system.
+Dieses Artefakt konzentriert sich auf die grundlegende Anforderungsdefinition des "WayBread Watchers". Wir haben ein Konzept eines Systems entworfen, das unsere Vorräte verwaltet und vor dem Zugriff durch Gollum andere Dritte schützt. Dies ist die Basis unseres Systems, um das Überleben der Gemeinschaft auf de, Weg zum Schicksalsberg sicherzustellen.
 
 Learning Outcomes
++ wie man ein Konzept erstellt  
++ Geschichte von LOTR im Schnelldurchlauf analysiert  
++ die ersten Schritte mit GitHub  
++ Repository anlegen  
++ Ordner und Dateien in GitHub erstellen  
++ Formatierung codieren  
++ Emojis codieren
++ auf GitHub verlinken (sowohl auf derselben Seite, als auch eine andere)
 
-Understand [concept / skill of the phase]
-Apply [tool / language / logic] to build [artifact]
+
+
 Reflect on AI-assisted development and decision-making
 Contribute to a shared, evolving system
 
@@ -30,9 +36,9 @@ Contribute to a shared, evolving system
 
 ### 💎 Artifact
 
-Adapt to your project...
 
-File: [Artifact 1](artifacts/artifact-1/artifact-1-situation-intent.md)
+File: [Artifact 1](artifacts/artifact-1/artifact-1-situation-intent.md)  
+
 
 Build:
 
@@ -49,6 +55,7 @@ Focus:
 Adapt to your project...
 
 What did I expect?
+
 What actually happened?
 How did AI help or mislead me?
 What decision (changes) did I make consciously?
@@ -58,6 +65,7 @@ What would I do differently next time?
 
 ### 🤓 Lessons Learned
 
-Adapt to your project...
-
-Insights, challenges, reflections
++ Softwareentwicklung beginnt nicht mit dem Coden, sondern mit der Ertellung eines Konzeptes  
++ Koordinieren einer großen Gruppe ist challenging  
++ bessere Effizienz durch Arbeitsaufteilung (zwei 3er Gruppen, statt einer 6er)  
++ eine Agenda vor dem Gruppentermin erstellen  
