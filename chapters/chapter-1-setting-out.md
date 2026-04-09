@@ -6,10 +6,10 @@
 ## Table of Contents
 
 **The Red Book of Westmarch - Chapter 1: Setting out**
- + Summary  
- + Artifact  
- + AI Assistance  
- + Lessons Learned  
+ + [Summary](#-summary)  
+ + [Artifact](#-artifact)  
+ + [AI Assistance](#-ai-assistance)  
+ + [Lessons Learned](#-lessons-learned)  
 
 ---
 
