@@ -52,14 +52,7 @@ Focus:
 
 ### 🤖 AI Assistance
 
-Adapt to your project...
-
-What did I expect?
-
-What actually happened?
-How did AI help or mislead me?
-What decision (changes) did I make consciously?
-What would I do differently next time?
+Wir haben nicht erwartet, dass AI uns eine gute Idee für eine App gibt. Wir haben auch nicht erwartet, dass Sich Ai so gut in der LOTR lore auskennt. Hier hat Ai besonders den Teammitgliedern geholfen, die weder die Bücher gelesen haben, noch die Filme gesehen haben, um einen schnellen Einblick in die story zu bekommen. Beim Formulieren war AI, wie zu erwarten war, sehr hilfreich. Um uns für eine Idee zu entscheiden, hat jeder stelbstständig die Aufgabenstellung in in AI-tool eingegeben und die besten zwei Ideen in der Gruppe präsentiert. Diese Ideen wurden in einem Dokument gesammelt und dann wurde abgestimmt. Das Ergebnis war einstimmig: "Hungry Hobbits". Es gab zwei Vorfälle bei denen AI uns in die Irre geführt hat: die AI hat uns gesagt, dass wir unser repository pushen müssen, dabei haben wir nicht im codespace gearbeitet, sondern ein public repository angelegt. Nächstes Mal würden wir beim ersten prompts bereits versuchen die Situation besser zu beschreiben und mehr Kontext von Anfang an zu geben, um genauere Methoden vorgeschlagen zu bekommen, und nicht noch viel mehr Wasser zu verbauchen als ohnehin schon passiert.   
 
 ---
 
