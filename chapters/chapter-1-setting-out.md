@@ -40,19 +40,20 @@ Contribute to a shared, evolving system
 File: [Artifact 1](artifacts/artifact-1/artifact-1-situation-intent.md)  
 
 
-Build:
+Build: requirements document  
 
-… [requirements document / Mermaid flow / wireframe / HTML + CSS page / JavaScript page / low-code extension]
 
 Focus:
+Beschreibung unserer Mission/Intention und der Hauptfunktionen des Tools.
 
-… [specific feature of the system / requirement addressed]
 
 ---
 
 ### 🤖 AI Assistance
 
-Wir haben nicht erwartet, dass AI uns eine gute Idee für eine App gibt. Wir haben auch nicht erwartet, dass Sich Ai so gut in der LOTR lore auskennt. Hier hat Ai besonders den Teammitgliedern geholfen, die weder die Bücher gelesen haben, noch die Filme gesehen haben, um einen schnellen Einblick in die story zu bekommen. Beim Formulieren war AI, wie zu erwarten war, sehr hilfreich. Um uns für eine Idee zu entscheiden, hat jeder stelbstständig die Aufgabenstellung in in AI-tool eingegeben und die besten zwei Ideen in der Gruppe präsentiert. Diese Ideen wurden in einem Dokument gesammelt und dann wurde abgestimmt. Das Ergebnis war einstimmig: "Hungry Hobbits". Es gab zwei Vorfälle bei denen AI uns in die Irre geführt hat: die AI hat uns gesagt, dass wir unser repository pushen müssen, dabei haben wir nicht im codespace gearbeitet, sondern ein public repository angelegt. Nächstes Mal würden wir beim ersten prompts bereits versuchen die Situation besser zu beschreiben und mehr Kontext von Anfang an zu geben, um genauere Methoden vorgeschlagen zu bekommen, und nicht noch viel mehr Wasser zu verbauchen als ohnehin schon passiert.   
+Wir haben nicht erwartet, dass AI uns eine gute Idee für eine App gibt. Wir haben auch nicht erwartet, dass Sich AI so gut in der LOTR Lore auskennt. Hier hat AI besonders den Teammitgliedern geholfen, die weder die Bücher gelesen, noch die Filme gesehen haben, um einen schnellen Einblick in die Storyline zu bekommen. Beim Formulieren war AI, wie zu erwarten war, sehr hilfreich. Um uns für eine Idee zu entscheiden, hat jeder stelbstständig die Aufgabenstellung in ein AI-Tool (ChatGPT, Gemini) eingegeben und die besten zwei Ideen in der Gruppe präsentiert. Diese Ideen wurden in einem Dokument gesammelt und dann wurde abgestimmt. Das Ergebnis war einstimmig: "Hungry Hobbits".  
+Es gab zwei Vorfälle, bei denen AI uns in die Irre geführt hat: Einerseits hat Gemini uns gesagt, dass wir unser Repository pushen müssen, dabei haben wir nicht im Codespace gearbeitet, sondern ein Public Repository angelegt. Andererseits hat Gandalf uns den falschen Code zum Verlinken gegeben.  
+Nächstes Mal würden wir beim ersten Prompt bereits versuchen die Situation besser zu beschreiben und mehr Kontext von Anfang an zu geben, um genauere Methoden vorgeschlagen zu bekommen, und um nicht noch mehr Wasser zu verbauchen als ohnehin schon passiert.
 
 ---
 
