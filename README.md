@@ -79,4 +79,5 @@ Tracking: An automatic inventory tracker utilizing weight sensors in the backpac
 This is our general changelog (e.g., new chapter contents added, rules changed, or major system revisions).  
 + 06.04.2026: Initial Setup of GitHub Repository. [Template](https://estebanthewhite.github.io/The-FellowShip-of-the-Code-2026/templates/) added to README.md. [Artifact 1](artifacts/artifact-1/artifact-1-situation-intent.md) created (WayBread Watcher).
 + 07.04.2026: Template personalized to our project.
++ 09.04.2026: Chapter 1 written.
 
