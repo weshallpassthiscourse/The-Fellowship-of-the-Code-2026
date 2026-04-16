@@ -7,7 +7,8 @@ flowchart TD
     C --> D([Standby aktivieren])
 
     %% Start des Zugriffs
-    D --> E[Näherung erkennen]
+    D --> Z[Näherung erkannt]
+    Z --> E[Bildschirm aufleuchten]
     E --> F[Finger scannen]
     F --> G[Identität prüfen]
     G --> H{Identität bestätigen}
@@ -22,7 +23,7 @@ flowchart TD
     H -- Ja --> L[Autorisierung bestätigen]
     
     %% Pop-Up für vorherige Fehlversuche (ausführlicher beschrieben)
-    L --> M{Vorherige fehlgeschlagene Login-Versuche prüfen}
+    L --> M{Haben fehlgeschlagene Login-Versuche stattgefunden?}
     M -- Ja --> N[Warnung anzeigen]
     N --> O[Schloss öffnen]
     M -- Nein --> O
