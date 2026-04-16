@@ -1,57 +1,59 @@
 ``` mermaid
 flowchart TD
-    %% Initialisierung & Nutzerverwaltung (Loop von unten)
-    A([Admin authentifizieren]) --> B{Verwaltung wählen}
-    B -- Registrieren --> C1[Abdrücke registrieren]
-    B -- Löschen --> C2[Abdrücke löschen]
-    
-    C1 --> D[Daten speichern]
-    C2 --> D
-    D --> E([Standby aktivieren])
+    %% Start mit Standby
+    D([Standby aktivieren]) --> Z[Näherung erkennen]
 
-    %% Start des regulären Zugriffs
-    E --> F[Näherung erkennen]
-    F --> G[Finger scannen]
-    G --> H[Identität prüfen]
-    H --> I{Identität bestätigen}
+    %% Start des Zugriffs
+    Z --> E[Bildschirm aufleuchten]
+    E --> F[Finger scannen]
+    F --> G[Identität prüfen]
+    G --> H{Identität bestätigen}
 
     %% Weg: Nein (Unbekannter User)
-    I -- Nein --> J[Zugriff verweigern]
-    J --> K[Zugang sperren]
-    K --> L[Versuch protokollieren]
-    L --> E
+    H -- Nein --> I[Zugriff verweigern]
+    I --> J[Zugang sperren]
+    J --> K[Versuch protokollieren]
+    K --> D
 
     %% Weg: Ja (Autorisierung erfolgreich)
-    I -- Ja --> M[Autorisierung bestätigen]
+    H -- Ja --> L[Autorisierung bestätigen]
     
     %% Pop-Up für vorherige Fehlversuche
-    M --> N{Fehlgeschlagene Login-Versuche stattgefunden?}
-    N -- Ja --> O[Warnung anzeigen]
-    O --> P[Schloss öffnen]
-    N -- Nein --> P
+    L --> M{Fehlversuche stattgefunden?}
+    M -- Ja --> N[Warnung anzeigen]
+    N --> O[Schloss öffnen]
+    M -- Nein --> O
     
-    %% Entscheidungspunkt: 4 Möglichkeiten
-    P --> Q{Aktion wählen}
+    %% Entscheidungspunkt: Hauptmenü
+    O --> P{Aktion wählen}
     
-    Q -- Option 1 --> R[Inventar verwalten]
-    Q -- Option 2 --> S[Nutzer verwalten]
-    Q -- Option 3 --> T[Protokoll ansehen]
+    P -- Option 1 --> Q[Inventar verwalten]
+    P -- Option 2 --> R[Nutzer verwalten]
+    P -- Option 3 --> S[Protokoll ansehen]
     
-    %% Loop zurück zur Admin-Authentifizierung für die Nutzerverwaltung
-    S --> A
+    %% Loops für Option 1 und 3
+    Q --> P
+    S --> P
     
-    %% Loop zurück zum Menü für Option 1 und 3
-    R --> Q
-    T --> Q
+    %% Strang für Option 2: Nutzerverwaltung durch Admin
+    R --> A[Admin authentifizieren]
+    A --> B{Verwaltung wählen}
+    
+    B -- Registrieren --> C1[Nutzer registrieren]
+    B -- Löschen --> C2[Nutzer löschen]
+    
+    C1 --> C[Daten speichern]
+    C2 --> C
+    
+    %% Loop zurück ins Hauptmenü nach der Verwaltung
+    C --> P
     
     %% Option 4: Prozess beenden
-    Q -- Option 4 --> U[Schloss verriegeln]
+    P -- Option 4 --> T[Schloss verriegeln]
     
     %% Abschluss und Logout
-    U --> V[Abmeldung scannen]
-    V --> W[Abmeldung protokollieren]
-    W --> X[Daten sichern]
-    X --> E
-
+    T --> U[Abmeldung scannen]
+    U --> V[Abmeldung protokollieren]
     V --> W[Daten sichern]
     W --> D
+
