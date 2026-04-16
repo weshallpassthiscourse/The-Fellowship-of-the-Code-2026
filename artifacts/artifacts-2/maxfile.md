@@ -1,3 +1,4 @@
+` ` ` mermaid
 
     %% Initialisierung durch Admin Macwise
     A([Admin authentifizieren]) --> NV1[Nutzerprofil anlegen / auswählen]
