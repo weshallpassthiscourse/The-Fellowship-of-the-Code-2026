@@ -39,8 +39,8 @@ flowchart TD
     R --> A[Admin authentifizieren]
     A --> B{Verwaltung wählen}
     
-    B -- Registrieren --> C1[Nutzer registrieren]
-    B -- Löschen --> C2[Nutzer löschen]
+    B  --> C1[Nutzer registrieren]
+    B  --> C2[Nutzer löschen]
     
     C1 --> C[Daten speichern]
     C2 --> C
