@@ -1,13 +1,9 @@
 ``` mermaid
-
 flowchart TD
-    %% Initialisierung durch Admin Macwise
-    A([Admin authentifizieren]) --> B[Abdrücke registrieren]
-    B --> C[Daten speichern]
-    C --> D([Standby aktivieren])
+    %% Start mit Standby
+    D([Standby aktivieren]) --> Z[Näherung erkennen]
 
     %% Start des Zugriffs
-    D --> Z[Näherung erkannt]
     Z --> E[Bildschirm aufleuchten]
     E --> F[Finger scannen]
     F --> G[Identität prüfen]
@@ -22,31 +18,41 @@ flowchart TD
     %% Weg: Ja (Autorisierung erfolgreich)
     H -- Ja --> L[Autorisierung bestätigen]
     
-    %% Pop-Up für vorherige Fehlversuche (ausführlicher beschrieben)
-    L --> M{Haben fehlgeschlagene Login-Versuche stattgefunden?}
+    %% Pop-Up für vorherige Fehlversuche
+    L --> M{Fehlversuche stattgefunden?}
     M -- Ja --> N[Warnung anzeigen]
     N --> O[Schloss öffnen]
     M -- Nein --> O
     
-    %% Entscheidungspunkt: 4 Möglichkeiten
+    %% Entscheidungspunkt: Hauptmenü
     O --> P{Aktion wählen}
     
-    P -- Option 1 --> Q[Inventar verwalten]
-    P -- Option 2 --> R[Nutzer verwalten]
-    P -- Option 3 --> S[Protokoll ansehen]
+    P --> Q[Inventar verwalten]
+    P --> R[Nutzer verwalten]
+    P --> S[Protokoll ansehen]
     
-    %% Loop zurück zum Menü für die ersten drei Optionen
+    %% Loops für Option 1 und 3
     Q --> P
-    R --> P
     S --> P
     
+    %% Strang für Option 2: Nutzerverwaltung durch Admin
+    R --> A[Admin authentifizieren]
+    A --> B{Verwaltung wählen}
+    
+    B --> C1[Nutzer registrieren]
+    B --> C2[Nutzer löschen]
+    
+    C1 --> C[Daten speichern]
+    C2 --> C
+    
+    %% Loop zurück ins Hauptmenü nach der Verwaltung
+    C --> P
+    
     %% Option 4: Prozess beenden
-    P -- Option 4 --> T[Schloss verriegeln]
+    P --> T[Schloss verriegeln]
     
     %% Abschluss und Logout
     T --> U[Abmeldung scannen]
     U --> V[Abmeldung protokollieren]
     V --> W[Daten sichern]
     W --> D
-
-
