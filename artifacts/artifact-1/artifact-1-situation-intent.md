@@ -23,11 +23,11 @@ Die Hobbits behalten genug Kraft für den letzten Aufstieg am Schicksalsberg und
 
 ### System Capabilities 
 
-Verwaltung verschiedener Profile: Das System muss die Erstellung und Pflege von Nutzerprofilen mit spezies-spezifischen Basis-Verbrauchsraten (z.B. erhöhter Bedarf für Hobbits, reduzierter Bedarf für Elben) ermöglichen.  
-Verbrauchs- und Bedarfsrechnung: Das System muss die Vorräte basierend auf der Gruppenzusammensetzung, dem täglichen Aktivitätslevel und dem Schwierigkeitsgrad des Geländes in Tagesschrittenautomatisch berechnen und abziehen können.  
-Frühwarnsystem: Das System muss Warnungen ausgeben, wenn der berechnete Restvorrat für eine spezifische Person oder die Gesamtgruppe einen kritischen Schwellenwert (z.B. Vorratsreichweite unter 3 Tage) unterschreitet.  
-Gollum-Proofing: Ein digitaler Verschluss für den Proviantbeutel, der nur durch Maxwises Fingerabdruck oder Gesichtsscan geöffnet werden kann mit Zeitangaben. 
-Inventory Tracker: Ein Gewichtssensor im Rucksack, der genau registriert, wann und wieviel Brot entnommen wird. 
++ Verwaltung verschiedener Profile: Das System muss die Erstellung und Pflege von Nutzerprofilen mit spezies-spezifischen Basis-Verbrauchsraten (z.B. erhöhter Bedarf für Hobbits, reduzierter Bedarf für Elben) ermöglichen.  
++ Verbrauchs- und Bedarfsrechnung: Das System muss die Vorräte basierend auf der Gruppenzusammensetzung, dem täglichen Aktivitätslevel und dem Schwierigkeitsgrad des Geländes in Tagesschrittenautomatisch berechnen und abziehen können.  
++ Frühwarnsystem: Das System muss Warnungen ausgeben, wenn der berechnete Restvorrat für eine spezifische Person oder die Gesamtgruppe einen kritischen Schwellenwert (z.B. Vorratsreichweite unter 3 Tage) unterschreitet.  
++ Gollum-Proofing: Ein digitaler Verschluss für den Proviantbeutel, der nur durch Maxwises Fingerabdruck oder Gesichtsscan geöffnet werden kann mit Zeitangaben. 
++ Inventory Tracker: Ein Gewichtssensor im Rucksack, der genau registriert, wann und wieviel Brot entnommen wird. 
 
 ---
 
