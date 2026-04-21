@@ -1,5 +1,8 @@
 # The Fellowship Companion – Artifact II: Deciding  
 
+> "We wants it, we needs it – but we must not let them have it." - Gollum
+
+
 ---
 
 ## Table of Contents
