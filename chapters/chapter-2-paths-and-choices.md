@@ -1,6 +1,6 @@
 # The Red Book of Westmarch - Chapter 2: Decisions  
 
-> "We wants it, we needs it – but we must not let them have it." - Gollum
+> “All we have to decide is what to do with the time that is given us.” - Gandalf
 
 ## Table of Contents
 
