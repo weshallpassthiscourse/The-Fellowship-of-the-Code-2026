@@ -4,33 +4,38 @@
 
 ## Table of Contents
 
-- **[Chosen System Capability](#chosen-system-capability)**
-- **[Flowchart](#flowchart)**
-- **[Wireframe](#wireframe)**
+- **[1. System Capability](#1-system-capability)**
+- **[2. Flow](#2-flow)**
+- **[3. Wireframe](#3-wireframe)**
+- **[4. Design Rationale](4-design-rationale)**
 
 ---
 
-## Chosen System Capability  
+## 1. System Capability  
 
 > **Gollum-Proofing**
+<br>
 
 ### Capability Description  
-Die von uns gewählte Capability ist die Sicherheitsmaßnahme die den Rucksack verschließt. Um zu verhindern, dass Gollum oder andere unerwünschte User auf den Rucksack und seine inhalte zugreifen können, haben wir einen Verschließmechanismus eingebaut. Dieser funktionier per Scan des Fingerabdrucks und lässt somit nur vorher vom Admin berechtigte User auf die Inhalte zugreifen.  
+Die von uns gewählte Capability ist die Sicherheitsmaßnahme, die den Rucksack verschließt. Um zu verhindern, dass Gollum oder andere unerwünschte User auf den Rucksack und seine Inhalte zugreifen können, haben wir einen Verschließmechanismus eingebaut. Dieser funktioniert per Scan des Fingerabdrucks und lässt somit nur vom Admin berechtigte User auf die Inhalte zugreifen.  
 <br>
 ### Why this capability?
-Ausgewählt haben wir diese Capability weil sie zum Einen essenziell für die Sicherheit der Reise der Gefährten ist und zum Anderen haben wir eine Abschätzung durchgeführt welche unserer Capabilities das richtige Maß an Komplexität für diese Arbeitsaufgabe hat. Wir wollten keine zu schiwerige Capability für unseren ersten Versuch der Beschreibung auswählen aber dennoch eine, die genug Inhalt für die Aufgabe bietet.  
+Ausgewählt haben wir diese Capability, weil sie einerseits essenziell für die Sicherheit unserer Reise ist und andererseits, weil diese Capability, das richtige Maß an Komplexität für diese Arbeitsaufgabe bzw. für das erste Mal hat. Wir wollten keine zu schiwerige Capability für unseren ersten Versuch der Beschreibung auswählen, aber dennoch eine, die genug Inhalt für die Aufgabe bietet.  
+Außerdem ist die gewählte Capability für unsere weiteren geplanten Capabilities sehr wichtig. Die spezienbasierte Verbrauchsrechnung zum Beispiel baut auf den in der Sicherheismaßnahme erstellten Nutzerprofilen auf. Auch für den Inventory-Tracker ist es essenziell, dass nicht jeder X-beliebige Mittelerdebewohner auf unseren Rucksack Zugriff hat und womöglich Proviant stehlen kann. Das Schloss ist somit logisch gesehen, der erste Schritt.  
 <br>
-### Why is it meaningful for us at this stage the journey?  
-Wie im Chapter I beschrieben hilft die Capability in erster Linie an der Stelle der Reise in der Frodo, Sam und Gollum den Schicksalsberg erklimmen und Gollum versucht Sam und Frodo zu entzweien indem er die letzten Lembas den Berg hinuter wirft und Sam die Schuld dafür gibt. Abgesehen davon ist ein sicher verschließbarer Rucksack auch an vielen anderen Stellen der Reise eine große Hilfe, da er sicherstellt, dass keine Vorräte gestohlen werden können und die Gefährten stehts genug Proviant dabei haben.
+### Why is it meaningful for us at this stage of the journey?  
+Obwohl wir uns aktuell in der Formierungs- und Planungsphase in Bree und Bruchtal befinden – und die akute Bedrohung durch Gollums Sabotage oder extremer Hunger noch in der Zukunft liegen – ist genau jetzt der entscheidende Zeitpunkt für die Entwicklung dieses Features. Wir betreiben hier eine vorausschauende Sicherheitsplanung: Ein sicheres Zugriffssystem muss entwickelt und getestet werden, bevor wir in feindliches Gebiet aufbrechen. Wenn wir erst in Mordor merken, dass uns Vorräte gestohlen werden, haben wir weder die Zeit noch die sichere Umgebung, um eine Lösung zu bauen.  
+Gleichzeitig adressiert dieses System schon jetzt ein zentrales Problem der Gruppendynamik: Der Rat von Elrond hat gezeigt, dass die Gefährten aus verschiedenen Völkern stammen und die korrumpierende Macht des Ringes leicht Misstrauen säen kann (wie z. B. bei Boromir). Ein fälschungssicheres, objektives Zugangssystem durch Biometrie etabliert von Anfang an klare Regeln. Es schützt uns also nicht nur vor externen Feinden, sondern schafft auch intern Vertrauen, bevor Paranoia oder Ressourcenknappheit die Mission von innen heraus gefährden können.
+
 
 ---  
 
-## Flowchart  
+## 2. Flow  
 
-**[Flowchart](src/decisions.mermaid.md)**
+> **[Flowchart](src/decisions.mermaid.md)**
 
-Die gewählte Capability ist für unsere weiteren geplanten Capabilities sehr wichtig. Die Spezienbasierte Verbrauchsrechnung zum Beispiel baut auf den in der Sicherheismaßnahme erstellten Nutzerprofilen auf. Auch für den Inventory-Tracker ist es essenziell, dass nicht jeder X-beliebige Mittelerdebewohner auf unseren Rucksack Zugriff hat und womöglich Proviant stehlen kann.
-So funktioniert der Ablauf  
+<br>
+
 
 1. **Standby aktivieren**  
 Das System befindet sich im Ruhezustand. und wird durch Bewegung oder Annäherung geweckt.
@@ -60,10 +65,17 @@ Der Nutzer sieht das Aktionsmenü und kann zwischen folgenden Optionen wählen
 
 ---  
 
-## Wireframe
+## 3. Wireframe
 
-**[Wireframe](src/decisions.png)**
-<br> 
+> **[Wireframe](src/decisions.png)**
+
+<br>
+
+
+---
+
+## 4. Design Rationale  
+
 ### How does this design support the intent and value defined in your Assignment 1?  
 Das Design des ersten Wireframes ist die “Login-Maske” für registrierte Gefährten. Durch das Login haben wir erstens direkten Zugang zu den Inhalten des Rucksacks, zweitens sind sie auch vor ungewollten Mitbenutzern geschützt. Unser Wireframe setzt auf eine strikte biometrische Authentifizierung (Fingerabdruck-Scan). Da Passwörter von Dritten belauscht oder erraten werden könnten, bietet der biometrische Zugang die absolut höchste Sicherheit. Gollum z.B. kann das System nicht öffnen, keine Rationen fälschen und keinen Zugriff auf den Proviantbeutel erlangen. Das große Schloss-Symbol und das Fingerabdruck-Symbol visualisieren diese kompromisslose Sicherheit. Außerdem gibt die Hinweismeldung die Information, dass eine Registrierung nicht ohne einen autorisierten Gefährten möglich ist. Das Design ist simpel gehalten, da in einer Umgebung mit toxischen Dämpfen und Hitze, sowie bei mentaler und/oder physischer Erschöpfung von uns Gefährten kognitive Anstrengung nicht von Vorteil ist. Die Schrift ist auch deswegen groß gehalten. Der Fingerabdruck ist mittig platziert, damit er füruns alle ersichtlich ist und gut benutzt werden kann. Die klare Statusmeldung („Status: Wartet auf Authentifizierung“) und der Hinweis unten („Registrierung nur durch autorisierte Gefährten“) stellen sicher, dass es ein in sich geschlossenes, sicheres System ist, was objektives Vertrauen zwischen den uns als Gefährten fördert.  
 <br> 
