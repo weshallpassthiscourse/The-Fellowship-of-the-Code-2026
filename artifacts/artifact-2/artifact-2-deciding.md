@@ -124,7 +124,11 @@ flowchart TD
     V --> W[Daten speichern]
     W --> D
 ```
-<script type="module" src="src/mermaid-init.js"></script>
+<details>
+  <summary>⚙️ System-Setup (Nicht ausklappen)</summary>
+  <script type="module" src="src/mermaid-init.js"></script>
+</details>
+
 
 ---  
 
