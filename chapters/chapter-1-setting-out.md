@@ -17,7 +17,7 @@
 
 Dieses Artefakt konzentriert sich auf die grundlegende Anforderungsdefinition des "WayBread Watchers". Wir haben ein Konzept eines Systems entworfen, das unsere Vorräte verwaltet und vor dem Zugriff durch Gollum andere Dritte schützt. Dies ist die Basis unseres Systems, um das Überleben der Gemeinschaft auf de, Weg zum Schicksalsberg sicherzustellen.
 
-Learning Outcomes
+**Learning Outcomes**  
 + wie man ein Konzept erstellt  
 + Geschichte von LOTR im Schnelldurchlauf analysiert  
 + die ersten Schritte mit GitHub  
