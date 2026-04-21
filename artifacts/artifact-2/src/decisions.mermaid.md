@@ -54,6 +54,6 @@ flowchart TD
     %% Abschluss und Logout
     T --> U[Abmeldung scannen]
     U --> V[Abmeldung protokollieren]
-    V --> W[Daten sichern]
+    V --> W[Daten speichern]
     W --> D
 
