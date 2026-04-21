@@ -13,6 +13,7 @@
   + [Purpose of The Fellowship Companion (TFC)](#purpose-of-the-fellowship-companion-tfc)
   + [Rules of our Journey](#rules-of-our-journey)
   + [Chapters](#chapters)
+  + [Artifacts](#artifacts)
   + [Key Features of The Fellowship Companion](#key-features-of-the-fellowship-companion)
   + [Changelog](#changelog)
 
@@ -21,8 +22,8 @@
 #### Purpose of The Fellowship Companion (TFC)
 
 We are 6 hobbits on our great journey from the Shire to Mordor. Along the way, we need a system to support our survival.
-The Fellowship Companion is a evolving digital tool we build together. It is not perfect, it is not finished - it evolves as we travel.  
-Who we are: The Fellowship - a group of 6 hobbits working together. *Maxwise* (Max), *Leodora* (Leonie), *Timobald* (Timon), *Eveybell* (Evelyn), *Helanor* (Helena) and *Kathirose* (Kathi).  
+The Fellowship Companion is a evolving digital tool we build together. It is not perfect, it is not finished - it evolves as we travel. We are part of the Fellowship and our names are *Maxwise* (Max), *Leodora* (Leonie), *Timobald* (Timon), *Eveybell* (Evelyn), *Helanor* (Helena) and *Kathirose* (Kathi).
+<img width="1264" height="846" alt="image" src="https://github.com/user-attachments/assets/c0ce12c4-b4ff-406e-8987-beb3df467401" />    
 What we build: The "WayBread Watcher" - an intelligent ration manager tool that helps manage our journey and resources and protects our food from Gollum.  
 Why we build it: Because everyone knows that hobbits cannot go long without food (we do need our second or third breakfast sometimes, after all!). We build it so our mission to Mount Doom doesn't fail due to starvation, and so we can understand the mindset, logic, design, and practice of developers along the way.
 
@@ -64,6 +65,18 @@ The Red Book of Westmark (README.md + chapters/) is our reflection log and livin
 [Go to Chapter V ](chapters/chapter-5-the-tale-continues.md)
 
 ---
+
+#### Artifacts  
+
+*Artifact I - Situation and Intent*  
+"Lembas! Elvish waybread. One small bite is enough to fill the stomach of a grown man" - Legolas  
+[Go to Artifact I](artifacts/artifact-1/artifact-1-situation-intent.md)  
+
+*Artifact II - Deciding*  
+"Lembas! Elvish waybread. One small bite is enough to fill the stomach of a grown man" - Legolas  
+[Go to Artifact II](artifacts/artifact-2/artifact-2-sdeciding.md)
+
+---  
 
 #### Key Features of The Fellowship Companion
 
