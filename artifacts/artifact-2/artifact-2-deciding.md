@@ -28,9 +28,8 @@ Wie im Chapter I beschrieben hilft die Capability in erster Linie an der Stelle 
 
 ### 2. Flowchart  
 
-[Flowchart](src/decisions-mermaid.md)  
+[Flowchart](src/decisions.mermaid.md)  
 
-[Artifact 1](artifacts/artifact-1/artifact-1-situation-intent.md)
 
 So funktioniert der Ablauf  
 1. Standby aktivieren
@@ -63,7 +62,7 @@ Der Nutzer sieht das Aktionsmenü und kann zwischen folgenden Optionen wählen
 
 ### 3. Wireframe
 
-[Wireframe](artifacts/artifact-2/src/decisions.png)
+[Wireframe](src/decisions.png)
 <br> 
 #### How does this design support the intent and value defined in your Assignment 1?  
 Das Design des ersten Wireframes ist die “Login-Maske” für registrierte Gefährten. Durch das Login haben wir erstens direkten Zugang zu den Inhalten des Rucksacks, zweitens sind sie auch vor ungewollten Mitbenutzern geschützt. Unser Wireframe setzt auf eine strikte biometrische Authentifizierung (Fingerabdruck-Scan). Da Passwörter von Dritten belauscht oder erraten werden könnten, bietet der biometrische Zugang die absolut höchste Sicherheit. Gollum z.B. kann das System nicht öffnen, keine Rationen fälschen und keinen Zugriff auf den Proviantbeutel erlangen. Das große Schloss-Symbol und das Fingerabdruck-Symbol visualisieren diese kompromisslose Sicherheit. Außerdem gibt die Hinweismeldung die Information, dass eine Registrierung nicht ohne einen autorisierten Gefährten möglich ist. Das Design ist simpel gehalten, da in einer Umgebung mit toxischen Dämpfen und Hitze, sowie bei mentaler und/oder physischer Erschöpfung von uns Gefährten kognitive Anstrengung nicht von Vorteil ist. Die Schrift ist auch deswegen groß gehalten. Der Fingerabdruck ist mittig platziert, damit er füruns alle ersichtlich ist und gut benutzt werden kann. Die klare Statusmeldung („Status: Wartet auf Authentifizierung“) und der Hinweis unten („Registrierung nur durch autorisierte Gefährten“) stellen sicher, dass es ein in sich geschlossenes, sicheres System ist, was objektives Vertrauen zwischen den uns als Gefährten fördert.  
