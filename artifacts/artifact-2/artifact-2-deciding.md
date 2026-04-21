@@ -125,7 +125,7 @@ flowchart TD
     W --> D
 ```
 <details>
-  <summary>⚙️ System-Setup (Nicht ausklappen)</summary>
+  <summary>⚙️ System-Setup</summary>
   <script type="module" src="src/mermaid-init.js"></script>
 </details>
 
