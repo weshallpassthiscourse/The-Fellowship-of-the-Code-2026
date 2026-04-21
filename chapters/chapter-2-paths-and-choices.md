@@ -1,4 +1,4 @@
-# The Red Book of Westmarch - Chapter 2: Descisions  
+# The Red Book of Westmarch - Chapter 2: Decisions  
 
 > "We wants it, we needs it – but we must not let them have it." - Gollum
 
@@ -30,7 +30,7 @@ Die gewählte Capability ist für unsere weiteren geplanten Capabilities sehr wi
 
 File: [Artifact 2](../artifacts/artifact-2/artifact-2-deciding.md)  
   
-Build: Mermaid flow / Wireframe 
+Build: Mermaid Flow / Wireframe 
   
 Focus: Detaillierte Ausarbeitung des Authentifizierungsprozesses: Logischer Ablauf der Zugangskontrolle (Flowchart) und Design des Login-Screens (Wireframe).
 
