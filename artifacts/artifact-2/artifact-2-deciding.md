@@ -33,31 +33,23 @@ Wie im Chapter I beschrieben hilft die Capability in erster Linie an der Stelle 
 So funktioniert der Ablauf  
 1. Standby aktivieren
 Das System befindet sich im Ruhezustand. und wird durch Bewegung oder Annäherung geweckt.  
-
 3. Näherung erkennen  
 Wenn sich jemand dem Rucksack nähert, dann erfasst das der Sensor. Dadurch erkennt das System eine Näherung.  
-
 4. Bildschirm aufleuchten  
 Der Bildschirm leuchtet durch die Annäherung auf und zeigt unser Wireframe. Der Erkennungsprozess wird eingeleitet.  
-
 5. Finger scannen  
 Die Person legt den Finger auf den Bildschirm. Der Finger wird gescannt.  
-
 6. Identität prüfen 
 Der gescannte Fingerabdruck wird mit den gespeicherten Identitätsdaten abgeglichen. 
-
 7. Identität bestätigen
     + Nein: Bei einer fehlgeschlagenen Identitätsprüfung wird der Zugriff verweigert, der Zugang gesperrt, der Versuch protokolliert, und damit kehrt das System zurück auf Standby.  
     + Ja: Bei einer erfolgreichen Identitätsprüfung bestätigt das System die Autorisierung.  
-
 8. Fehlversuche stattgefunden?  
-Gab vor der letzten erfolgreichen Anmeldung einen fehlgeschlagenen Versuch, in das System zu kommen?
+Gab vor der letzten erfolgreichen Anmeldung einen fehlgeschlagenen Versuch, in das System zu kommen?  
     + Ja: Ein Popup-Fenster taucht auf mit der Information, dass jemand sich versucht hat, einzuloggen.  
     + Nein: Es taucht kein Popup-Fenster auf. Weiter zu Punkt 9.
-
 9. Schloss öffnen  
 Das Schloss wird entriegelt und somit kann in weiterer Folge das Aktionsmenü bedient werden. 
-
 10. Aktion wählen  
 Der Nutzer sieht das Aktionsmenü und kann zwischen folgenden Optionen wählen  
     + Inventar verwalten: Die Systemoption "Inventar verwalten" verschafft den Zugriff ausschließlich auf das Inventar, daher kehrt das System nach der Nutzung zurück auf die Aktionsmenü. 
@@ -65,11 +57,6 @@ Der Nutzer sieht das Aktionsmenü und kann zwischen folgenden Optionen wählen
     + Protokoll ansehen: "Protokoll ansehen" ermöglicht dem Nutzer jegliche vom System erstellen Protokolle einzusehen. Nach der Einsicht kehrt das System zurück auf "Aktion wählen". 
     + Schloss verriegeln: Bei der Option "Schloss verriegeln" wird der Benutzer aufgefordert, durch Fingerabdruckscan die Abmeldung einzuleiten. Anschließend wird die Abmeldung protokolliert, sowie die Daten gespeichert und das System kehrt in “Standby aktivieren” zurück. 
 
-
-
-
-
-  
 ---  
 
 ### 3. Wireframe
