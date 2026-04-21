@@ -25,9 +25,9 @@ Die Capability ist für unsere weiteren geplanten Capabilities sehr wichtig. Die
 
 ### 💎 Artifact
 
-File: Artifact 2  
+File: Artifact 2  (The-Fellowship-of-the-Code-2026/artifacts/artifacts-2/ )
   
-Build: The-Fellowship-of-the-Code-2026/artifacts/artifacts-2/artifacts-2-deciding.md 
+Build: Product Requirements Document
   
 Focus: Auswahl und detaillierte Beschreibung einer unserer geplanten Capabilities  
 
@@ -41,5 +41,5 @@ Wir haben erwartet, durch einen einzigen Prompt direkt die passende Aufstellung 
 ### 🤓 Lessons Learned
 + Wie in unserer letzten "lesson learned" beschrieben, haben wir uns bei dieser Aufgabe aufgeteilt um produktiver zu arbeiten. Es hat sehr gut funktioniert, dass sich jeder beteiligen kann und nicht 2-3 von 6 Gruppenmitgliedern die meiste Arbeit leisten.  
 + Möglichst detaillierte Prompts helfen dabei Schneller ein besseres Ergebnis zu erzielen.
-+ Wenn man in Github ausversehen auf  “zurück” klickt (oder eine Maus hat mit extra Zurückbutton in gefährlicher Daumennähe), ohne zu commiten, ist ALLES was man z.B. für das redbook geschrieben hat weg. Demensprechen werden wir nun alles immer zuerst in Word ausarbeiten.
++ Wenn man in Github ausversehen auf  “zurück” klickt (oder eine Maus hat mit extra Zurückbutton in gefährlicher Daumennähe), ohne zu commiten, ist ALLES was man z.B. für das Redbook geschrieben hat weg. Demensprechend werden wir nun alles immer zuerst in Word ausarbeiten.
 
