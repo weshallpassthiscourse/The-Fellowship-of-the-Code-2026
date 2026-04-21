@@ -28,7 +28,7 @@ Wie im Chapter I beschrieben hilft die Capability in erster Linie an der Stelle 
 
 ### 2. Flowchart  
 
-[Flowchart](artifacts/artifact-2/src/decisions-mermaid.md)  
+[Flowchart](src/decisions-mermaid.md)  
 
 [Artifact 1](artifacts/artifact-1/artifact-1-situation-intent.md)
 
