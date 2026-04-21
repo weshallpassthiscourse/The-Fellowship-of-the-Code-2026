@@ -14,12 +14,12 @@
 
 ### 📝 Summary
 
-In dieser Aufgabe haben wir uns für eine userer Capabilities entschieden und diese im Detail beschrieben. Wir haben ein Mermaidchart erstellt um die Logik der einzelenen Schritte userer Capability zu definieren und zu visualisieren. Ebenfalls haben wir einen Wireframe KI-generieren lassen mit Hilfe von welchem in einzelner „Screen“ unserer Capability veranschaulicht wird. Entschieden haben wir uns für den Verschießmechanismus (Gollum-Proofing) unseres magischen Rucksacks, welcher für viele unserer anderen Capabilities essenziell ist.  
+In dieser Aufgabe haben wir uns für eine userer Capabilities entschieden und diese im Detail beschrieben. Wir haben ein Mermaidchart erstellt, um die Logik der einzelenen Schritte userer Capability zu definieren und zu visualisieren. Ebenfalls haben wir einen Wireframe KI-generieren lassen, der einen einzelnen „Screen“ unserer Capability veranschaulicht. Entschieden haben wir uns für den Verschließmechanismus (Gollum-Proofing) unseres magischen Rucksacks, welcher für viele unserer anderen Capabilities essenziell ist.  
   
 **Learning Outcomes**  
-Wir haben verstanden, wie man mit Hilfe von simplem text-code ein Mermaid-Chart erstellen kann und warum es sinnvoll ist einen Wireframe zu visualisieren. Diese Skills haben wir dann angewant um eben ein Flowchar und einen Wireframe zu erstellen. Wie bei jeder Aufgabe wurden wir auch Schritt für Schritt etwas vertrauter mit der GitHub Umgebung.
-KI war bei der erstellung des Wireframe eine großartige Hilfe und mit nur wenigen Anläufen haben wir ein sehr zufriedenstellendes Ergebnis erhalten. Ebenfalls haben wir anfangs KI eingesetzt um uns Mermaid erklären zu lassen, ein Grundgerüst aufzubauen und um einzelne Fehler zu korrigieren. Bei der entscheidung welche Capability wir nehmen wollen, haben wir bewusst nicht KI eingesetzt sondern eine klassische Abstimmung durchgeführt.
-Die Capability ist für unsere weiteren geplanten Capabilities sehr wichtig. Die spezien-basierte Verbrauchsrechnung zum Beispiel baut auf den in der Sicherheismaßnahme erstellten Nutzerprofilen auf. Auch für den Inventory-Tracker ist es essenziell, dass nicht jeder X-beliebige Mittelerdebewohner auf unseren Rucksack Zugriff hat und womöglich Proviant stehlen kann.
+Wir haben verstanden, wie man mit Hilfe von simplem text-code ein Mermaid-Chart erstellen kann und warum es sinnvoll ist, einen Wireframe zu visualisieren. Diese Skills haben wir dann angewandt, um eben ein Flowchart und einen Wireframe zu erstellen. Wie bei jeder Aufgabe wurden wir auch Schritt für Schritt etwas vertrauter mit der GitHub Umgebung.
+KI war bei der Erstellung des Wireframe eine großartige Hilfe und mit nur wenigen Anläufen haben wir ein sehr zufriedenstellendes Ergebnis erhalten. Ebenfalls haben wir anfangs KI eingesetzt, um uns Mermaid erklären zu lassen, ein Grundgerüst aufzubauen und um einzelne Fehler zu korrigieren. Bei der Entscheidung, welche Capability wir nehmen wollen, haben wir bewusst nicht KI eingesetzt sondern eine klassische Abstimmung durchgeführt.
+Die gewählte Capability ist für unsere weiteren geplanten Capabilities sehr wichtig. Die Spezienbasierte Verbrauchsrechnung zum Beispiel baut auf den in der Sicherheismaßnahme erstellten Nutzerprofilen auf. Auch für den Inventory-Tracker ist es essenziell, dass nicht jeder X-beliebige Mittelerdebewohner auf unseren Rucksack Zugriff hat und womöglich Proviant stehlen kann.
 
 ---
 
@@ -29,7 +29,8 @@ File: [Artifact 2](../artifacts/artifact-2/artifact-2-deciding.md)
   
 Build: Mermaid flow / Wireframe 
   
-Focus: Auswahl und detaillierte Beschreibung einer unserer geplanten Capabilities  
+Focus: Detaillierte Ausarbeitung des Authentifizierungsprozesses: Logischer Ablauf der Zugangskontrolle (Flowchart) und Design des Login-Screens (Wireframe).
+
 
 ---
 
