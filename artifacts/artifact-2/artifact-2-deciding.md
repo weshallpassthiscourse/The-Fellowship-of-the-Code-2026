@@ -10,7 +10,7 @@
 
 ---
 
-### 3. Chosen System Capability  
+### 1. Chosen System Capability  
 
 Gollum-Proofing
 
@@ -64,7 +64,7 @@ Die Aktionswahl “Schloss verriegeln“ delegiert den Benutzer durch den Abmeld
 
 ### 3. Wireframe
 
-Wireframe link
+[Wireframe](artifacts/artifact-2/src/decisions.png)
 
 #### How does this design support the intent and value defined in your Assignment 1?  
 
