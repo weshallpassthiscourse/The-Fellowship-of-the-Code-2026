@@ -37,7 +37,7 @@ Contribute to a shared, evolving system
 ### 💎 Artifact
 
 
-File: [Artifact 1](artifacts/artifact-1/artifact-1-situation-intent.md)  
+File: [Artifact 1](../artifacts/artifact-1/artifact-1-situation-intent.md)  
 
 
 Build: requirements document  
