@@ -73,7 +73,7 @@ The Red Book of Westmark (README.md + chapters/) is our reflection log and livin
 [Go to Artifact I](artifacts/artifact-1/artifact-1-situation-intent.md)  
 
 *Artifact II - Deciding*  
-"Lembas! Elvish waybread. One small bite is enough to fill the stomach of a grown man" - Legolas  
+"We wants it, we needs it – but we must not let them have it." - Gollum  
 [Go to Artifact II](artifacts/artifact-2/artifact-2-sdeciding.md)
 
 ---  
