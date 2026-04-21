@@ -124,6 +124,7 @@ flowchart TD
     V --> W[Daten speichern]
     W --> D
 ```
+<script type="module" src="src/mermaid-init.js"></script>
 
 ---  
 
