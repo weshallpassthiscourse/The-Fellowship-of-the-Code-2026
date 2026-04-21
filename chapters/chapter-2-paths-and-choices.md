@@ -25,9 +25,9 @@ Die Capability ist für unsere weiteren geplanten Capabilities sehr wichtig. Die
 
 ### 💎 Artifact
 
-File: [Artifact 2](artifacts/artifact-2)  
+File: [Artifact 2](../artifacts/artifact-2/artifact-2-deciding.md)  
   
-Build: Product Requirements Document
+Build: Mermaid flow / Wireframe 
   
 Focus: Auswahl und detaillierte Beschreibung einer unserer geplanten Capabilities  
 
