@@ -1,6 +1,7 @@
 # **The Fellowship Companion - Artifact I: Situation & Intent**
 
-## **WayBread Watcher (App)**
+## **WayBread Watcher (App)**  
+>"Lembas! Elvish waybread. One small bite is enough to fill the stomach of a grown man" - Legolas
 
  
 ### Situation
