@@ -1,6 +1,6 @@
 # The Red Book of Westmarch - Chapter 2: Descisions  
 
-> "We wants it, we needs it – but we must not let them have it."
+> "We wants it, we needs it – but we must not let them have it." - Gollum
 
 ## Table of Contents
 
