@@ -83,4 +83,3 @@ This is our general changelog (e.g., new chapter contents added, rules changed, 
 + 09.04.2026: [Chapter 1](chapters/chapter-1-setting-out.md) created.
 + 16.04.2026: Choosing system capability and one wireframe, created [Wireframe](artifacts/artifact-2/src/decisions.png) und [Mermaid-Flowchart](artifacts/artifact-2/src/decisions.mermaid.md), created [Artifact 2](artifacts/artifact-2/artifact-2-deciding.md)
 + 21.04.2026: Updated files and folders, finished assignment 2, added 1b, 2a and 4a from the assignment, updated Red Book/[Chapter 2](chapters/chapter-2-paths-and-choices.md)
-[b](artifacts/artifact-2/a2-d.md)
