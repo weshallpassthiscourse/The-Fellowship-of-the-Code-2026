@@ -26,7 +26,7 @@ Wie im Chapter I beschrieben hilft die Capability in erster Linie an der Stelle 
 
 ### 2. Flowchart  
 
-[FLowchart](artifacts/artifact-2/src/decisions.mermaid.md)
+[FLowchart](.artifacts/artifact-2/src/decisions.mermaid.md)
 
 So funktioniert der Ablauf – Schritt für Schritt 
 
