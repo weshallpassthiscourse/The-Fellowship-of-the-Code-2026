@@ -41,6 +41,7 @@ Wir haben erwartet, durch einen einzigen Prompt direkt die passende Aufstellung 
 
 ### 🤓 Lessons Learned
 + Wie in unserer letzten "lesson learned" beschrieben, haben wir uns bei dieser Aufgabe aufgeteilt, um produktiver zu arbeiten. Es hat sehr gut funktioniert, dass sich jeder beteiligen kann und nicht 2-3 von 6 Gruppenmitgliedern die meiste Arbeit leisten. Eine Gruppe hat die Capability mit Worten beschrieben (1b), eine Gruppe hat die Steps des Flowcharts mit Worten beschrieben (2a) und die letzte Gruppe hat den Hintergrund der Design Decisions erfasst. Danach wurden die ERgebnisse vorgetragen und gemeinsam ausgebessert bzw. ergänzt.
++ Agenda hat tatsächlich geholfen. Jeder wusste, was zu tun ist, und wir haben keine Zeit vergeudet.
 + Möglichst detaillierte Prompts helfen dabei schneller ein besseres Ergebnis zu erzielen.
 + Es gibt den perfekten Prompt nicht. Manchmal kommt man nach 2-3 Prompts erst richtig darauf, was man selbst eigentlich haben will.
 + Wenn man in Github ausversehen auf “zurück” klickt (oder eine Maus hat mit extra Zurückbutton in gefährlicher Daumennähe), ohne zu commiten, ist ALLES was man z.B. für das Redbook geschrieben hat weg. Demensprechend werden wir nun alles immer zuerst in Word ausarbeiten.
