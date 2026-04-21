@@ -14,7 +14,7 @@
 
 ### 📝 Summary
 
-In dieser Aufgabe haben wir uns für eine userer Capabilities entschieden und diese im Detail beschrieben. Wir haben ein Mermaidchart erstellt um die Logik der einzelenen Schritte userer Capability zu definieren und zu visualisieren. Ebenfalls haben wir einen Wireframe KI-generieren lassen mit Hilfe von welchem in einzelner „Screen“ unserer Capability veranschaulicht wird. Entschieden haben wir uns für den Verschießmechanismus unseres magischen Rucksacks, welcher für viele unserer anderen Capabilities essenziell ist.  
+In dieser Aufgabe haben wir uns für eine userer Capabilities entschieden und diese im Detail beschrieben. Wir haben ein Mermaidchart erstellt um die Logik der einzelenen Schritte userer Capability zu definieren und zu visualisieren. Ebenfalls haben wir einen Wireframe KI-generieren lassen mit Hilfe von welchem in einzelner „Screen“ unserer Capability veranschaulicht wird. Entschieden haben wir uns für den Verschießmechanismus (Gollum-Proofing) unseres magischen Rucksacks, welcher für viele unserer anderen Capabilities essenziell ist.  
   
 **Learning Outcomes**  
 Wir haben verstanden, wie man mit Hilfe von simplem text-code ein Mermaid-Chart erstellen kann und warum es sinnvoll ist einen Wireframe zu visualisieren. Diese Skills haben wir dann angewant um eben ein Flowchar und einen Wireframe zu erstellen. Wie bei jeder Aufgabe wurden wir auch Schritt für Schritt etwas vertrauter mit der GitHub Umgebung.
