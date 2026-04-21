@@ -13,6 +13,7 @@
 ### 1. Chosen System Capability  
 
 > Gollum-Proofing  
+<br>
 
 #### Capability Description  
 Die von uns gewählte Capability ist die Sicherheitsmaßnahme die den Rucksack verschließt. Um zu verhindern, dass Gollum oder andere unerwünschte User auf den Rucksack und seine inhalte zugreifen können, haben wir einen Verschließmechanismus eingebaut. Dieser funktionier per Scan des Fingerabdrucks und lässt somit nur vorher vom Admin berechtigte User auf die Inhalte zugreifen.  
@@ -30,36 +31,39 @@ Wie im Chapter I beschrieben hilft die Capability in erster Linie an der Stelle 
 [Flowchart](artifacts/artifact-2/src/decisions-mermaid.md)
 
 So funktioniert der Ablauf  
-1. Näherung erkennen  
-Standby aktivieren - das System befindet sich im Ruhezustand und wird durch Bewegung oder Annäherung geweckt. 
+1. Standby aktivieren
+Das System befindet sich im Ruhezustand. und wird durch Bewegung oder Annäherung geweckt.  
 
-2. Bildschirm aufleuchten  
-Ein Sensor erfasst den relevanten haptischen Kontakt, um den Erkennungsprozess einzuleiten. 
+3. Näherung erkennen  
+Wenn sich jemand dem Rucksack nähert, dann erfasst das der Sensor. Dadurch erkennt das System eine Näherung.  
 
-3. Finger scannen  
-Der erkannte Finger wird per Fingerabdruckscan erfasst. 
+4. Bildschirm aufleuchten  
+Der Bildschirm leuchtet durch die Annäherung auf und zeigt unser Wireframe. Der Erkennungsprozess wird eingeleitet.  
 
-4. Identität bestätigen 
+5. Finger scannen  
+Die Person legt den Finger auf den Bildschirm. Der Finger wird gescannt.  
+
+6. Identität prüfen 
 Der gescannte Fingerabdruck wird mit den gespeicherten Identitätsdaten abgeglichen. 
 
-5. Identität bestätigen?  
-    + Bei einer fehlerhaften Identitätsprüfung wird der Zugriff verweigert und der Versuch protokolliert, damit kehrt das System zurück auf Standby.  
-    + Bei erfolgreicher Bestätigung der Identität bestätigt das System die Autorisierung.  
+7. Identität bestätigen
+    + Nein: Bei einer fehlgeschlagenen Identitätsprüfung wird der Zugriff verweigert, der Zugang gesperrt, der Versuch protokolliert, und damit kehrt das System zurück auf Standby.  
+    + Ja: Bei einer erfolgreichen Identitätsprüfung bestätigt das System die Autorisierung.  
 
-6. Fehlversuche stattgefunden?  
-Das System prüft, ob ein Transfer oder eine Weiterreise erfolgt ist:
-    + Findet kein Fehlversuch statt, kann das Schloss geöffnet werden.  
-    + Findet ein Fehlversuch statt, wird eine Warnung angezeigt, worauf infolge erst das Schloss geöffnet werden kann.  
+8. Fehlversuche stattgefunden?  
+Gab vor der letzten erfolgreichen Anmeldung einen fehlgeschlagenen Versuch, in das System zu kommen?
+    + Ja: Ein Popup-Fenster taucht auf mit der Information, dass jemand sich versucht hat, einzuloggen.  
+    + Nein: Es taucht kein Popup-Fenster auf. Weiter zu Punkt 9.
 
-7. Schloss öffnen  
+9. Schloss öffnen  
 Das Schloss wird entriegelt und somit kann in weiterer Folge das Aktionsmenü bedient werden. 
 
-8. Aktion wählen  
-Der Nutzer wählt zwischen den Optionen  
-    + Inventar verwalten: Die Systemoption Inventar verwalten verschafft den Zugriff ausschließlich auf das Inventar, daher kehrt das System nach der Nutzung zurück auf die Aktionenübersicht. 
-    + Nutzer verwalten: Unter “Nutzer verwalten “ gelangt der Nutzer auf die Option sich als Admin zu authentifizieren. Erfolg die Authentifizierung erfolgreich, erhält der Nutzer Zugriff auf die Verwaltung der Nutzer und kann diese somit registrieren oder löschen. Die Daten der Verwaltungsschritte müssen gespeichert werden, damit der Nutzer auf das Aktionsmenü zurückkehrt. 
-    + Protokoll ansehen: “Protokoll ansehen” ermöglicht dem Nutzer jegliche vom System erstellen Protokolle einzusehen. Nach der Einsicht kehrt das System zurück auf “Aktion wählen”. 
-    + Schloss verriegeln: Die Aktionswahl “Schloss verriegeln“ delegiert den Benutzer durch den Abmeldungsscan, wobei eine weitere Identitätsprüfung durchzuführen ist. Anschließend wird die Abmeldung protokolliert, sowie die Daten gesichert und das System kehrt in “Standby aktivieren” zurück. 
+10. Aktion wählen  
+Der Nutzer sieht das Aktionsmenü und kann zwischen folgenden Optionen wählen  
+    + Inventar verwalten: Die Systemoption "Inventar verwalten" verschafft den Zugriff ausschließlich auf das Inventar, daher kehrt das System nach der Nutzung zurück auf die Aktionsmenü. 
+    + Nutzer verwalten: Unter “Nutzer verwalten" muss sich der Admin mit Fingerabdruckscan authentifizieren, um Zugriff auf die Verwaltung der Nutzer zu bekommen. NAch erfolgreicher Authentifizierung kann er neue Nutzer registrieren oder gespeicherte Nutzer löschen. Diese Daten werden anschließend gespeichert, und der Nutzer kann auf das Aktionsmenü zurückkehren. 
+    + Protokoll ansehen: "Protokoll ansehen" ermöglicht dem Nutzer jegliche vom System erstellen Protokolle einzusehen. Nach der Einsicht kehrt das System zurück auf "Aktion wählen". 
+    + Schloss verriegeln: Bei der Option "Schloss verriegeln" wird der Benutzer aufgefordert, durch Fingerabdruckscan die Abmeldung einzuleiten. Anschließend wird die Abmeldung protokolliert, sowie die Daten gespeichert und das System kehrt in “Standby aktivieren” zurück. 
 
 
 
