@@ -1,6 +1,6 @@
 # The Red Book of Westmarch - Chapter 1: Setting Out  
 
-> "Lembas! Elvish waybread. One small bite is enough to fill the stomach of a grown man" - Legolas
+> “I will take the Ring, though I do not know the way.” - Frodo
 
 
 ## Table of Contents
