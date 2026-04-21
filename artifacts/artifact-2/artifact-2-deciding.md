@@ -34,6 +34,7 @@ Gleichzeitig adressiert dieses System schon jetzt ein zentrales Problem der Grup
 
 > **[Flowchart](src/decisions.mermaid.md)**
 
+
 <br>
 
 
@@ -61,13 +62,76 @@ Der Nutzer sieht das Aktionsmenü und kann zwischen folgenden Optionen wählen
     + Inventar verwalten: Die Systemoption "Inventar verwalten" verschafft den Zugriff ausschließlich auf das Inventar, daher kehrt das System nach der Nutzung zurück auf die Aktionsmenü. 
     + Nutzer verwalten: Unter “Nutzer verwalten" muss sich der Admin mit Fingerabdruckscan authentifizieren, um Zugriff auf die Verwaltung der Nutzer zu bekommen. NAch erfolgreicher Authentifizierung kann er neue Nutzer registrieren oder gespeicherte Nutzer löschen. Diese Daten werden anschließend gespeichert, und der Nutzer kann auf das Aktionsmenü zurückkehren. 
     + Protokoll ansehen: "Protokoll ansehen" ermöglicht dem Nutzer jegliche vom System erstellen Protokolle einzusehen. Nach der Einsicht kehrt das System zurück auf "Aktion wählen". 
-    + Schloss verriegeln: Bei der Option "Schloss verriegeln" wird der Benutzer aufgefordert, durch Fingerabdruckscan die Abmeldung einzuleiten. Anschließend wird die Abmeldung protokolliert, sowie die Daten gespeichert und das System kehrt in “Standby aktivieren” zurück. 
+    + Schloss verriegeln: Bei der Option "Schloss verriegeln" wird der Benutzer aufgefordert, durch Fingerabdruckscan die Abmeldung einzuleiten. Anschließend wird die Abmeldung protokolliert, sowie die Daten gespeichert und das System kehrt in “Standby aktivieren” zurück.
+
+
+``` mermaid
+flowchart TD
+    %% Start mit Standby
+    D([Standby aktivieren]) --> Z[Näherung erkennen]
+
+    %% Start des Zugriffs
+    Z --> E[Bildschirm aufleuchten]
+    E --> F[Finger scannen]
+    F --> G[Identität prüfen]
+    G --> H{Identität bestätigen}
+
+    %% Weg: Nein (Unbekannter User)
+    H -- Nein --> I[Zugriff verweigern]
+    I --> J[Zugang sperren]
+    J --> K[Versuch protokollieren]
+    K --> D
+
+    %% Weg: Ja (Autorisierung erfolgreich)
+    H -- Ja --> L[Autorisierung bestätigen]
+    
+    %% Pop-Up für vorherige Fehlversuche
+    L --> M{Fehlversuche stattgefunden?}
+    M -- Ja --> N[Warnung anzeigen]
+    N --> O[Schloss öffnen]
+    M -- Nein --> O
+    
+    %% Entscheidungspunkt: Hauptmenü
+    O --> P{Aktion wählen}
+    
+    P --> Q[Inventar verwalten]
+    P --> R[Nutzer verwalten]
+    P --> S[Protokoll ansehen]
+    
+    %% Loops für Option 1 und 3
+    Q --> P
+    S --> P
+    
+    %% Strang für Option 2: Nutzerverwaltung durch Admin
+    R --> A[Admin authentifizieren]
+    A --> B{Verwaltung wählen}
+    
+    B --> C1[Nutzer registrieren]
+    B --> C2[Nutzer löschen]
+    
+    C1 --> C[Daten speichern]
+    C2 --> C
+    
+    %% Loop zurück ins Hauptmenü nach der Verwaltung
+    C --> P
+    
+    %% Option 4: Prozess beenden
+    P --> T[Schloss verriegeln]
+    
+    %% Abschluss und Logout
+    T --> U[Abmeldung scannen]
+    U --> V[Abmeldung protokollieren]
+    V --> W[Daten speichern]
+    W --> D
+```
 
 ---  
 
 ## 3. Wireframe
 
-> **[Wireframe](src/decisions.png)**
+> **[Wireframe](src/decisions.png)**  
+
+![Wireframe](src/decisions.png)
 
 <br>
 
