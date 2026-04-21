@@ -25,7 +25,7 @@ Die Capability ist für unsere weiteren geplanten Capabilities sehr wichtig. Die
 
 ### 💎 Artifact
 
-File: Artifact 2  (artifacts/artifacts-2)
+File: [Artifact 2](artifacts/artifacts-2)
   
 Build: Product Requirements Document
   
