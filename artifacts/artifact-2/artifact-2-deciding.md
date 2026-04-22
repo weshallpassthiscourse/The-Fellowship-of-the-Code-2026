@@ -57,7 +57,7 @@ Der gescannte Fingerabdruck wird mit den gespeicherten Identitätsdaten abgeglic
 7. **Fehlversuche stattgefunden?**  
 Gab vor der letzten erfolgreichen Anmeldung einen fehlgeschlagenen Versuch, in das System zu kommen?  
     + Ja: Ein Popup-Fenster taucht auf mit der Information, dass jemand sich versucht hat, einzuloggen.  
-    + Nein: Es taucht kein Popup-Fenster auf. Weiter zu Punkt 9.
+    + Nein: Es taucht kein Popup-Fenster auf. Weiter zu Punkt 8.
 8. **Schloss öffnen**  
 Das Schloss wird entriegelt und somit kann in weiterer Folge das Aktionsmenü bedient werden. 
 9. **Aktion wählen**  
