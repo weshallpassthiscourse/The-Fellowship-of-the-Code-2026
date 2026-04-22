@@ -49,7 +49,7 @@ Wenn sich jemand dem Rucksack nähert, dann erfasst das der Sensor. Dadurch erke
 Der Bildschirm leuchtet durch die Annäherung auf und zeigt unser Wireframe. Der Erkennungsprozess wird eingeleitet.  
 4. **Finger scannen**  
 Die Person legt den Finger auf den Bildschirm. Der Finger wird gescannt.  
-5. **Identität prüfen** 
+5. **Identität prüfen**  
 Der gescannte Fingerabdruck wird mit den gespeicherten Identitätsdaten abgeglichen. 
 6. **Identität bestätigen**
     + Nein: Bei einer fehlgeschlagenen Identitätsprüfung wird der Zugriff verweigert, der Zugang gesperrt, der Versuch protokolliert, und damit kehrt das System zurück auf Standby.  
