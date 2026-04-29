@@ -1,91 +1,147 @@
-/* Grundlegendes Layout */
+CSS
+/* Globale Resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #e0e0e0; /* Dunklerer Hintergrund f체r den Randbereich */
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     min-height: 100vh;
-    margin: 0;
     padding: 20px;
+    color: #1a1a1a;
 }
 
+/* Der Smartphone-Rahmen */
 .app-container {
-    background-color: #d3d3d3; /* Neutraler Grauton wie im Wireframe */
     width: 100%;
-    max-width: 400px;
-    border: 2px solid #333;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+    max-width: 380px;
+    background-color: #f2f2ee; /* Leichtes, warmes Off-White f체r die Papier-Optik */
+    border: 2px solid #222;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    /* Leichte Canvas-Textur simulieren */
+    background-image: repeating-linear-gradient(45deg, #f2f2ee 25%, transparent 25%, transparent 75%, #f2f2ee 75%, #f2f2ee), repeating-linear-gradient(45deg, #f2f2ee 25%, #f0f0ea 25%, #f0f0ea 75%, #f2f2ee 75%, #f2f2ee);
+    background-position: 0 0, 2px 2px;
+    background-size: 4px 4px;
 }
 
-/* Header */
+/* Kopfzeile */
 .app-header {
-    background-color: #b0b0b0;
-    padding: 10px;
+    background-color: #d1d1d1;
+    border-bottom: 2px solid #222;
+    padding: 15px 10px;
     text-align: center;
-    border-bottom: 2px solid #333;
 }
 
 .app-header h1 {
-    margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
-/* Karten-Stil für die Sektionen */
-section, footer {
-    background-color: #e0e0e0;
-    margin: 15px;
-    padding: 20px;
-    border: 1px solid #333;
+/* Inhaltsbereich */
+.app-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Standard-Design f체r die K채sten (Cards) */
+.card {
+    background-color: #cccccc;
+    border: 1.5px solid #222;
+    padding: 20px 15px;
     text-align: center;
 }
 
-/* Symbole */
-.icon-placeholder {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-/* Button-Styling */
-.fingerprint-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.fingerprint-icon {
-    font-size: 4rem;
-    margin-bottom: 10px;
-}
-
-.btn-text {
-    font-size: 1.2rem;
+.card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
     font-weight: bold;
 }
 
-/* Status Zeile */
+.card p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Spezifische Icon-Anpassungen */
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.icon-wrapper .fa-lock {
+    font-size: 4rem;
+    color: transparent;
+    -webkit-text-stroke: 2px #222; /* Macht das Icon hohl wie in der Vorlage */
+}
+
+/* Das Fragezeichen auf dem Schloss */
+.icon-badge {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.large-icon {
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.medium-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: transparent;
+    -webkit-text-stroke: 2px #222;
+}
+
+/* Status-Leiste Layout */
 .status-bar {
+    background-color: #e6e6e6;
+    border: 1.5px solid #222;
+    padding: 12px 15px;
     display: flex;
     align-items: center;
+    gap: 15px;
+}
+
+.status-icon {
+    background-color: #222;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 4px;
+    display: flex;
     justify-content: center;
-    gap: 10px;
-    padding: 10px;
+    align-items: center;
+}
+
+.status-icon i {
+    font-size: 1.2rem;
 }
 
 .status-bar p {
-    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
-/* Info Box */
-.info-card h3 {
-    margin: 5px 0;
+/* Hinweis-Formatierung */
+.hinweis-text {
+    font-size: 0.95rem;
+}
+
+.italic {
     font-style: italic;
-}
-
-.info-card p {
-    font-size: 0.9rem;
 }
