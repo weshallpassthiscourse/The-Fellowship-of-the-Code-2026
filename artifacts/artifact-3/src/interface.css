@@ -1,0 +1,91 @@
+/* Grundlegendes Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.app-container {
+    background-color: #d3d3d3; /* Neutraler Grauton wie im Wireframe */
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #333;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.app-header {
+    background-color: #b0b0b0;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Karten-Stil für die Sektionen */
+section, footer {
+    background-color: #e0e0e0;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+/* Symbole */
+.icon-placeholder {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Button-Styling */
+.fingerprint-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fingerprint-icon {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.btn-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Status Zeile */
+.status-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.status-bar p {
+    margin: 0;
+}
+
+/* Info Box */
+.info-card h3 {
+    margin: 5px 0;
+    font-style: italic;
+}
+
+.info-card p {
+    font-size: 0.9rem;
+}
