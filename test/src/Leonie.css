@@ -1,0 +1,107 @@
+/* Seite */
+body {
+    margin: 0;
+    padding: 30px 16px;
+    background-color: #f0f4f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/* App Box */
+.app {
+    width: 100%;
+    max-width: 380px;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid #c8dfc8;
+}
+
+/* Header */
+header {
+    background-color: #4a7c59;
+    padding: 18px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+/* Hauptbereich */
+main {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Karten */
+.card {
+    background-color: #f7fbf7;
+    border: 1.5px solid #c8dfc8;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card h2 {
+    color: #2d5a3d;
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+.card p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 4px 0;
+}
+
+/* Grosses Icon */
+.big-icon {
+    font-size: 2.8rem;
+    margin-bottom: 6px;
+}
+
+/* Button */
+button {
+    margin-top: 10px;
+    padding: 12px 28px;
+    background-color: #4a7c59;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3a6347;
+}
+
+/* Status */
+.status {
+    background-color: #eaf3eb;
+    border: 1.5px solid #c8dfc8;
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.status p {
+    margin: 0;
+}
+
+/* Hinweis Karte etwas anders */
+.hinweis {
+    background-color: #fffbea;
+    border-color: #e8d8a0;
+}
