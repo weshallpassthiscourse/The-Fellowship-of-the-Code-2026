@@ -1,39 +1,58 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WayBread Watcher</title>
-    <link rel="stylesheet" href="interface.css">
+    <!-- Einbinden von FontAwesome für die Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
+    <div class="app-container">
+        <!-- Kopfzeile -->
+        <header class="app-header">
+            <h1>WayBread Watcher</h1>
+        </header>
 
-        <div class="header">WayBread Watcher</div>
+        <!-- Hauptinhalt -->
+        <main class="app-content">
 
-        <div class="section">
-            <div class="icon">🔒</div>
-            <h2>Willkommen, Gefährte!</h2>
-            <p>Bitte authentifiziere dich, um auf den Proviantbeutel zuzugreifen.</p>
-        </div>
+            <!-- Willkommens-Karte -->
+            <section class="card">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-lock"></i>
+                    <span class="icon-badge">?</span>
+                </div>
+                <h2>Willkommen, Gefährte!</h2>
+                <p>Bitte authentifiziere dich, um auf den<br>Proviantbeutel zuzugreifen.</p>
+            </section>
 
-        <div class="section">
-            <div class="icon">☝️</div>
-            <p><strong>Fingerabdruck-Scan</strong></p>
-        </div>
+            <!-- Scan-Karte -->
+            <section class="card">
+                <i class="fa-solid fa-fingerprint large-icon"></i>
+                <p>Fingerabdruck-Scan</p>
+            </section>
 
-        <div class="status">
-            🔒 Status: Wartet auf Authentifizierung
-        </div>
+            <!-- Status-Leiste -->
+            <section class="status-bar">
+                <div class="status-icon">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <p>Status: Wartet auf Authentifizierung</p>
+            </section>
 
-        <div class="section">
-            <div class="icon">👥</div>
-            <p><i>Hinweis:</i><br>
-            Neu hier? Registrierung nur durch einen autorisierten Gefährten möglich.</p>
-        </div>
+            <!-- Hinweis-Karte -->
+            <section class="card">
+                <i class="fa-solid fa-users medium-icon"></i>
+                <p class="hinweis-text">
+                    <span class="italic">Hinweis:</span><br>
+                    Neu hier? Registrierung nur durch<br>einen autorisierten Gefährten möglich.
+                </p>
+            </section>
 
+        </main>
     </div>
 
 </body>
