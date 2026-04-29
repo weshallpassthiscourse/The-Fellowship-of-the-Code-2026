@@ -35,7 +35,7 @@ Gleichzeitig adressiert dieses System schon jetzt ein zentrales Problem der Grup
 
 ## 2. Static Interface
 
-> **[Wireframe](artifact-2/src/decisions.png)**  
+> **[Wireframe](../artifact-2/src/decisions.png)**  
 
 > **[HTML](src/interface.html)**
 
