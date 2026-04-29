@@ -76,6 +76,10 @@ The Red Book of Westmark (README.md + chapters/) is our reflection log and livin
 "We wants it, we needs it – but we must not let them have it." - Gollum  
 [Go to Artifact II](artifacts/artifact-2/artifact-2-deciding.md)
 
+*Artifact III - Representation*  
+""  
+[Go to Artifact III](artifacts/artifact-3/artifact-3-representation.md)
+
 ---  
 
 #### Key Features of The Fellowship Companion
