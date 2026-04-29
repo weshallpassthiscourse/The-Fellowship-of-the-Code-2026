@@ -37,7 +37,7 @@ Gleichzeitig adressiert dieses System schon jetzt ein zentrales Problem der Grup
 
 > **[Wireframe](../artifact-2/src/decisions.png)**  
 
-> **[HTML](src/index.html)**
+> **[HTML](src/interface.html)**
 
 <br>
 
