@@ -1,21 +1,22 @@
 body {
     background-color: #1a1b16; 
+    color: black; 
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center; 
-    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
 }
 
 .app-container {
     width: 100%;
     max-width: 400px; 
-    height: 100dvh;
+    height: 100%;
     background-color: #3e4231; 
-    color: black; /* <-- Hier erzwingen wir die schwarze Farbe für die ganze App */
+    color: black; 
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -34,7 +35,7 @@ body {
 
 header {
     background-color: #313526; 
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     border-bottom: 2px solid #575c46;
     flex-shrink: 0;
@@ -42,7 +43,7 @@ header {
 
 h1 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: black; 
 }
 
@@ -50,17 +51,18 @@ main {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding: 12px;
-    gap: 12px;
+    padding: 10px;
+    gap: 8px;
     text-align: center;
     box-sizing: border-box;
+    justify-content: space-evenly;
 }
 
 section {
     background-color: #494e3b; 
     border: 1px solid #575c46;
     border-radius: 8px;
-    padding: 15px;
+    padding: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,29 +71,30 @@ section {
 }
 
 .welcome-section {
-    flex-shrink: 0; 
+    flex-shrink: 1; 
 }
 
 .welcome-section .icon {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 5px;
 }
 
 .welcome-section h2 {
-    font-size: 1.15rem;
-    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    margin: 0 0 5px 0;
     color: black; 
 }
 
 .welcome-section p {
     margin: 0;
-    font-size: 0.9rem;
-    line-height: 1.3;
+    font-size: 0.85rem;
+    line-height: 1.2;
 }
 
 .scanner-section {
     flex-grow: 1;
     background-color: #555c42; 
+    min-height: 0;
 }
 
 .scan-area {
@@ -104,10 +107,10 @@ section {
 }
 
 .fingerprint-icon {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     opacity: 0.85;
 }
 
@@ -117,21 +120,23 @@ section {
     font-weight: bold;
     background-color: #313526;
     flex-shrink: 0;
+    padding: 10px;
 }
 
 .hint-section {
     text-align: center;
     flex-shrink: 0;
+    padding: 10px;
 }
 
 .hint-section h2 {
-    font-size: 1rem;
-    margin: 0 0 5px 0;
+    font-size: 0.95rem;
+    margin: 0 0 4px 0;
     color: black; 
 }
 
 .hint-section p {
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     line-height: 1.2;
 }
