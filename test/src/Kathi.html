@@ -1,1 +1,52 @@
-
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WayBread Watcher</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Das ist der äußere Rahmen (das "Smartphone") -->
+    <div class="smartphone-rahmen">
+        <!-- Kopfzeile -->
+        <header class="app-header">
+            <h1>WayBread Watcher</h1>
+        </header>
+        
+        <!-- Inhaltsbereich mit den ganzen Card -->
+        <div class="app-inhalt">
+            
+            <!-- Card 1: Willkommen -->
+            <section class="karte welcome-card">
+                <!-- NEU: Das Elbenblatt statt dem Schloss -->
+                <i class="fa-solid fa-leaf icon-gross"></i>
+                <h2>Willkommen, Gefährte!</h2>
+                <p>Bitte authentifiziere dich, um auf den Proviantbeutel zuzugreifen.</p>
+            </section>
+            
+            <!-- Card 2: Fingerabdruck-Scan -->
+            <section class="karte scan-card">
+                <i class="fa-solid fa-fingerprint icon-riesig"></i>
+                <p><strong>Fingerabdruck-Scan</strong></p>
+            </section>
+            
+            <!-- Leiste: Status -->
+            <section class="status-leiste">
+                <div class="status-icon-wrapper">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <p>Status: Wartet auf Authentifizierung</p>
+            </section>
+            
+            <!-- Card 3: Hinweis -->
+            <section class="karte hint-card">
+                <i class="fa-solid fa-users icon-medium"></i>
+                <p><strong>Hinweis:</strong><br>Neu hier? Registrierung nur durch einen autorisierten Gefährten möglich.</p>
+            </section>
+            
+        </div>
+    </div>
+</body>
+</html>
