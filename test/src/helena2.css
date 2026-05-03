@@ -46,7 +46,7 @@ section {
     align-items: center;
 }
 
-.scanner {
+.scanner-section {
     flex-grow: 1;
     justify-content: center;
     background: #5a6148;
