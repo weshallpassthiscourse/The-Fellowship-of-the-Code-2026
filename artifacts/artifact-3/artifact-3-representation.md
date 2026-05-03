@@ -45,3 +45,9 @@ Gleichzeitig adressiert dieses System schon jetzt ein zentrales Problem der Grup
 ---
 
 ## 3. Design Rationale  
+
+
+### How does this interface support the intent and value defined in Assignment 1?  
+### How does it reflect the wireframe from Assignment 2?  
+### What did you deliberately not implement yet?  
+### What assumptions or constraints shaped your decisions?  
