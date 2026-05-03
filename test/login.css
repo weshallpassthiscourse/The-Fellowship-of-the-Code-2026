@@ -1,0 +1,23 @@
+body {
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex > div {
+  flex: 1;
+  padding: 10px;
+}
+
+label,
+input,
+button {
+  display: block;
+  width: 100%;
+}
+
+input {
+  margin: 10px 0;
+}
