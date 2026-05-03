@@ -102,10 +102,11 @@ section {
 }
 
 .hint img {
-    width: 70px;
+    width: 50px;
     height: auto;
     margin-bottom: 15px;
     opacity: 0.9;
+    filter: invert(1)
 }
 
 h2 {
