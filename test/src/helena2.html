@@ -1,41 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Login</title>
-    <link rel="stylesheet" href="login.css" />
-  </head>
-  <body>
-    <header>
-      <a href="home.html">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
-          alt="Home"
-          height="30"
-          width="30"
-      /></a>
-    </header>
-    <main>
-      <h1>Welcome back, Hobbits!</h1>
-      <p>Please log in using your account credentials</p>
-      <form class="flex">
-        <div>
-          <label for="username">Username</label>
-          <input id="username" type="text" />
-          <a href="reset.html">Reset Password</a>
-          <a href="register.html">Register</a>
-        </div>
-        <div>
-          <label for="password">Username</label>
-          <input id="password" type="text" />
-          <button type="submit">Login</button>
-        </div>
-        <div>
-          <img src="bilbo.png" alt="LotR" height="200" width="200" />
-        </div>
-      </form>
-    </main>
-  </body>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>WayBread Watcher</title>
+    <link rel="stylesheet" href="helena.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>WayBread Watcher</h1>
+        </header>
+        <main>
+            <section class="welcome">
+                <div class="oracle-core"></div>
+                <h2>Mae Govannen, Gefährte!</h2>
+                <p>Bitte authentifiziere dich für den Proviantbeutel.</p>
+            </section>
+            
+            <section class="scanner">
+                <img src="helena.png" alt="Fingerabdruck">
+                <h2>Fingerabdruck-Scan</h2>
+            </section>
+            
+            <section class="status">
+                <h2>🔒 Status 🔒</h2>
+                <p>Wartet auf Authentifizierung</p>
+            </section>
+            
+            <section class="hint">
+                <h2>👥 Hinweis</h2>
+                <p>Registrierung nur durch autorisierte Gefährten.</p>
+            </section>
+        </main>
+    </div>
+</body>
 </html>
+
