@@ -101,6 +101,13 @@ section {
     flex-grow: 1;
 }
 
+.hint img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
 h2 {
     margin: 0;
     font-size: 1.1rem;
