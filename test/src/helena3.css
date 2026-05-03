@@ -89,9 +89,6 @@ section {
     opacity: 0.9;
 }
 
-.scanner p {
-    font-weight: bold;
-}
 
 .status {
     flex-grow: 0.5;
