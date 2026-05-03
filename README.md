@@ -107,3 +107,7 @@ This is our general changelog (e.g., new chapter contents added, rules changed, 
 | 03.05.2026  | Finished design HMTL and CSS in test folder, Updated RedBook  |
 | nd   | nd   |
 | nd   | nd   |
+| nd   | nd   |
+| nd   | nd   |
+| nd   | nd   |
+| nd   | nd   |
