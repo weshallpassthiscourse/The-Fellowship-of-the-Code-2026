@@ -18,6 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
 header {
@@ -70,4 +71,14 @@ p {
     margin: 5px 0 0 0;
     font-weight: normal;
     font-size: 0.9rem;
+}
+
+@media (min-width: 450px) {
+    .app-container {
+        height: 750px;
+        max-height: 95vh;
+        border-radius: 15px;
+        border: 2px solid #575c46;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
 }
