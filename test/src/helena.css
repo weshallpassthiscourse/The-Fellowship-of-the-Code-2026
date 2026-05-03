@@ -1,7 +1,8 @@
 body {
     background-color: #1a1b16; 
-    color: black; 
+    color: white; 
     font-family: sans-serif;
+    font-weight: bold;
     margin: 0;
     padding: 0;
     display: flex;
@@ -16,7 +17,7 @@ body {
     max-width: 400px; 
     height: 100%;
     background-color: #3e4231; 
-    color: black; 
+    color: white; 
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -35,7 +36,7 @@ body {
 
 header {
     background-color: #313526; 
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     border-bottom: 2px solid #575c46;
     flex-shrink: 0;
@@ -43,16 +44,16 @@ header {
 
 h1 {
     margin: 0;
-    font-size: 1.3rem;
-    color: black; 
+    font-size: 1.5rem;
+    color: white; 
 }
 
 main {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding: 10px;
-    gap: 8px;
+    padding: 15px;
+    gap: 12px;
     text-align: center;
     box-sizing: border-box;
     justify-content: space-evenly;
@@ -62,7 +63,7 @@ section {
     background-color: #494e3b; 
     border: 1px solid #575c46;
     border-radius: 8px;
-    padding: 12px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,20 +76,20 @@ section {
 }
 
 .welcome-section .icon {
-    font-size: 2rem;
-    margin-bottom: 5px;
+    font-size: 2.5rem;
+    margin-bottom: 8px;
 }
 
 .welcome-section h2 {
-    font-size: 1.1rem;
-    margin: 0 0 5px 0;
-    color: black; 
+    font-size: 1.3rem;
+    margin: 0 0 8px 0;
+    color: white; 
 }
 
 .welcome-section p {
     margin: 0;
-    font-size: 0.85rem;
-    line-height: 1.2;
+    font-size: 1rem;
+    line-height: 1.3;
 }
 
 .scanner-section {
@@ -107,36 +108,37 @@ section {
 }
 
 .fingerprint-icon {
-    width: 55px;
-    height: 55px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     opacity: 0.85;
 }
 
 .status-section {
     flex-direction: row;
     gap: 10px;
-    font-weight: bold;
     background-color: #313526;
     flex-shrink: 0;
-    padding: 10px;
+    padding: 15px;
+    font-size: 1.1rem;
 }
 
 .hint-section {
     text-align: center;
     flex-shrink: 0;
-    padding: 10px;
+    padding: 15px;
 }
 
 .hint-section h2 {
-    font-size: 0.95rem;
-    margin: 0 0 4px 0;
-    color: black; 
+    font-size: 1.1rem;
+    margin: 0 0 6px 0;
+    color: white; 
 }
 
 .hint-section p {
     margin: 0;
-    font-size: 0.75rem;
-    line-height: 1.2;
+    font-size: 0.9rem;
+    line-height: 1.3;
 }
+
