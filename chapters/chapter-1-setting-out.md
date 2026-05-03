@@ -29,9 +29,6 @@ Dieses Artefakt konzentriert sich auf die grundlegende Anforderungsdefinition de
 
 
 
-Reflect on AI-assisted development and decision-making
-Contribute to a shared, evolving system
-
 ---
 
 ### 💎 Artifact
