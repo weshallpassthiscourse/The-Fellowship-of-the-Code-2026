@@ -23,7 +23,15 @@ body {
     overflow: hidden;
 }
 
-
+@media (min-width: 450px) {
+    .app-container {
+        height: 750px;
+        max-height: 95vh;
+        border-radius: 12px;
+        border: 2px solid #575c46;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+    }
+}
 
 header {
     background-color: #313526; 
