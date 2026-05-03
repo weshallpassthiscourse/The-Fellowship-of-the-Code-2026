@@ -78,7 +78,11 @@ The Red Book of Westmark (README.md + chapters/) is our reflection log and livin
 
 *Artifact III - Representation*  
 ""  
-[Go to Artifact III](artifacts/artifact-3/artifact-3-representation.md)
+[Go to Artifact III](artifacts/artifact-3/artifact-3-representation.md)  
+
+
+[kathi](test/kathi.html)  
+[leo](test/leonie.html)
 
 ---  
 
