@@ -1,1 +1,78 @@
-html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="WayBread Watcher - Login für Gefährten" />
+    <title>WayBread Watcher</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h1>WayBread Watcher</h1>
+        </header>
+
+        <main>
+            <section class="welcome-section">
+                <div class="icon">🍃</div>
+                <h2>Mae govannen, mellon!</h2>
+                <p>Bitte authentifiziere dich, um auf den Proviantbeutel zuzugreifen.</p>
+            </section>
+
+            <section class="scanner-section">
+                <button id="scan-button">
+                    <span class="fingerprint-icon">👆</span>
+                    <span>Fingerabdruck-Scan</span>
+                </button>
+            </section>
+
+            <section id="status-box" class="status-section">
+                <span id="status-icon">🔒</span>
+                <span id="status-text">Status: Wartet auf Authentifizierung</span>
+            </section>
+
+            <section class="hint-section">
+                <h2>👥 Hinweis:</h2>
+                <p>Neu hier? Registrierung nur durch einen autorisierten Gefährten möglich.</p>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const scanButton = document.getElementById('scan-button');
+        const statusBox = document.getElementById('status-box');
+        const statusIcon = document.getElementById('status-icon');
+        const statusText = document.getElementById('status-text');
+
+        scanButton.addEventListener('click', function() {
+            statusBox.className = 'status-section';
+            statusIcon.textContent = '⏳';
+            statusText.textContent = 'Prüfe...';
+
+            setTimeout(function() {
+                const isSuccess = Math.random() > 0.5; 
+
+                if (isSuccess) {
+                    statusBox.classList.add('status-success');
+                    statusIcon.textContent = '🔓';
+                    statusText.textContent = 'Authentifizierung erfolgreich';
+                } else {
+                    statusBox.classList.add('status-error');
+                    statusIcon.textContent = '🔒';
+                    statusText.textContent = 'Authentifizierung fehlgeschlagen';
+                }
+                
+                setTimeout(function() {
+                    statusBox.className = 'status-section';
+                    statusIcon.textContent = '🔒';
+                    statusText.textContent = 'Status: Wartet auf Authentifizierung';
+                }, 3000);
+
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
