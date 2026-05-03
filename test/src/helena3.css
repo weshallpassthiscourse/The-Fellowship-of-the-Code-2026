@@ -81,6 +81,7 @@ section {
     margin-bottom: 15px;
     opacity: 0.7;
     filter: invert(1);
+    }
 
 .scanner {
     flex-grow: 4;
