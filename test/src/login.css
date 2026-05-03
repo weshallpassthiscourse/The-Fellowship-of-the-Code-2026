@@ -43,6 +43,7 @@ h1 {
     font-weight: bold;
     color: #ffffff;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 main {
@@ -66,20 +67,24 @@ section {
     flex-grow: 2;
 }
 
-.oracle-core {
-    width: 12px;
-    height: 12px;
-    background-color: #f0f0e0;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    box-shadow: 0 0 15px #f0f0e0, 0 0 30px #f0f0e0;
-    animation: pulse 3s infinite ease-in-out;
+.app-logo {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(240, 240, 224, 0.1);
+    border: 2px solid #f0f0e0;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    opacity: 0.7;
 }
 
-@keyframes pulse {
-    0% { transform: scale(1); opacity: 0.5; box-shadow: 0 0 10px #f0f0e0; }
-    50% { transform: scale(1.5); opacity: 1; box-shadow: 0 0 25px #f0f0e0; }
-    100% { transform: scale(1); opacity: 0.5; box-shadow: 0 0 10px #f0f0e0; }
+.inner-shape {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f0f0e0;
+    border-radius: 50%;
 }
 
 .scanner {
