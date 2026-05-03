@@ -1,1 +1,132 @@
+/* 1. Grundeinstellungen für die ganze Seite */
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #d1c8b3;      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: #4a3c2c;                 
+}
 
+/* 2. Der Rahmen (das "Handy") - Wieder mit eckigen Kanten! */
+.smartphone-rahmen {
+    width: 100%;
+    max-width: 350px;           
+    background-color: #7a5c3d;  
+    border: 3px solid #3e2f1e;    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 3. Die Kopfzeile ganz oben */
+.app-header {
+    background-color: #2a3d2e;  
+    border-bottom: 3px solid #3e2f1e;
+    color: #f2e9d9;              
+    padding: 15px;
+    text-align: center;         
+}
+
+.app-header h1 {
+    font-size: 1.5rem;
+    margin: 0;                  
+    font-weight: 700;
+}
+
+/* 4. Der Inhaltsbereich (hält die Cards zusammen) */
+.app-inhalt {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;                   
+}
+
+/* 5. Die einzelnen Cards oben Willkommen und unten Hinweis - Mit abgerundeten Ecken */
+.karte {
+    background-color: #f2e9d9;  
+    border: 2px solid #3e2f1e;
+    color: #3e2f1e;             
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;        
+}
+
+.karte h2 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+.karte p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* 6. Icon-Formatierung */
+.icon-gross {
+    font-size: 3.5rem;            
+    color: #436e52;             
+    margin-bottom: 15px;
+}
+
+.icon-riesig {
+    font-size: 5rem;            
+    color: #3e2f1e;
+    margin-bottom: 10px;
+}
+
+.icon-medium {
+    font-size: 2.5rem;          
+    color: #3e2f1e;
+    margin-bottom: 15px;
+}
+
+/* 7. Die schmale Statusleiste (Spezialfall) - Mit abgerundeten Ecken */
+.status-leiste {
+    background-color: #436e52;  
+    border: 2px solid #3e2f1e;
+    color: #f2e9d9;             
+    padding: 12px;
+    display: flex;               
+    align-items: center;         
+    gap: 12px;                   
+    border-radius: 15px;        
+}
+
+.status-icon-wrapper {
+    background-color: #3e2f1e;  
+    color: #ffd700;              
+    padding: 6px 8px;           
+    border-radius: 6px;         
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-leiste p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* 8. Spezifische Text-Anpassungen & Ausnahmen */
+.welcome-card,
+.hint-card {
+    background-color: #dce8d5; 
+}
+
+/* 9. Die abgerundete Box für den Fingerabdruck-Scan */
+.scan-card {
+    border-radius: 25px;        
+    width: 85%;                 
+    align-self: center;         
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
