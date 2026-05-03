@@ -54,7 +54,6 @@ main {
 }
 
 section {
-    border-radius: 8px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -63,8 +62,8 @@ section {
 }
 
 .welcome, .hint {
-    background-color: #494e3b;
-    border: 1px solid #575c46;
+    background-color: transparent;
+    border: none;
 }
 
 .welcome {
@@ -80,6 +79,7 @@ section {
     flex-grow: 4;
     background-color: #5a6148;
     border: 2px solid #7a8266;
+    border-radius: 8px;
     cursor: pointer;
 }
 
@@ -97,6 +97,7 @@ section {
 .status {
     flex-grow: 0.5;
     background-color: #2a2e20;
+    border-radius: 8px;
     padding: 8px;
 }
 
