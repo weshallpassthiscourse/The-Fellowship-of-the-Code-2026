@@ -83,7 +83,8 @@ The Red Book of Westmark (README.md + chapters/) is our reflection log and livin
 
 [kathi](test/src/Kathi.html)  
 [leo](test/src/Leonie.html)  
-[hel](test/src/helena.html)
+[hel](test/src/helena.html)  
+[hel2](test/src/helena2.html)
 
 ---  
 
