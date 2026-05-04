@@ -21,12 +21,8 @@
 ### Capability Description  
 Die von uns gewählte Capability ist die Sicherheitsmaßnahme, die den Rucksack verschließt. Um zu verhindern, dass Gollum oder andere unerwünschte User auf den Rucksack und seine Inhalte zugreifen können, haben wir einen Verschließmechanismus eingebaut. Dieser funktioniert per Scan des Fingerabdrucks und lässt somit nur vom Admin berechtigte User auf die Inhalte zugreifen.  
 <br>
-### Why this capability?
-Ausgewählt haben wir diese Capability, weil sie einerseits essenziell für die Sicherheit unserer Reise ist und andererseits, weil diese Capability, das richtige Maß an Komplexität für diese Arbeitsaufgabe bzw. für das erste Mal hat. Wir wollten keine zu schiwerige Capability für unseren ersten Versuch der Beschreibung auswählen, aber dennoch eine, die genug Inhalt für die Aufgabe bietet.  
-Außerdem ist die gewählte Capability für unsere weiteren geplanten Capabilities sehr wichtig. Die spezienbasierte Verbrauchsrechnung zum Beispiel baut auf den in der Sicherheismaßnahme erstellten Nutzerprofilen auf. Auch für den Inventory-Tracker ist es essenziell, dass nicht jeder X-beliebige Mittelerdebewohner auf unseren Rucksack Zugriff hat und womöglich Proviant stehlen kann. Das Schloss ist somit logisch gesehen, der erste Schritt.  
-<br>
 ### Why is it meaningful for us at this stage of the journey?  
-Das biometrische Zugangskontrollsystem wurde bewusst als erste Capability gewählt: Es ist komplex genug, um inhaltlich relevant zu sein, aber handhabbar genug für einen ersten Implementierungsversuch. Vor allem aber ist es das logische Fundament für alles, was folgt, die speziesbasierte Verbrauchsrechnung baut auf den hier erstellten Nutzerprofilen auf, und der Inventory-Tracker funktioniert nur, wenn der Zugriff auf den Rucksack kontrolliert ist. 
+Das biometrische Zugangskontrollsystem wurde bewusst als erste Capability gewählt: Es ist komplex genug, um inhaltlich relevant zu sein, aber handhabbar genug für einen ersten Implementierungsversuch. Vor allem aber ist es das logische Fundament für alles, was folgt, die speziesbasierte Verbrauchsrechnung baut auf den hier erstellten Nutzerprofilen auf, und der Inventory-Tracker funktioniert nur, wenn der Zugriff auf den Rucksack kontrolliert ist. Ein objektives, fälschungssicheres Zugangssystem schafft von Anfang an klare Regeln und schützt die Gemeinschaft nicht nur vor externen Bedrohungen wie Gollum, sondern auch vor dem Misstrauen, das von innen entstehen kann.
 
 ---  
 
