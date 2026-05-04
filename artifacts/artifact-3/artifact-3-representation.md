@@ -1,6 +1,6 @@
 # The Fellowship Companion – Artifact III: Representation  
 
-> "We wants it, we needs it – but we must not let them have it." - Gollum
+> He’s eaten it! He’s eaten it all! He’s finished the last of our lembas!" — Gollum
 
 
 ---
@@ -44,16 +44,16 @@ Das biometrische Zugangskontrollsystem wurde bewusst als erste Capability gewäh
 Das Interface dient als „Gatekeeper“ für den Proviantbeutel der Gefährten. 
 Durch die prominente Platzierung der Authentifizierung wird klargestellt, dass der Zugriff nicht öffentlich ist. Dies schützt die wertvollen Inhalte vor unbefugtem Zugriff.
 Die Wortwahl („Mae Govannen“, „Gefährte“, „Proviantbeutel“) passt zum narrativen Kontext der Welt in der wir uns befinden.
-Wir haben dunkle und eher grünliche Farben gewählt, damit diese möglich wenig auffallen wenn der Bildschirm aufleuchtet. Besonders wenn der Bildschirm in der Nacht aufleuchtet, wären helle Farben sehr auffällig für Feinde. Dazu haben wir eine weißliche Schirftfarbe gewählt damit die Schrift gut lesbar ist.
+Wir haben dunkle und eher grünliche Farben gewählt, damit diese möglich wenig auffallen wenn der Bildschirm aufleuchtet. Besonders wenn der Bildschirm in der Nacht aufleuchtet, wären helle Farben sehr auffällig für Feinde. Dazu haben wir eine weißliche Schirftfarbe gewählt, damit die Schrift gut lesbar ist.
 Der Nutzer erkennt sofort, dass eine Aktion (Scan) erforderlich ist, um den nächsten Schritt im Prozess zu erreichen.
-Damit intuitiv erkennbar ist, was ein Button ist und was nicht haben wir die Buttons mit einem deutlichen Rand hervorgehoben. Grund dafür ist, dass im Wireframe noch nicht ersichtlich war, was Buttons sind und was nicht.  
+Damit intuitiv erkennbar ist, was ein Button ist und was nicht, haben wir die Buttons mit einem deutlichen Rand hervorgehoben. Grund dafür ist, dass im Wireframe noch nicht ersichtlich war, was Buttons sind und was nicht.  
 
 ### How does it reflect the wireframe from Assignment 2?  
 Die Implementierung ist eine direkte Übersetzung des Wireframes in Code. Die vertikale Anordnung der sections wurde exakt beibehalten. Die oberste Box dient der Begrüßung, die mittlere der Interaktion und die untere der Information – genau wie in der Skizze vorgegeben.  
 
 ### What did you deliberately not implement yet?  
-Um den Fokus auf die Struktur zu legen, wurden folgende Aspekte bewusst weggelassen
-Interaktivität: Alle Buttons sind rein statisch. Es findet noch keine echte biometrische Prüfung statt. Genauso gibt es noch keine Weiterleitung zum Hauptmenü oder anderen Seiten.
+Um den Fokus auf die Struktur zu legen, wurden folgende Aspekte bewusst weggelassen:  
+Interaktivität: Alle Buttons sind rein statisch. Es findet noch keine echte biometrische Prüfung statt. Genauso gibt es noch keine Weiterleitung zum Hauptmenü oder anderen Seiten.  
 Verschönerungen: Es wurden keine modernen CSS-Effekte wie Schatten, Verläufe oder Animationen verwendet, um die Struktur übersichtlich zu halten. Komplizierte Designs können überfordernd wirken.  
  
 ### What assumptions or constraints shaped your decisions?  
