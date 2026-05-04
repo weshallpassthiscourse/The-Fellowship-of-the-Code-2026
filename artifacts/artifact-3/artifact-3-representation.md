@@ -46,8 +46,12 @@ Gleichzeitig adressiert dieses System schon jetzt ein zentrales Problem der Grup
 
 ## 3. Design Rationale  
 
-
 ### How does this interface support the intent and value defined in Assignment 1?  
+Das Interface schützt den gemeinsamen Proviantbeutel der Gefährten vor unbefugtem Zugriff. Ohne Authentifizierung bleibt der Beutel gesperrt – niemand kann heimlich Vorräte entwenden oder manipulieren. Ein konkretes Szenario wäre etwa Gollum, der unbemerkt Vorräte stiehlt oder gezielt Misstrauen sät, indem er einem Gefährten einredet, ein anderer habe heimlich gegessen. Der Fingerabdruck-Scan stellt sicher, dass nur wirklich autorisierte Personen Zugang erhalten und solche Intrigen von vornherein verhindert werden. 
+
 ### How does it reflect the wireframe from Assignment 2?  
+Das Interface bildet den ersten Schritt unseres Wireframes ab: den Anmeldevorgang. Aufbau und Struktur – Header, Willkommensbereich, Scanner-Sektion, Statusanzeige und Hinweis – entsprechen direkt dem geplanten Layout. Der visuelle Stil mit dem Oliv-Farbschema unterstreicht dabei die mittelalterlich-rustikale Atmosphäre der Anwendung.  
 ### What did you deliberately not implement yet?  
+Bewusst ausgespart wurden eine echte Fingerabdruck-Datenbank, der vollständige Autorisierungsprozess (da dieser Java voraussetzen würde, das im Kurs noch nicht behandelt wurde) sowie die Weiterleitung zum Hauptmenü nach erfolgreicher Anmeldung. Diese Elemente sind konzeptuell vorgesehen, lagen aber außerhalb des aktuellen Umsetzungsrahmens.  
 ### What assumptions or constraints shaped your decisions?  
+Zwei wesentliche Faktoren haben unsere Entscheidungen geprägt: Zum einen der verfügbare Zeitrahmen und Arbeitsaufwand innerhalb des Projekts. Zum anderen eine bewusste Weltannahme – wir gehen davon aus, dass der Bildschirm auf einem kleinen, im Rucksack integrierten Gerät läuft. Dementsprechend wurde das UI kompakt und mobil-first gestaltet: schmales Layout, klare Schriftgrößen und ein reduziertes Design, das auch auf engem Raum gut lesbar und bedienbar bleibt.  
