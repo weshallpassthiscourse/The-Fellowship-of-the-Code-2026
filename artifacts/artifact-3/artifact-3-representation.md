@@ -29,9 +29,9 @@ Das biometrische Zugangskontrollsystem wurde bewusst als erste Capability gewäh
 
 ## 2. Static Interface
 
-> **[Wireframe](../artifact-2/src/decisions.png)**  
+> **![Wireframe](../artifact-2/src/decisions.png)**  
 
-> **[HTML](src/interface.html)**
+> **![HTML](src/interface.html)**
 
 <br>
 
