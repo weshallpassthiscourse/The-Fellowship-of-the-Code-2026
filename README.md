@@ -81,11 +81,6 @@ The Red Book of Westmark (README.md + chapters/) is our reflection log and livin
 [Go to Artifact III](artifacts/artifact-3/artifact-3-representation.md)  
 
 
-[kathi](test/src/Kathi.html)  
-[leo](test/src/Leonie.html)  
-[hel](test/src/helena.html)  
-[hel2](test/src/helena2.html)  
-[hel3](test/src/helena3.html)
 
 ---  
 
@@ -111,8 +106,8 @@ This is our general changelog (e.g., new chapter contents added, rules changed, 
 | 16.04.2026  | Choosing system capability and one wireframe, created [Wireframe](artifacts/artifact-2/src/decisions.png) und [Mermaid-Flowchart](artifacts/artifact-2/src/decisions.mermaid.md), created [Artifact 2](artifacts/artifact-2/artifact-2-deciding.md)  |
 | 21.04.2026  | Updated files and folders, finished assignment 2, added 1b, 2a and 4a from the assignment, updated Red Book/[Chapter 2](chapters/chapter-2-paths-and-choices.md)   |
 | 29.04.2026  | Created Folder, started designing in HTML and CSS, distributed tasks  |
-| 03.05.2026  | Finished design HMTL and CSS in test folder, Updated RedBook  |
-| nd   | nd   |
+| 03.05.2026  | Designed 3 different HTML and CSS documents in test folder|
+| 04.05.2026  | Decided on HTML and CSS Code, changed path. Updated Red Book Chapter 3. Explained Design Rationale.|
 | nd   | nd   |
 | nd   | nd   |
 | nd   | nd   |
