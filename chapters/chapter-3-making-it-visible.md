@@ -1,11 +1,11 @@
-# The Red Book of Westmarch - Chapter 1: Setting Out  
+# The Red Book of Westmarch - Chapter 3: Making it visible
 
 > “I like less than half of you half as well as you deserve.” - Bilbo
 
 
 ## Table of Contents
 
-**The Red Book of Westmarch - Chapter 1: Setting out**
+**The Red Book of Westmarch - Chapter 3: Making it visible**
  + [Summary](#-summary)  
  + [Artifact](#-artifact)  
  + [AI Assistance](#-ai-assistance)  
