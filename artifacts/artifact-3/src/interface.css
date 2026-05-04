@@ -8,7 +8,7 @@ CSS
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e0e0e0; /* Dunklerer Hintergrund f체r den Randbereich */
+    background-color: #e0e0e0; /* Dunklerer Hintergrund fuer den Randbereich */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ body {
 .app-container {
     width: 100%;
     max-width: 380px;
-    background-color: #f2f2ee; /* Leichtes, warmes Off-White f체r die Papier-Optik */
+    background-color: #f2f2ee; /* Leichtes, warmes Off-White fuer die Papier-Optik */
     border: 2px solid #222;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     /* Leichte Canvas-Textur simulieren */
@@ -52,7 +52,7 @@ body {
     gap: 15px;
 }
 
-/* Standard-Design f체r die K채sten (Cards) */
+/* Standard-Design fuer die Kaesten (Cards) */
 .card {
     background-color: #cccccc;
     border: 1.5px solid #222;
