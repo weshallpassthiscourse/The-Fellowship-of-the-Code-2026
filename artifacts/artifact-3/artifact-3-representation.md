@@ -41,11 +41,20 @@ Das biometrische Zugangskontrollsystem wurde bewusst als erste Capability gewäh
 ## 3. Design Rationale  
 
 ### How does this interface support the intent and value defined in Assignment 1?  
-Das Interface schützt den gemeinsamen Proviantbeutel der Gefährten vor unbefugtem Zugriff. Ohne Authentifizierung bleibt der Beutel gesperrt – niemand kann heimlich Vorräte entwenden oder manipulieren. Ein konkretes Szenario wäre etwa Gollum, der unbemerkt Vorräte stiehlt oder gezielt Misstrauen sät, indem er einem Gefährten einredet, ein anderer habe heimlich gegessen. Der Fingerabdruck-Scan stellt sicher, dass nur wirklich autorisierte Personen Zugang erhalten und solche Intrigen von vornherein verhindert werden. 
+Das Interface dient als „Gatekeeper“ für den Proviantbeutel der Gefährten. 
+Durch die prominente Platzierung der Authentifizierung wird klargestellt, dass der Zugriff nicht öffentlich ist. Dies schützt die wertvollen Inhalte vor unbefugtem Zugriff.
+Die Wortwahl („Mae Govannen“, „Gefährte“, „Proviantbeutel“) passt zum narrativen Kontext der Welt in der wir uns befinden.
+Wir haben dunkle und eher grünliche Farben gewählt, damit diese möglich wenig auffallen wenn der Bildschirm aufleuchtet. Besonders wenn der Bildschirm in der Nacht aufleuchtet, wären helle Farben sehr auffällig für Feinde. Dazu haben wir eine weißliche Schirftfarbe gewählt damit die Schrift gut lesbar ist.
+Der Nutzer erkennt sofort, dass eine Aktion (Scan) erforderlich ist, um den nächsten Schritt im Prozess zu erreichen.
+Damit intuitiv erkennbar ist, was ein Button ist und was nicht haben wir die Buttons mit einem deutlichen Rand hervorgehoben. Grund dafür ist, dass im Wireframe noch nicht ersichtlich war, was Buttons sind und was nicht.  
 
 ### How does it reflect the wireframe from Assignment 2?  
-Das Interface bildet den ersten Schritt unseres Wireframes ab: den Anmeldevorgang. Aufbau und Struktur – Header, Willkommensbereich, Scanner-Sektion, Statusanzeige und Hinweis – entsprechen direkt dem geplanten Layout. Der visuelle Stil mit dem Oliv-Farbschema unterstreicht dabei die mittelalterlich-rustikale Atmosphäre der Anwendung.  
+Die Implementierung ist eine direkte Übersetzung des Wireframes in Code. Die vertikale Anordnung der sections wurde exakt beibehalten. Die oberste Box dient der Begrüßung, die mittlere der Interaktion und die untere der Information – genau wie in der Skizze vorgegeben.  
+
 ### What did you deliberately not implement yet?  
-Bewusst ausgespart wurden eine echte Fingerabdruck-Datenbank, der vollständige Autorisierungsprozess (da dieser Java voraussetzen würde, das im Kurs noch nicht behandelt wurde) sowie die Weiterleitung zum Hauptmenü nach erfolgreicher Anmeldung. Diese Elemente sind konzeptuell vorgesehen, lagen aber außerhalb des aktuellen Umsetzungsrahmens.  
+Um den Fokus auf die Struktur zu legen, wurden folgende Aspekte bewusst weggelassen
+Interaktivität: Alle Buttons sind rein statisch. Es findet noch keine echte biometrische Prüfung statt. Genauso gibt es noch keine Weiterleitung zum Hauptmenü oder anderen Seiten.
+Verschönerungen: Es wurden keine modernen CSS-Effekte wie Schatten, Verläufe oder Animationen verwendet, um die Struktur übersichtlich zu halten. Komplizierte Designs können überfordernd wirken.  
+ 
 ### What assumptions or constraints shaped your decisions?  
-Zwei wesentliche Faktoren haben unsere Entscheidungen geprägt: Zum einen der verfügbare Zeitrahmen und Arbeitsaufwand innerhalb des Projekts. Zum anderen eine bewusste Weltannahme – wir gehen davon aus, dass der Bildschirm auf einem kleinen, im Rucksack integrierten Gerät läuft. Dementsprechend wurde das UI kompakt und mobil-first gestaltet: schmales Layout, klare Schriftgrößen und ein reduziertes Design, das auch auf engem Raum gut lesbar und bedienbar bleibt.  
+Wir gehen davon aus, dass der Bildschirm auf dem Rücksack stets die selbe Größe hat und nicht anpassungsfähig sein muss. Wir haben angenommen, dass die Gefährten lesen können und mit Touch-Bildschirmen vertraut sind. Weiters gehen wir davon aus, dass die Benutzer wissen, was ein Fingerabdruck-Scan ist, weswegen wir auch keine erklärenden Textfelder eingebaut haben. Wir gehen davon aus, dass es bereits einen registrierten und autorisierten Gefährten gibt (z.B. Maxwise). Wir haben die Benutzeroberfläche so simpel wie möglich gehalten, damit sie auch in stressigen Situationen schnell und fehlerfrei bedient werden kann.   
