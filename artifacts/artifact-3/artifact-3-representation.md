@@ -1,6 +1,6 @@
 # The Fellowship Companion – Artifact III: Representation  
 
-> He’s eaten it! He’s eaten it all! He’s finished the last of our lembas!" — Gollum
+> "He’s eaten it! He’s eaten it all! He’s finished the last of our lembas!" — Gollum
 
 
 ---
