@@ -30,8 +30,9 @@ Das biometrische Zugangskontrollsystem wurde bewusst als erste Capability gewäh
 ## 2. Static Interface
 
 
-> **[Wireframe](../artifact-2/src/decisions.png)**
-> **[HTML](src/interface.html)**
+> **[Wireframe](../artifact-2/src/decisions.png)**  
+> **[HTML](src/interface.html)**  
+> **[Stylesheet](src/style.css)**
 
 
 ![Wireframe](../artifact-2/src/decisions.png)
@@ -47,20 +48,37 @@ Das biometrische Zugangskontrollsystem wurde bewusst als erste Capability gewäh
 ## 3. Design Rationale  
 
 ### How does this interface support the intent and value defined in Assignment 1?  
-Das Interface dient als „Gatekeeper“ für den Proviantbeutel der Gefährten. 
-Durch die prominente Platzierung der Authentifizierung wird klargestellt, dass der Zugriff nicht öffentlich ist. Dies schützt die wertvollen Inhalte vor unbefugtem Zugriff.
-Die Wortwahl („Mae Govannen“, „Gefährte“, „Proviantbeutel“) passt zum narrativen Kontext der Welt in der wir uns befinden.
-Wir haben dunkle und eher grünliche Farben gewählt, damit diese möglich wenig auffallen wenn der Bildschirm aufleuchtet. Besonders wenn der Bildschirm in der Nacht aufleuchtet, wären helle Farben sehr auffällig für Feinde. Dazu haben wir eine weißliche Schirftfarbe gewählt, damit die Schrift gut lesbar ist.
-Der Nutzer erkennt sofort, dass eine Aktion (Scan) erforderlich ist, um den nächsten Schritt im Prozess zu erreichen.
-Damit intuitiv erkennbar ist, was ein Button ist und was nicht, haben wir die Buttons mit einem deutlichen Rand hervorgehoben. Grund dafür ist, dass im Wireframe noch nicht ersichtlich war, was Buttons sind und was nicht.  
+Das Interface dient als „Gatekeeper“ für den Proviantbeutel der Gefährten und setzt den geforderten Schutz vor unbefugtem Zugriff und Manipulation visuell um.  
++ First things first: Da die erste Information eine Aufforderung ist, sich zu authentifizieren, wird klargestellt, dass der Zugriff zum Proviantbeutel nicht öffentlich ist.
++ Stealth- & Dark-Mode mit hohem Kontrast: Um Lichtemissionen in feindlichem Gebiet zu vermeiden, haben wir einen sehr dunklen, grünlichen Hintergrund gewählt. Um jedoch unter erschwerten Bedingungen die Lesbarkeit zu garantieren, nutzen wir bewusst eine weiße, kontrastreiche Schrift. So bleibt das Display unauffällig für Feinde, aber klar erkennbar für die Gefährten.  
++ Typografie für maximale Lesbarkeit: Wir haben ganz bewusst auf verschnörkelte Fantasy-Schriften verzichtet. In einer extremen Überlebenssituation muss der Text auf den ersten Blick mühelos lesbar sein, weshalb wir eine klare, schnörkellose Standardschrift gewählt haben. Überschriften sind fett gedruckt, während sich der Text darunter durch mehr Abstand und eine leicht abgedimmte, andere Farbe visuell sauber abtrennt. Das schafft Übersichtlichkeit und lässt dich App wie ein seriöses Überlebenswerkzeug wirken.
++ Gezielte Interaktions-Boxen: Wir haben Rahmen und Kästchen ganz bewusst nur bei den Elementen „Fingerabdruck“ und „Status“ eingesetzt, was sich von unserem Wireframe auch unterscheidet. Das signalisiert dem Nutzer sofort, dass nur diese beiden Bereiche interaktiv sind oder System-Feedback geben.  
++ Button-Differenzierung: Der Fingerabdruck-Scan ist das größte Element auf dem Bildschirm, da dieser Bereich die wichtigste und zentrale Aktion darstellt. Um dem Nutzer klarzumachen, dass nicht beide Boxen zum Klicken gedacht sind, unterscheiden sie sich deutlich in der Hintergrundfarbe. Man erkennt intuitiv: Die große Box ist der Button zum Drücken, die andersfarbige Status-Box spuckt lediglich Informationen aus.  
++ Wortwahl: Ausdrücke wie „Mae Govannen“, „Gefährte“ oder „Proviantbeutel“ passen zum narrativen Kontext der Welt, in der wir uns befinden.  
++ Präzise Handlungsaufforderungen (Microcopy): Um die Benutzerführung zu optimieren, haben wir die Texte im Vergleich zum Wireframe klarer und aktiver formuliert. Aus einem passiven „Fingerabdruck-Scan“ wurde die direkte Anweisung „Finger auflegen und scannen“. Ebenso wurde der Begrüßungstext konkretisiert („um den Proviantbeutel zu öffnen“ statt nur „für den Proviantbeutel“). So werden Missverständnisse vermieden und Nutzer, die das zum ersten Mal verwenden, werden durch den Prozess geführt.
+<br>  
+
 
 ### How does it reflect the wireframe from Assignment 2?  
-Die Implementierung ist eine direkte Übersetzung des Wireframes in Code. Die vertikale Anordnung der sections wurde exakt beibehalten. Die oberste Box dient der Begrüßung, die mittlere der Interaktion und die untere der Information – genau wie in der Skizze vorgegeben.  
+Die Implementierung ist eine direkte Übersetzung des Wireframes in echten Code.  
++ Strukturtreue: Die vertikale Anordnung wurde exakt beibehalten: Die oberste Sektion dient der Begrüßung, die mittlere der Interaktion und die untere der Information – genau wie in der Skizze vorgegeben. Die visuelle Hierarchie führt das Auge genau wie im Wireframe von oben nach unten.
++ Responsive App-Look: Eine bewusste Weiterentwicklung vom reinen Wireframe ist die technische Umsetzung als App-Container. Das Interface ist so programmiert, dass es sich dynamisch an alle Handydisplays anpasst. Öffnet man es jedoch auf einem größeren Bildschirm (z. B. am Laptop), wird es durch Media-Queries automatisch zentriert und wie eine eigenständige Smartphone-App mit abgerundeten Ecken und Schatten dargestellt. Das soll das "Gadget"-Gefühl bewahren.
++ Sinnvolle Abweichungen bei den Icons: Wir haben die Bildsprache gegenüber dem Wireframe optimiert, um sie logischer zu machen. Statt des Schloss-Symbols bei der Begrüßung haben wir eine winkende Hand eingesetzt, was deutlich besser zur Formulierung „Mae Govannen“ (Willkommen) passt. Unten beim Hinweis haben wir die Personengruppe durch ein klassisches Informationszeichen ersetzt, um unmissverständlich klarzumachen, dass es sich hierbei um eine reine Info handelt.
++ Sinnvolle Abweichung bei Boxen und Text: Wie wir, die Hobbits, oben bereits erwähnt haben, haben wir bewusst die Rahmen um die Begrüßung und die Information weggelassen, damit man intuitiv merkt, dass da nichts zum Klicken ist. Außerdem haben wir den Text in Handlunsgaufforderungen umformuliert, um eine präzise Ausdrucksweise zu gewährleisten und Missverständnisse zu vermeiden.  
+<br>  
 
 ### What did you deliberately not implement yet?  
 Um den Fokus auf die Struktur zu legen, wurden folgende Aspekte bewusst weggelassen:  
-Interaktivität: Alle Buttons sind rein statisch. Es findet noch keine echte biometrische Prüfung statt. Genauso gibt es noch keine Weiterleitung zum Hauptmenü oder anderen Seiten.  
-Verschönerungen: Es wurden keine modernen CSS-Effekte wie Schatten, Verläufe oder Animationen verwendet, um die Struktur übersichtlich zu halten. Komplizierte Designs können überfordernd wirken.  
- 
++ Interaktivität: Alle Buttons sind rein statisch. Es findet noch keine echte biometrische Prüfung statt. Genauso gibt es noch keine Weiterleitung zum Hauptmenü oder anderen Seiten.
++ Verschönerungen: Es wurden keine modernen CSS-Effekte wie Schatten, Verläufe oder Animationen verwendet, um die Struktur übersichtlich zu halten. Komplizierte Designs können überfordernd wirken.
++ Bilder & visueller Kitsch („Less is more“): Obwohl wir gezielt schlichte Icons (wie die winkende Hand oder das Info-Zeichen) zur schnellen Orientierung einsetzen, haben wir ganz bewusst auf bunte Emojis, aufwendige Fantasy-Bilder oder Animationen verzichtet. In einer extremen Überlebenssituation gilt strikt das Prinzip „weniger ist mehr“ – jedes überflüssige visuelle Detail lenkt nur ab. Das Interface soll nicht wie ein Spiel wirken, sondern als seriöses, technisches Überlebenswerkzeug Ernsthaftigkeit und Verlässlichkeit ausstrahlen.
+
+<br>  
+
 ### What assumptions or constraints shaped your decisions?  
-Wir gehen davon aus, dass der Bildschirm auf dem Rücksack stets die selbe Größe hat und nicht anpassungsfähig sein muss. Wir haben angenommen, dass die Gefährten lesen können und mit Touch-Bildschirmen vertraut sind. Weiters gehen wir davon aus, dass die Benutzer wissen, was ein Fingerabdruck-Scan ist, weswegen wir auch keine erklärenden Textfelder eingebaut haben. Wir gehen davon aus, dass es bereits einen registrierten und autorisierten Gefährten gibt (z.B. Maxwise). Wir haben die Benutzeroberfläche so simpel wie möglich gehalten, damit sie auch in stressigen Situationen schnell und fehlerfrei bedient werden kann.   
++ Wir haben angenommen, dass die Gefährten lesen können und mit Touch-Bildschirmen vertraut sind.
++ technisches Knowhow: Weiters gehen wir davon aus, dass die Benutzer wissen, was ein Fingerabdruck-Scan ist, weswegen wir auch keine erklärenden Textfelder eingebaut haben.
++ Admin: Wir gehen davon aus, dass es bereits einen registrierten und autorisierten Gefährten gibt (z.B. Maxwise). Wir haben die Benutzeroberfläche so simpel wie möglich gehalten, damit sie auch in stressigen Situationen schnell und fehlerfrei bedient werden kann.
++ Energie & Hardware: Wir nehmen an, dass das Gerät seine Energie mühsam (Solar/Kinetisch) beziehen muss. Um den Akku zu schonen, haben wir das CSS extrem minimalistisch und ressourcenschonend programmiert: Wir nutzen reine Volltonfarben statt rechenintensiver Farbverläufe, verzichten auf Animationen und verwenden einfache Systemschriften. Das und der dunkle Hintergrund simulieren einen energiesparenden Betrieb auf einem robusten Display.
++ Kognitive Belastung: Wir gehen davon aus, dass die Gefährten auf der Reise physisch und mental extrem erschöpft sind (Hunger, zittrige Hände). Daher ist der Scanner extrem groß gehalten. Durch unsere klaren Text-Aufforderungen ("Finger auflegen...") nehmen wir den Nutzern zudem jegliche Denkarbeit ab.
++ Offline-Betrieb & Zuverlässigkeit: Da es in Mittelerde kein Netz gibt, zeigt der Status keine Ladebalken für Serververbindungen an. Das Design suggeriert ein lokales, sofort reagierendes System (Edge Computing).
