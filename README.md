@@ -100,15 +100,15 @@ This is our general changelog (e.g., new chapter contents added, rules changed, 
 
 | Date | Changes |
 | -------- | -------- |
-| 06.04.2026  | Initial Setup of GitHub Repository. [Template](https://estebanthewhite.github.io/The-FellowShip-of-the-Code-2026/templates/) added to README.md. [Artifact 1](artifacts/artifact-1/artifact-1-situation-intent.md) created (WayBread Watcher).  |
-| 07.04.2026  | Template personalized to our project.  |
-| 09.04.2026  | [Chapter 1](chapters/chapter-1-setting-out.md) created.|
-| 16.04.2026  | Choosing system capability and one wireframe, created [Wireframe](artifacts/artifact-2/src/decisions.png) und [Mermaid-Flowchart](artifacts/artifact-2/src/decisions.mermaid.md), created [Artifact 2](artifacts/artifact-2/artifact-2-deciding.md)  |
-| 21.04.2026  | Updated files and folders, finished assignment 2, added 1b, 2a and 4a from the assignment, updated Red Book/[Chapter 2](chapters/chapter-2-paths-and-choices.md)   |
-| 29.04.2026  | Created Folder, started designing in HTML and CSS, distributed tasks  |
-| 03.05.2026  | Designed 3 different HTML and CSS documents in test folder|
-| 04.05.2026  | Decided on HTML and CSS Code, changed path. Updated Red Book Chapter 3. Explained Design Rationale.|
-| nd   | nd   |
+| 06.04.2026  | Initial Setup of GitHub Repository. [Template](https://estebanthewhite.github.io/The-FellowShip-of-the-Code-2026/templates/) added to README.md. Artifact 1 created.  |
+| 07.04.2026  | Template personalized to our project. Handed assignment 1 in. |
+| 09.04.2026  | Chapter 1 created.|
+| 16.04.2026  | Chose system capability and one wireframe. Created [Wireframe](artifacts/artifact-2/src/decisions.png) and [Mermaid-Flowchart](artifacts/artifact-2/src/decisions.mermaid.md). Created Artifact 2.  |
+| 21.04.2026  | Updated files and folders. Finished assignment 2 and drafted 1b, 2a and 4a from the assignment. Updated Red Book Chapter 2. Handed assignment 2 in.   |
+| 29.04.2026  | Created folders and documents. Discussed HTML basics in group and created mock-up HTML and CSS documents. Task: In groups of two create your version of HTML and CSS docs for our wireframe and explain why. Save in test folder.  |
+| 03.05.2026  | Designed 3 different HTML and CSS documents in test folder.|
+| 04.05.2026  | Decided on HTML and CSS Code. Changed it's path into the artifact-3 folder. Updated Red Book Chapter 3. Explained Design Rationale.|
+| 05.05.2026  | Elaborated on and made corrections to Design Rationale. Handed assignment 3 in. |
 | nd   | nd   |
 | nd   | nd   |
 | nd   | nd   |
