@@ -7,10 +7,10 @@
 
 ## Table of Contents
 
-- **[1. System Capability](#1-system-capability)**
-- **[2. Flow](#2-flow)**
-- **[3. Wireframe](#3-wireframe)**
-- **[4. Design Rationale](4-design-rationale)**
+**[1. System Capability](#1-system-capability)**  
+**[2. Flow](#2-flow)**  
+**[3. Wireframe](#3-wireframe)**  
+**[4. Design Rationale](4-design-rationale)**  
 
 ---
 
