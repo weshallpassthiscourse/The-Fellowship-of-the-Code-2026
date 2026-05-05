@@ -43,7 +43,6 @@ Das biometrische Zugangskontrollsystem wurde bewusst als erste Capability gewäh
 </div>
 
 
-
 <br>
 
 
