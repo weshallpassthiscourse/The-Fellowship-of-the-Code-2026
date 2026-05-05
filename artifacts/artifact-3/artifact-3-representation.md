@@ -35,9 +35,9 @@ Das biometrische Zugangskontrollsystem wurde bewusst als erste Capability gewäh
 > **[Stylesheet](src/style.css)**  
 
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 50px; flex-wrap: wrap;">
-  <img src="../artifact-2/src/decisions.png" style="width: 300px; height: auto; border-radius: 8px;">
-  <div>
+<div style="text-align: center;">
+  <img src="../artifact-2/src/decisions.png" style="width: 200px; vertical-align: middle; margin-right: 30px; border-radius: 8px;">
+  <div style="display: inline-block; vertical-align: middle;">
     {% include app-preview.html %}
   </div>
 </div>
