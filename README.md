@@ -108,7 +108,7 @@ This is our general changelog (e.g., new chapter contents added, rules changed, 
 | 29.04.2026  | Created folders and documents. Discussed HTML basics in group and created mock-up HTML and CSS documents. Task: In groups of two create your version of HTML and CSS docs for our wireframe and explain why. Save in test folder.  |
 | 03.05.2026  | Designed 3 different HTML and CSS documents in test folder.|
 | 04.05.2026  | Decided on HTML and CSS Code. Changed it's path into the artifact-3 folder. Updated Red Book Chapter 3. Explained Design Rationale.|
-| 05.05.2026  | Elaborated on and made corrections to Design Rationale. Handed assignment 3 in. |
+| 05.05.2026  | Elaborated on and made corrections to Design Rationale. Added iFrame. Handed assignment 3 in. |
 | nd   | nd   |
 | nd   | nd   |
 | nd   | nd   |
