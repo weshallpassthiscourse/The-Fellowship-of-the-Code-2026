@@ -36,8 +36,12 @@ Das biometrische Zugangskontrollsystem wurde bewusst als erste Capability gewäh
 
 
 ![Wireframe](../artifact-2/src/decisions.png)
-![Interfac](src/interface.png)
+![Interfac](src/interface.png)  
 
+
+<iframe src="interface.html" width="100%" height="800px" style="border: none; border-radius: 12px;"></iframe>
+
+<p><a href="interface.html" target="_blank">↗ App im Vollbild öffnen</a></p>
 
 
 <br>
