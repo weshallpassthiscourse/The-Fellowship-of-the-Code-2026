@@ -38,8 +38,7 @@ Das biometrische Zugangskontrollsystem wurde bewusst als erste Capability gewäh
 ![Wireframe](../artifact-2/src/decisions.png)
 ![Interfac](src/interface.png)  
 
-<details>
-  <summary>⚙️ System-Setup</summary>
+
 <div style="display: flex; justify-content: center; margin: 30px 0;">
     <iframe src="src/interface.html" width="100%" height="750px" style="max-width: 400px; border: 2px solid #575c46; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);"></iframe>
 </div>
