@@ -36,7 +36,6 @@ Das biometrische Zugangskontrollsystem wurde bewusst als erste Capability gewäh
 
 
 ![Wireframe](../artifact-2/src/decisions.png)
-![Interfac](src/interface.png)  
 
 
 <div style="display: flex; justify-content: center; margin: 30px 0;">
