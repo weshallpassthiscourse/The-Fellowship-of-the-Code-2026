@@ -34,9 +34,14 @@ Das biometrische Zugangskontrollsystem wurde bewusst als erste Capability gewäh
 > **[HTML](src/interface.html)**  
 > **[Stylesheet](src/style.css)**
 
-<img src="../artifact-2/src/decisions.png" width="300">  
 
-{% include app-preview.html %}
+<div style="display: flex; justify-content: center; align-items: center; gap: 50px; flex-wrap: wrap;">
+  <img src="../artifact-2/src/decisions.png" style="width: 300px; height: auto; border-radius: 8px;">
+  <div>
+    {% include app-preview.html %}
+  </div>
+</div>
+
 
 
 
