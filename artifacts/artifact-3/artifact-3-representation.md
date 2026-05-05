@@ -32,7 +32,7 @@ Das biometrische Zugangskontrollsystem wurde bewusst als erste Capability gewäh
 
 > **[Wireframe](../artifact-2/src/decisions.png)**  
 > **[HTML](src/interface.html)**  
-> **[Stylesheet](src/style.css)**
+> **[Stylesheet](src/style.css)**  
 
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 50px; flex-wrap: wrap;">
