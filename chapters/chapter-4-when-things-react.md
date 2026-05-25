@@ -1,11 +1,11 @@
-# The Red Book of Westmarch - Chapter 3: Making it visible
+# The Red Book of Westmarch - Chapter 4: When things react
 
 > “I like less than half of you half as well as you deserve.” - Bilbo
 
 
 ## Table of Contents
 
-**The Red Book of Westmarch - Chapter 3: Making it visible**
+**The Red Book of Westmarch - Chapter 4: When things react**
  + [Summary](#-summary)  
  + [Artifact](#-artifact)  
  + [AI Assistance](#-ai-assistance)  
@@ -15,7 +15,10 @@
 
 ### 📝 Summary
 
-In dieser Aufgabe sollten wir unser davor erstelltes Wireframe in einem HTML- und CSS-Dokument darstellen. Mit Hilfe von AI haben wir uns schnell eingefunden und haben das Skelett und die Kleidung unserer Login-Seite erstellt. Nach langer Überlegung haben wir einige Designs verändert, um die Login-Seite intuitiv zu gestalten. Beispielsweise haben wir die Farben abgeändert, die Wortwahl angepasst, also statt Aussagen Instruktionen geschrieben, und um 'Nicht-Buttons' die Umrandung weggelassen, damit man weiß, wo man draufklicken kann und wo nicht.  
+In dieser Aufgabe sollen wir unser davor erstelltes HTML- und CSS-Dokument mit JavaScript interaktiv gestalten. 
+
+
+Mit Hilfe von AI haben wir uns schnell eingefunden und haben das Skelett und die Kleidung unserer Login-Seite erstellt. Nach langer Überlegung haben wir einige Designs verändert, um die Login-Seite intuitiv zu gestalten. Beispielsweise haben wir die Farben abgeändert, die Wortwahl angepasst, also statt Aussagen Instruktionen geschrieben, und um 'Nicht-Buttons' die Umrandung weggelassen, damit man weiß, wo man draufklicken kann und wo nicht.  
 
 Learning Outcomes  
 + Coden ist zwar viel Copy und Pasten, aber der Kern ist, logisch zu denken und den Code so zu ändern, dass er zu unseren spezifischen Requirements passt.
