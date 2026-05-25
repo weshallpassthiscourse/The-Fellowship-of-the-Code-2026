@@ -20,6 +20,7 @@
 ### Capability Description  
 Die von uns gewählte Capability ist die Sicherheitsmaßnahme, die den Rucksack verschließt. Um zu verhindern, dass Gollum oder andere unerwünschte User auf den Rucksack und seine Inhalte zugreifen können, haben wir einen Verschließmechanismus eingebaut. Dieser funktioniert per Scan des Fingerabdrucks und lässt somit nur vom Admin berechtigte User auf die Inhalte zugreifen.  
 <br>
+
 ### What state this capability depends on or modifies?  
 Diese Funktion verändert die explizite Boolean-Statusvariable isAuthorized. Das System startet standardmäßig in einem gesicherten Zustand (isAuthorized = false). Wenn ein Benutzer mit dem biometrischen Scanner interagiert, ändert die zugrundeliegende Logik diesen Zustand entweder auf true (Zugriff gewährt) oder false (Zugriff verweigert). Die Benutzeroberfläche hängt strikt von dieser Zustandsänderung ab, um die Status-Box (Farben, Text und Schloss-Symbole) visuell zu aktualisieren und den Gefährten zu zeigen, ob der Proviantbeutel aktuell verschlossen oder zugänglich ist. Wenn der Zustand dann true ist, werden neue Bereiche freigeschalten und andere Interface Zustände können erlebt werden.
 
