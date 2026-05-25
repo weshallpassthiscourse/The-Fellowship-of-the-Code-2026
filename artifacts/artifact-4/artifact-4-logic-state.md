@@ -16,10 +16,6 @@
 ## 1. System Capability  
 
 > **Gollum-Proofing**
-<br>
-Which system capability you are implementing?  
-What state this capability depends on or modifies?  
-Why this capability matters for the Fellowship at this stage of the journey?  
 
 ### Capability Description  
 Die von uns gewählte Capability ist die Sicherheitsmaßnahme, die den Rucksack verschließt. Um zu verhindern, dass Gollum oder andere unerwünschte User auf den Rucksack und seine Inhalte zugreifen können, haben wir einen Verschließmechanismus eingebaut. Dieser funktioniert per Scan des Fingerabdrucks und lässt somit nur vom Admin berechtigte User auf die Inhalte zugreifen.  
