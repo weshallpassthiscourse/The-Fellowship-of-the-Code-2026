@@ -1,6 +1,6 @@
 # The Fellowship Companion - Artifact IV: Logic & State  
 
-> "He’s eaten it! He’s eaten it all! He’s finished the last of our lembas!" — Gollum
+> "Who knows? Have patience. Go where you must go, and hope!” - Gandalf
 
 
 ---
