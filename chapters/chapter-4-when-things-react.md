@@ -47,7 +47,9 @@ Erstellung des Login-Bildschirms der WayBread Watcher App **mit** Interaktivitä
 
 ### 🤖 AI Assistance  
 
-Um uns auf das erste Code Review vorzubereiten, haben wir so wenig wie möglich mit AI gemacht. Natürlich kann man AI nicht komplett außen vor lassen, denn die Erklärungen, die sie uns gegeben hat, waren sehr hilfreich. Bei einzelnen Probleme, die im Code aufgetaucht sind, haben wir AI hinzugezogen, um uns bei konkreten Fragestellungen zu unterstützen. _Wir haben uns zum Beispiel die Funktionen nochmals von der KI erklären lassen und bei Logik-Fehlern konnte sie uns auch unter die Arme greifen._
+Wir haben die Implementierung mit AI gestartet und gebeten, uns eine Struktur zu geben und nicht den kompletten Code. Wir wollten auf die richtige Spur geleitet werden, damit wir nicht nur Copy&Pasten, sondern wirklich auch verstehen, was wir da coden. 
+
+Um uns auf das erste Code Review vorzubereiten, haben wir so wenig wie möglich mit AI gemacht.  Bei einzelnen Problemen, die im Code aufgetaucht sind, haben wir AI hinzugezogen, um uns bei konkreten Fragestellungen zu unterstützen. Wir haben getElementById in "Reading the Runes" gesehen und uns diese Funktion nochmal von der KI erklären lassen. Dann wussten wir, was durch die Interaktivität geändert werden soll und haben mit Hilfe von AI die "const" benannt. Wir haben die KI auch benutzt, um unseren Code dry-er zu machen. So sind wir zur Dunktion updateStatus(title, message, color). Am ende sind wir draufgekommen, dass wir die Status-Card gerne farblich anpassungsfähig machen wollen. Die KI hat uns geholfen, mit scannerButton.style.backgroundColor und dem setTimeout die Fingerabdrucks-Card so zu gestalten, dass ersichtlich ist, dass gerade auf diesen Block geklickt wird.
 
 ---
 
