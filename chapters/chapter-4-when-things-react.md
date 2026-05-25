@@ -1,6 +1,6 @@
 # The Red Book of Westmarch - Chapter 4: When things react
 
-> “Who knows? Have patience. Go where you must go, and hope!” - Gandalf
+> “I like less than half of you half as well as you deserve.” - Bilbo
 
 
 ## Table of Contents
