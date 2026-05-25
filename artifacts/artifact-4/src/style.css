@@ -1,0 +1,133 @@
+body {
+    background-color: #1a1b16; 
+    color: white; 
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100dvh;
+    overflow: hidden;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 400px; 
+    height: 100%;
+    background-color: #3e4231; 
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+@media (min-width: 450px) {
+    .app-container {
+        height: 750px;
+        max-height: 95vh;
+        border-radius: 12px;
+        border: 2px solid #575c46;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+    }
+}
+
+header {
+    background-color: #313526; 
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid #575c46;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #f0f0e0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 12px;
+    gap: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome, .hint {
+    background-color: transparent;
+    border: none;
+}
+
+.welcome {
+    flex-grow: 2;
+}
+
+.welcome span {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+.welcome img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 15px;
+    opacity: 0.7;
+    filter: invert(1);
+    }
+
+.scanner {
+    flex-grow: 4;
+    background-color: #5a6148;
+    border: 2px solid #7a8266;
+    border-radius: 8px;
+}
+
+.scanner img {
+    width: 110px;
+    height: auto;
+    margin-bottom: 15px;
+    opacity: 1;
+}
+
+
+.status {
+    flex-grow: 0.5;
+    background-color: #2a2e20;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.hint {
+    flex-grow: 1;
+}
+
+.hint img {
+    width: 40px;
+    height: auto;
+    margin-bottom: 15px;
+    opacity: 0.7;
+    filter: invert(1);
+}
+
+h2 {
+    margin: 0 0 6px 0;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #f0f0e0
+}
+
+p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+}
