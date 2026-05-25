@@ -48,20 +48,19 @@ Hinzu kommt die unmittelbare Gefahr: Gollum schleicht ihnen im Dunkeln nach und 
 
 ### How does your logic support the intent and value defined in Assignment 1?  
 Die implementierte Logik spiegelt exakt die in Assignment 1 definierte Notwendigkeit des "Gollum-Proofings" wider. Der Kern des JavaScript-Codes ist die State-Variable isAuthorized, die standardmäßig auf false gesetzt ist ("Secure by Default"). Dies unterstützt den Intent, das lebensrettende Lembas-Brot vor unbefugtem Zugriff (insbesondere durch Gollum) zu schützen.
-Indem der Status nur durch den simulierten, erfolgreichen Scan auf true wechselt, liefert der Code den definierten Value: Die Rationen bleiben sicher, und objektiv kontrollierter Zugang verhindert Misstrauen und Streit innerhalb der ohnehin schon psychisch und physisch erschöpften Gemeinschaft. Das System nimmt den Gefährten die Last der ständigen Bewachung ab.
+Indem der Status nur durch den simulierten, erfolgreichen Scan auf true wechselt, liefert der Code den definierten Value: Die Rationen bleiben sicher, und objektiv kontrollierter Zugang verhindert Misstrauen und Streit innerhalb der ohnehin schon psychisch und physisch erschöpften Gemeinschaft. Das System nimmt den Gefährten die Last der ständigen Bewachung ab.  
 <br>  
 
 
 ### How does the implemented behavior reflect your flow and wireframe from Assignment 2?  
 Das System ist eine direkte technische Übersetzung der Dokumente aus Assignment 2:  
 + Wireframe: Die HTML-Struktur entspricht exakt dem Aufbau des Wireframes (Willkommens-Nachricht, markanter Scanner-Button mit Fingerabdruck-Icon, dynamische Status-Box und der Hinweis unten).
-+ Flowchart: Die JavaScript-Logik arbeitet die zentralen Knotenpunkte des Flowcharts ab. Der addEventListener repräsentiert den Schritt "Finger scannen". Die Zufallsberechnung (Math.random()) simuliert den Schritt "Identität prüfen". Die if/else-Bedingung setzt die Verzweigung "Identität bestätigen (Ja/Nein)" um und gibt durch die Farb- und Textwechsel in der UI unmittelbares Feedback ("Zugriff verweigert" vs. "Autorisierung bestätigen"). Der eingebaute 3-Sekunden-Timer (setTimeout) spiegelt zudem den Pfeil wider, der das System nach einer Aktion wieder in den Modus "Standby aktivieren" zurückversetzt.  
++ Flowchart: Die JavaScript-Logik arbeitet die zentralen Knotenpunkte des Flowcharts ab. Der addEventListener repräsentiert den Schritt "Finger scannen". Die Zufallsberechnung (Math.random()) simuliert den Schritt "Identität prüfen". Die if/else-Bedingung setzt die Verzweigung "Identität bestätigen (Ja/Nein)" um und gibt durch die Farb- und Textwechsel in der UI unmittelbares Feedback. Der im Mermaid stehende Schritt "Zugriff verweigern" ist im UI der Text "Zugriff verweigert" und der Schritt "Autorisierung bestätigen" ist "Zugriff bestätigt". Der eingebaute 3-Sekunden-Timer (setTimeout) spiegelt zudem den Pfeil wider, der das System nach einer Aktion wieder in den Modus "Standby aktivieren" zurückversetzt.  
 <br>  
 
 ### What constraints or assumptions shaped your logic?  
-Das System ist eine direkte technische Übersetzung von Assignment 2:  
-+ Wireframe: Die HTML-Struktur entspricht exakt dem Aufbau des Wireframes (Willkommens-Nachricht, markanter Scanner-Button mit Fingerabdruck-Icon, dynamische Status-Box und der Hinweis unten).
-+ Flowchart: Die JavaScript-Logik arbeitet die zentralen Knotenpunkte des Flowcharts ab. Der addEventListener repräsentiert den Schritt "Finger scannen". Die Zufallsberechnung (Math.random()) simuliert den Schritt "Identität prüfen". Die if/else-Bedingung setzt die Verzweigung "Identität bestätigen (Ja/Nein)" um und gibt durch die Farb- und Textwechsel in der UI unmittelbares Feedback ("Zugriff verweigert" vs. "Autorisierung bestätigen"). Der eingebaute 5-Sekunden-Timer (setTimeout) spiegelt zudem den Pfeil wider, der das System nach einer Aktion wieder in den Modus "Standby aktivieren" zurückversetzt.
++ Constraint (Einschränkung): Da dies ein erster Software-Prototyp ist, stand keine echte biometrische Hardware (ein physischer Fingerabdruck- oder Gesichtsscanner) zur Verfügung. Daher musste der Scan- und Verifizierungsprozess abstrahiert werden.
++ Assumption (Annahme): Um das Erlebnis dennoch testbar zu machen, wurde die Annahme getroffen, dass ein Klick-Event in Kombination mit einem Zufallsgenerator (Math.random()) ausreicht, um die unvorhersehbare Natur einer biometrischen Prüfung (Erfolg oder Fehlschlag) für den Moment zu simulieren. Eine weitere Annahme war, dass die Nutzer in einer Stresssituation (wie in Moria) sehr schnelles, klares visuelles Feedback benötigen, weshalb die Logik stark auf eindeutige Farbwechsel (Grün für Zugang, Rot für Ablehnung) setzt.
 <br>  
 
 ### What did you deliberately not implement yet?  
