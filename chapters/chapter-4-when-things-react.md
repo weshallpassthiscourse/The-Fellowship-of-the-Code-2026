@@ -1,6 +1,6 @@
 # The Red Book of Westmarch - Chapter 4: When things react
 
-> “I like less than half of you half as well as you deserve.” - Bilbo
+> “Who knows? Have patience. Go where you must go, and hope!” - Gandalf
 
 
 ## Table of Contents
@@ -15,49 +15,40 @@
 
 ### 📝 Summary
 
-In dieser Aufgabe sollen wir unser davor erstelltes HTML- und CSS-Dokument mit JavaScript interaktiv gestalten. 
+In dieser Aufgabe haben wir unser HTML- und CSS-Dokument mithilfe von JavaScript interaktiv gestaltet. Wir haben Funktionen implementiert, sodass User das Interface benutzen können. 
 
-
-Mit Hilfe von AI haben wir uns schnell eingefunden und haben das Skelett und die Kleidung unserer Login-Seite erstellt. Nach langer Überlegung haben wir einige Designs verändert, um die Login-Seite intuitiv zu gestalten. Beispielsweise haben wir die Farben abgeändert, die Wortwahl angepasst, also statt Aussagen Instruktionen geschrieben, und um 'Nicht-Buttons' die Umrandung weggelassen, damit man weiß, wo man draufklicken kann und wo nicht.  
+Die Funktionalität, die wir eingebaut haben, zeigt, wie die Applikation bei registrierten und Nicht-Registrierten Usern funktioniert. Unsere Login-Maske leitet je nach Registrierungsstatus direkt auf die Verteilerseite weiter, die dann zu den verbleibenden System Capabilities führt.
 
 Learning Outcomes  
-+ Coden ist zwar viel Copy und Pasten, aber der Kern ist, logisch zu denken und den Code so zu ändern, dass er zu unseren spezifischen Requirements passt.
-+ Sich selbst zu hinterfragen, bzw. seine eigene Logik ist Bestandteil davon, dass man richtig coded.
-+ Erstes Mal fast selbstständig HTML und CSS Code erstellt, und selbst Sachen gelöscht und eingefügt, ohne den Code ganz zu zerstören.
-+ Zusammenhang von HTML und CSS einfacher, wenn es um unsere eigene "App" geht.
-+ Einfacher, wenn es die eigene App ist, zu verstehen, wann man welche Elemente verwendet.
-+ Es gibt eben nicht nur einen Weg oder eine Lösung, etwas darzustellen, sondern mehrere. Statt den Fingerabdruck aus einem Stylesheet zu verlinken, haben wir ein Bild runtergeladen und selbst verlinkt.
 
++ Logisches Denken bei den Workflows ist essentiell, um Code zu verstehen (siehe Hobbit Rations Tracker)
++ Erstes Mal fast selbstständig JavaScript implementiert und mit Hilfe eines Code Visualizers anschaulich gemacht
++ Farbcodes implementiert, je nach UseCase für verständliche Visualisierung
 
 ---
 
 ### 💎 Artifact
 
 
-File: [Artifact 3](../artifacts/artifact-3/artifact-3-representation.md)  
+File: [Artifact 4](../artifacts/artifact-4/artifact-4-logic-state.md)  
 
 
-Build: HTML + CSS page 
+Build: JavaScript Implementation
 
 
 Focus:
-Erstellung des Login-Bildschirms der WayBread Watcher App ohne Interaktivität.  
-
+Erstellung des Login-Bildschirms der WayBread Watcher App **mit** Interaktivität.  
 
 ---
 
 ### 🤖 AI Assistance  
 
-AI hat uns schon zu komplizierte Sachen erstellt. Beispielsweise hat er uns Buttons eingebaut, die wir aber vorerst mal weglassen wollten. Außerdem hat er uns Stylesheets aus dem Internet verlinkt, die ein Fingerabdruck-Icon verlinken. Aber wir dachten uns, dass das auch simpler geht, also haben wir stattdessen ein Image verlinkt. Wir wollten aber ein ziemlich einfaches HTML- Dokument, das wir auch verstehen. Lustigerweise hat AI auch den Code sehr verschachtelt, also die Sections wieder in 'div' geteilt, damit man später noch etwas einfügen kann. Er hat also von selbst schon vorgegriffen. Wir mussten ihm also sagen 'dumb it down'. Geholfen hat es sehr, als wir ihm dann die Zusammenfassung von HTML und CSS gefüttert haben.  
-Ehrlicherweise haben wir erwartet, dass er uns ein sehr einfaches HTML-Dokument ausspuckt. Das war dann leider nicht der Fall. Aber andererseits hat er uns auf Ideen gebracht, die wir davor nicht überlegt hatten.
-Wir haben zwar die HTML-Basics gelernt, aber die Anwendung war etwas schwieriger als gedacht. Ohne AI wäre der Anfang sehr tricky gewesen. So hat sich jeder ein HTML- und CSS-Dokument erstellt. Wir sind dann alle durchgegangen, haben sie vereinfacht und die Codes verschmolzen. Ein sogenannter Francken-Code.  
-
-
+Um uns auf das erste Code Review vorzubereiten, haben wir so wenig wie möglich mit AI gemacht. Natürlich kann man AI nicht komplett außen vor lassen, denn die Erklärungen, die sie uns gegeben hat, waren sehr hilfreich. Bei einzelnen Probleme, die im Code aufgetaucht sind, haben wir AI hinzugezogen, um uns bei konkreten Fragestellungen zu unterstützen. _Wir haben uns zum Beispiel die Funktionen nochmals von der KI erklären lassen und bei Logik-Fehlern konnte sie uns auch unter die Arme greifen._
 
 ---
 
 ### 🤓 Lessons Learned  
 
-+ Die Terminfindung für 6 Leute ist nicht einfach. Wir haben dann immer den ersten Termin genommen, bei dem mind. drei Leute zugesagt haben.
-+ Vorarbeit ist die halbe Miete.
-+ Aufgabenteilung macht Effizienz.
++ Vorarbeit ist weiterhin die halbe Miete.
++ Terminfindung früh ansetzen ist hilfreich, falls doch etwas dazwischen kommt und der Termin verschoben werden muss.
++ Kommunikation innerhalb der Gruppe ist sehr wichtig.
