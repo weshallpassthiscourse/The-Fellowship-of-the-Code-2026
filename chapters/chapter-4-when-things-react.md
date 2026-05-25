@@ -47,9 +47,11 @@ Erstellung des Login-Bildschirms der WayBread Watcher App **mit** Interaktivitä
 
 ### 🤖 AI Assistance  
 
-Wir haben die Implementierung mit AI gestartet und gebeten, uns eine Struktur zu geben und nicht den kompletten Code. Wir wollten auf die richtige Spur geleitet werden, damit wir nicht nur Copy&Pasten, sondern wirklich auch verstehen, was wir da coden. 
+Wir haben die Implementierung mit AI gestartet und gebeten, uns eine Struktur zu geben und uns nicht gleich den kompletten Code bereitzustellen. Wir wollten auf die richtige Spur geleitet werden, damit wir nicht nur Copy&Pasten, sondern wirklich auch verstehen, was wir coden. Auch im Hinblick auf das erste Code Review wollten wir so wenig wie möglich mit AI machen, um gut vorbereitet zu sein.
 
-Um uns auf das erste Code Review vorzubereiten, haben wir so wenig wie möglich mit AI gemacht.  Bei einzelnen Problemen, die im Code aufgetaucht sind, haben wir AI hinzugezogen, um uns bei konkreten Fragestellungen zu unterstützen. Wir haben getElementById in "Reading the Runes" gesehen und uns diese Funktion nochmal von der KI erklären lassen. Dann wussten wir, was durch die Interaktivität geändert werden soll und haben mit Hilfe von AI die "const" benannt. Wir haben die KI auch benutzt, um unseren Code dry-er zu machen. So sind wir zur Dunktion updateStatus(title, message, color). Am ende sind wir draufgekommen, dass wir die Status-Card gerne farblich anpassungsfähig machen wollen. Die KI hat uns geholfen, mit scannerButton.style.backgroundColor und dem setTimeout die Fingerabdrucks-Card so zu gestalten, dass ersichtlich ist, dass gerade auf diesen Block geklickt wird.
+Bei einzelnen konkreten Fragestellungen, die im Code aufgetaucht sind, haben wir AI hinzugezogen, um uns zu unterstützen. Wir wussten, welche Funktionen wir einbauen wollen und was durch die Interaktivität geändert werden soll. Zum Beispiel haben wir mit Hilfe von AI die "const" benannt. Außerdem haben wir getElementById in "Reading the Runes" gesehen und uns diese Funktion nochmal von der KI erklären lassen. 
+
+Wir haben die KI auch benutzt, um unseren Code dry-er zu machen. So sind wir zur Funktion updateStatus(title, message, color) gekommen. Am Ende ist uns aufgefallen, dass wir die Status-Card gerne farblich anpassungsfähig machen wollen. Die KI hat uns geholfen, mit scannerButton.style.backgroundColor und dem setTimeout die Fingerabdrucks-Card so zu gestalten, dass ersichtlich ist, dass gerade auf diesen Block geklickt wird. Nach einem kurzen Moment nimmt der Button wieder die Ausgangsfarbe an.
 
 ---
 
