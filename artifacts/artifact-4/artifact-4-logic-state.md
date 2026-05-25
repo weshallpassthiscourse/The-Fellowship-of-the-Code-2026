@@ -8,7 +8,7 @@
 ## Table of Contents
 
 **[1. System Capability](#1-system-capability)**  
-**[2. Static Interface](#3-static-interface)**  
+**[2. Static Interface Implementation](#3-static-interface-implementation)**  
 **[3. Design Rationale](4-design-rationale)**  
 
 ---
