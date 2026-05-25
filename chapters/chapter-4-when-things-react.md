@@ -55,7 +55,7 @@ Um uns auf das erste Code Review vorzubereiten, haben wir so wenig wie möglich 
 
 ### 🤓 Lessons Learned  
 
-+JavScript kann entweder direkt im HTML gecoded werden oder dort auch referenced werden.
++ JavaScript kann entweder direkt im HTML gecoded werden oder dort auch referenced werden.
 + Visual Studio Code erstmalig verwendet
 + Vorarbeit ist weiterhin die halbe Miete.
 + Terminfindung früh ansetzen ist hilfreich, falls doch etwas dazwischen kommt und der Termin verschoben werden muss.
