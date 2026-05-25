@@ -33,7 +33,7 @@ Hinzu kommt die unmittelbare Gefahr: Gollum schleicht ihnen im Dunkeln nach und 
 ## 2. Static Interface Implementation
  
 > **[HTML](src/interface.html)**  
-> **[Stylesheet](src/style.css)**
+> **[Stylesheet](src/style.css)**  
 > **[JavaScript](link einfügen)**
 
 
