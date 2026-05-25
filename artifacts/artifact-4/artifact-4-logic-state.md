@@ -48,7 +48,7 @@ Hinzu kommt die unmittelbare Gefahr: Gollum schleicht ihnen im Dunkeln nach und 
 
 ### How does your logic support the intent and value defined in Assignment 1?  
 Die implementierte Logik spiegelt exakt die in Assignment 1 definierte Notwendigkeit des "Gollum-Proofings" wider. Der Kern des JavaScript-Codes ist die State-Variable isAuthorized, die standardmäßig auf false gesetzt ist ("Secure by Default"). Dies unterstützt den Intent, das lebensrettende Lembas-Brot vor unbefugtem Zugriff (insbesondere durch Gollum) zu schützen.
-Indem der Status nur durch den simulierten, erfolgreichen Scan auf true wechselt, liefert der Code den definierten Value: Die Rationen bleiben sicher, und objektiv kontrollierter Zugang verhindert Misstrauen und Streit innerhalb der ohnehin schon psychisch und physisch erschöpften Gemeinschaft. Das System nimmt den Gefährten die Last der ständigen Bewachung ab.  
+Indem der Status nur durch den simulierten, erfolgreichen Scan auf true wechselt, liefert der Code den definierten Value: Die Rationen bleiben sicher, und objektiv kontrollierter Zugang verhindert Misstrauen und Streit innerhalb unserer ohnehin schon psychisch und physisch erschöpften Gemeinschaft. Das System nimmt uns Gefährten die Last der ständigen Bewachung ab.  
 <br>  
 
 
@@ -59,8 +59,9 @@ Das System ist eine direkte technische Übersetzung der Dokumente aus Assignment
 <br>  
 
 ### What constraints or assumptions shaped your logic?  
-+ Constraint (Einschränkung): Da dies ein erster Software-Prototyp ist, stand keine echte biometrische Hardware (ein physischer Fingerabdruck- oder Gesichtsscanner) zur Verfügung. Daher musste der Scan- und Verifizierungsprozess abstrahiert werden.
-+ Assumption (Annahme): Um das Erlebnis dennoch testbar zu machen, wurde die Annahme getroffen, dass ein Klick-Event in Kombination mit einem Zufallsgenerator (Math.random()) ausreicht, um die unvorhersehbare Natur einer biometrischen Prüfung (Erfolg oder Fehlschlag) für den Moment zu simulieren. Eine weitere Annahme war, dass die Nutzer in einer Stresssituation (wie in Moria) sehr schnelles, klares visuelles Feedback benötigen, weshalb die Logik stark auf eindeutige Farbwechsel (Grün für Zugang, Rot für Ablehnung) setzt.
++ Constraint: Da dies ein erster Software-Prototyp ist, stand keine echte biometrische Hardware (ein physischer Fingerabdruck- oder Gesichtsscanner) zur Verfügung. Daher musste der Scan- und Verifizierungsprozess abstrahiert werden.
++ Assumption: Um das Erlebnis testbar zu machen, wurde angenommen, dass ein Klick-Event mit einem Zufallsgenerator (Math.random()) ausreicht, um die unvorhersehbare Natur einer biometrischen Prüfung zu simulieren.
++ Assumption: Wir sind zudem davon ausgegangen, dass sich wir in einer extremen Stresssituation befinden (z. B. auf der Flucht in Moria) und erschöpft sind. Das genaue Lesen von Texten dauert in solchen Momenten zu lange. Diese Annahme hat unsere Logik maßgeblich geprägt: Wir haben sofortiges visuelles Feedback implementiert. Der Scanner-Button ändert beim Klicken für den Bruchteil einer Sekunde seine Hintergrundfarbe, um die physische Eingabe sofort zu bestätigen. Zudem färbt sich die gesamte Status-Box markant (Grün für Zugang, Rot für Ablehnung), sodass der Nutzer das Ergebnis intuitiv im Augenwinkel erfassen kann, ohne die Statusmeldung zwingend lesen zu müssen.
 <br>  
 
 ### What did you deliberately not implement yet?  
