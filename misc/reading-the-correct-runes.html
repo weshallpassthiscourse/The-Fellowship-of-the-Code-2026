@@ -24,20 +24,24 @@
         statusText.innerText = "Rations available: " + rations;
     }
 
+    function turnInputValue() {
+      return parseInt(amountInput.value);
+    }
+
     addButton.addEventListener("click", () => {
-        const value = parseInt(amountInput.value);
+        const value = turnInputValue();
         rations     = rations + value;
         updateStatus();
     });
 
     eatButton.addEventListener("click", () => {
-        const value = parseInt(amountInput.value);
-        if (rations - value >= 0) {
-             rations = rations - value;
-             updateStatus()
+        const value = turnInputValue();
+        if (rations - value < 0) {
+            alert("Not enough rations!");
         } else {
-          alert("Not enough rations!")
+            rations = rations - value;
         }
+        updateStatus()
     });
     
   </script>
