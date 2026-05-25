@@ -3,7 +3,7 @@
 
 ---
 
-## What the Code Does and first impressions  
+## What the Code Does and First Impressions  
 
 Das CSS ist jetzt nicht schön, aber wahrscheinlich in der Aufgabe nicht so wichtig. Diese App ist einfach ein Rations-Rechner mit einem Input-Feld und zwei Buttons, die eine Menge abziehen (Eat Rations) oder hinzufügen (Add Rations). Das Ziel ist von einer gegebenen Menge an Rationen, und zwar 10, eine beliebige Menge, die man selbst in dem Input-Feld eingibt, korrekt zu addieren bzw. zu subtrahieren.  
 Bei der Verwendung sind uns sofort einige Sachen aufgefallen.  
@@ -16,7 +16,7 @@ Bei der Verwendung sind uns sofort einige Sachen aufgefallen.
 ---
 
 
-## Identified Issues and why they matter  
+## Identified Issues and Why They Matter  
 
 Obwohl uns mehrere Fehler im Code aufgefallen sind, z.B. dass man negative Zahlen eingeben kann, dass das Input-Feld nicht geleert wird und dass man auch „nichts“ addieren/subtrahieren kann, haben wir uns entschieden, nur die folgenden zwei Bugs zu fixen, weil diese die grundlegenden zwei Funktionen betreffen. Addieren und Subtrahieren. Und der Rechner soll ja genau diese zwei Funktionen richtig machen.  
 1.	Addition → funktioniert nicht richtig  
@@ -28,7 +28,7 @@ Obwohl uns mehrere Fehler im Code aufgefallen sind, z.B. dass man negative Zahle
 
 ---
 
-## Fixes ans AI Assistance Reflection  
+## Fixes and AI Assistance Reflection  
 1.	Addition  
 Wir haben zunächst den type des Inputs im HTML von text in number geändert. Zudem wurden bei let rations = "10" die Gänsefüßchen entfernt, damit es eine echte Zahl ist und kein String. Wir dachten, dass durch diese Änderungen die Addition dann richtig sein würde, aber es wurde trotzdem als String zusammengeklebt. Daraufhin wurde Gemini konsultiert und gebeten, uns – ohne die Lösung direkt zu verraten – auf die richtige Fährte zu bringen. Wir sollten mit console.log(typeof value) unter dem addButton schauen, was für ein Datentyp eigentlich herauskommt. Nachdem wir ein Number erwartet, aber einen String herausbekommen hatten und erst mal verdutzt schauten, hat uns Gemini erklärt, dass ein HTML-Input-Feld standardmäßig immer einen String liefert, selbst wenn man es auf type="number" stellt. Um das Problem zu lösen, mussten wir an zwei Enden ansetzen: Erstens durfte unsere gegebene Menge kein Text sein (was wir davor bereits geändert hatten). Zweitens mussten wir den Text aus dem Input-Feld zwingend mit dem Befehl parseInt() in eine mathematische Zahl umwandeln. Wenn auf beiden Seiten des Plus-Zeichens echte Zahlen stehen, rechnet JavaScript endlich richtig, statt nur Text aneinanderzukleben.  
 Aber danach kam die Frage auf, warum das Subtrahieren auch vorher schon ohne parseInt funktioniert hat. Laut Gemini liegt es an der sogenannten „Type Coercion“. Kurz gesagt fühlt sich JavaScript bei allen anderen Rechenzeichen außer dem + gezwungen, wirklich zu rechnen, und wandelt den String automatisch um (braucht das parseInt da also streng genommen nicht). Beim Addieren kann das Plus-Zeichen die Strings aber eben auch „zusammenkleben“, weshalb das parseInt dort zwingend benötigt wird, um als Ergebnis eine Zahl zu erzwingen. Wir haben es der Sauberkeit halber auch beim Subtrahieren hinzugefügt, auch wenn dort vorher schon ein richtiges Ergebnis herauskam. JavaScript ist zwar sehr "forgiving", aber wenn der Code irgendwann länger wäre, kann es sein, dass wir dann genau deswegen auf Fehler stoßen.
