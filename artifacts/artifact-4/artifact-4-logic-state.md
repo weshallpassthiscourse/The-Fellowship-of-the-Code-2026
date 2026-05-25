@@ -35,7 +35,7 @@ Hinzu kommt die unmittelbare Gefahr: Gollum schleicht ihnen im Dunkeln nach und 
  
 > **[HTML](src/interface.html)**  
 > **[Stylesheet](src/style.css)**  
-> **[JavaScript](link einfügen)**
+> **[JavaScript](src/logic.js)**
 
 
 <br>
