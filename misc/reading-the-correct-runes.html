@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hobbit Rations Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Hobbit Rations Tracker</h1>
+  <p id="status">Rations available: 10</p>
+  <input id="amount" type="number" placeholder="Amount">
+  <button id="add">Add Rations</button>
+  <button id="eat">Eat Rations</button>
+
+  <script>
+    let rations = 10; // initial rations
+
+    const statusText  = document.getElementById("status");
+    const amountInput = document.getElementById("amount");
+    const addButton   = document.getElementById("add");
+    const eatButton   = document.getElementById("eat");
+
+    function updateStatus() {
+        statusText.innerText = "Rations available: " + rations;
+    }
+
+    addButton.addEventListener("click", () => {
+        const value = parseInt(amountInput.value);
+        rations     = rations + value;
+        updateStatus();
+    });
+
+    eatButton.addEventListener("click", () => {
+        const value = parseInt(amountInput.value);
+        if (rations - value >= 0) {
+             rations = rations - value;
+             updateStatus()
+        } else {
+          alert("Not enough rations!")
+        }
+    });
+    
+  </script>
+</body>
+</html>
