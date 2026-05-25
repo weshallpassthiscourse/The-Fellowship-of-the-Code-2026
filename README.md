@@ -94,7 +94,7 @@ Tracking: An automatic inventory tracker utilizing weight sensors in the backpac
 
 ---  
 
-[Go timon max test](test/Timon_Max_Test/Seite_2.html)  
+[Go timon max test](test/src/Timon_Max_Test/Seite_2.html)  
 
 #### Changelog
 
