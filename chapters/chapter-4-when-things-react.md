@@ -21,9 +21,13 @@ Die Funktionalität, die wir eingebaut haben, zeigt, wie die Applikation bei reg
 
 Learning Outcomes  
 
-+ Logisches Denken bei den Workflows ist essentiell, um Code zu verstehen (siehe Hobbit Rations Tracker)
-+ Erstes Mal fast selbstständig JavaScript implementiert und mit Hilfe eines Code Visualizers anschaulich gemacht
-+ Farbcodes implementiert, je nach UseCase für verständliche Visualisierung
++ Logisches Denken bei den Workflows ist essentiell, um Code zu verstehen 
++ Erstes Mal fast selbstständig JavaScript implementiert und mit Hilfe von "Visual Studio Code" anschaulich gemacht
++ Farbcodes je nach Authentifizierungsstatus implementiert für eine klare Visualisierung und deutliche Kommunikation
++ Funktionen sind gut, um den Code dry zu halten
++ setTimeOut und getElementByID gelernt
++ Math.random als Zufallsgenerator verwendet, weil es für uns nicht möglich ist, einen richtigen biometrischen Login zu machen
++ Bei der Implementation von JavaScript können sich noch Details in (HTML und) CSS ändern - bei uns war es das Schloss in der "Status"-Card
 
 ---
 
