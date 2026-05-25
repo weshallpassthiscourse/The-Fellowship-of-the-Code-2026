@@ -46,12 +46,15 @@ Hinzu kommt die unmittelbare Gefahr: Gollum schleicht ihnen im Dunkeln nach und 
 
 
 ### How does your logic support the intent and value defined in Assignment 1?  
-
+Die implementierte Logik spiegelt exakt die in Assignment 1 definierte Notwendigkeit des "Gollum-Proofings" wider. Der Kern des JavaScript-Codes ist die State-Variable isAuthorized, die standardmäßig auf false gesetzt ist ("Secure by Default"). Dies unterstützt den Intent, das lebensrettende Lembas-Brot vor unbefugtem Zugriff (insbesondere durch Gollum) zu schützen.
+Indem der Status nur durch den simulierten, erfolgreichen Scan auf true wechselt, liefert der Code den definierten Value: Die Rationen bleiben sicher, und objektiv kontrollierter Zugang verhindert Misstrauen und Streit innerhalb der ohnehin schon psychisch und physisch erschöpften Gemeinschaft. Das System nimmt den Gefährten die Last der ständigen Bewachung ab.
 <br>  
 
 
 ### How does the implemented behavior reflect your flow and wireframe from Assignment 2?  
-  
+Das System ist eine direkte technische Übersetzung der Dokumente aus Assignment 2:
+• Wireframe: Die HTML-Struktur entspricht exakt dem Aufbau des Wireframes (Willkommens-Nachricht, markanter Scanner-Button mit Fingerabdruck-Icon, dynamische Status-Box und der Hinweis unten).
+• Flowchart: Die JavaScript-Logik arbeitet die zentralen Knotenpunkte des Flowcharts ab. Der addEventListener repräsentiert den Schritt "Finger scannen". Die Zufallsberechnung (Math.random()) simuliert den Schritt "Identität prüfen". Die if/else-Bedingung setzt die Verzweigung "Identität bestätigen (Ja/Nein)" um und gibt durch die Farb- und Textwechsel in der UI unmittelbares Feedback ("Zugriff verweigert" vs. "Autorisierung bestätigen"). Der eingebaute 5-Sekunden-Timer (setTimeout) spiegelt zudem den Pfeil wider, der das System nach einer Aktion wieder in den Modus "Standby aktivieren" zurückversetzt.  
 <br>  
 
 ### What constraints or assumptions shaped your logic?  
