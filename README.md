@@ -80,7 +80,9 @@ The Red Book of Westmark (README.md + chapters/) is our reflection log and livin
 "He’s eaten it! He’s eaten it all! He’s finished the last of our lembas!" — Gollum  
 [Go to Artifact III](artifacts/artifact-3/artifact-3-representation.md)  
 
-*Artifact IV - Representation*  
+*Artifact IV - Logic & State*  
+"Who knows? Have patience. Go where you must go, and hope!” - Gandalf  
+[Go to Artifact IV](artifacts/artifact-4/artifact-4-logic-state.md)  
 
 
 
@@ -95,9 +97,6 @@ Security: "Gollum-Proofing" through biometric locks on our supply bags (accessib
 Tracking: An automatic inventory tracker utilizing weight sensors in the backpack to register exactly when and how much bread is taken.
 
 ---  
-
-[Go timon max test](test/src/Timon_Max_Test/Seite_2.html)  
-[Go to runes](misc/reading-the-correct-runes.html)
 
 #### Changelog
 
@@ -114,7 +113,13 @@ This is our general changelog (e.g., new chapter contents added, rules changed, 
 | 03.05.2026  | Designed 3 different HTML and CSS documents in test folder.|
 | 04.05.2026  | Decided on HTML and CSS Code. Changed it's path into the artifact-3 folder. Updated Red Book Chapter 3. Explained Design Rationale.|
 | 05.05.2026  | Elaborated on and made corrections to Design Rationale. Added iFrame. Handed assignment 3 in. |
+| 25.05.2026  | created folders and docuents fpr assignment 3 and sidequest. Tested code in test folder. Created artifact 4, chapter 4 and reading the runes.  |
+| 26.05.2026  | nd   | Made minor changes to formatting. Corrected mistakes. Polished sentences. Handed assignment 4 and sidequest in.|
 | nd   | nd   |
-| nd   | nd   |
-| nd   | nd   |
-| nd   | nd   |
+| nd   | nd   |  
+
+---  
+links  
+[Go timon max test](test/src/Timon_Max_Test/Seite_2.html)  
+[Go to runes](misc/reading-the-correct-runes.html)
+
