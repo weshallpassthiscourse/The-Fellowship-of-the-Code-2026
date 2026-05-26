@@ -58,4 +58,5 @@ Zuletzt hat uns die KI bei der Umsetzung unseres UX-Gedankens unterstützt: Mith
 + Vorarbeit ist weiterhin die halbe Miete.  
 + Eine frühzeitige Terminfindung ist extrem wichtig, um Puffer zu haben, falls Aufgaben doch einmal länger dauern oder Treffen verschoben werden müssen.  
 + Teamwork: Die Kommunikation innerhalb der Gruppe ist essenziell. Gerade bei logischen Problemen im Code (Debugging) hilft es enorm, wenn vier Augen auf den Bildschirm schauen.
-+ Wir haben uns gefragt, ob WET dann das Gegenteil von DRY ist und Gemini hat das bestätigt!  
++ Wir haben uns gefragt, ob WET dann das Gegenteil von DRY ist und Gemini hat das bestätigt!
++ Mit Backticks kann man Code-Schnipsel grau hinterlegen.
