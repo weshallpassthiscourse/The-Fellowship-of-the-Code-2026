@@ -5,7 +5,6 @@
 
 ## Table of Contents
 
-**The Red Book of Westmarch - Chapter 4: When things react**
  + [Summary](#-summary)  
  + [Artifact](#-artifact)  
  + [AI Assistance](#-ai-assistance)  
