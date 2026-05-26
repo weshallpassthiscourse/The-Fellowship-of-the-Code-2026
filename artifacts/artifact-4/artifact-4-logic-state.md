@@ -67,6 +67,6 @@ Das System ist eine direkte technische Übersetzung der Dokumente aus Assignment
 <br>  
 
 ### What did you deliberately not implement yet?  
-1. Das Aktionsmenü (Schritt 9 im Flow): Nach erfolgreicher Entsperrung öffnet sich im Code momentan noch nicht das Untermenü zur Inventarverwaltung (Verbrauchsrechnung), zur Nutzerverwaltung oder für das Protokoll. Wir haben uns auf den "Türsteher" – die reine Authentifizierungshürde – konzentriert. In der Theorie würde die App an dieser Stelle auf die Verteilerseite weiterleiten.  
+1. Das Aktionsmenü (Schritt 9 im Flow): Nach erfolgreicher Entsperrung öffnet sich im Code momentan noch nicht das Untermenü zur Inventarverwaltung (Verbrauchsrechnung), zur Nutzerverwaltung oder für das Protokoll. Wir haben uns auf den "Türsteher" – die reine Authentifizierungshürde – konzentriert. In der Theorie würde die App an dieser Stelle auf die Verteilerseite weiterleiten. (YAGNI!)  
 2. Näherungssensor (Schritt 2 im Flow): Das automatische Aufwecken des Bildschirms durch eine Näherungserkennung wurde nicht implementiert; der Prototyp startet direkt im wachen Standby-Modus.  
 3. Spezifische Nutzerprofile: Das System unterscheidet in der Simulation (durch die Zufallszahl) aktuell nur generisch zwischen "Autorisiert" und "Nicht autorisiert", anstatt wie in Assignment 1 geplant echte, spezies-spezifische Profile (Hobbits vs. Elben) abzugleichen.  
