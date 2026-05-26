@@ -67,7 +67,7 @@ The Red Book of Westmark (README.md + chapters/) is our reflection log and livin
 ---
 
 #### Artifacts  
-..
+
 *Artifact I - Situation and Intent*  
 "Lembas! Elvish waybread. One small bite is enough to fill the stomach of a grown man" - Legolas  
 [Go to Artifact I](artifacts/artifact-1/artifact-1-situation-intent.md)  
