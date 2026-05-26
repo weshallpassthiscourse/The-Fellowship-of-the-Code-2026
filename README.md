@@ -80,6 +80,8 @@ The Red Book of Westmark (README.md + chapters/) is our reflection log and livin
 "He’s eaten it! He’s eaten it all! He’s finished the last of our lembas!" — Gollum  
 [Go to Artifact III](artifacts/artifact-3/artifact-3-representation.md)  
 
+*Artifact IV - Representation*  
+
 
 
 ---  
