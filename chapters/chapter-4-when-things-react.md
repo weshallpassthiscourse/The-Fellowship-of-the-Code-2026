@@ -23,7 +23,7 @@ Learning Outcomes
 + Wir haben zum ersten Mal weitgehend selbstständig JavaScript implementiert und dabei die Entwicklungsumgebung Visual Studio Code (VS Code) genutzt, um unseren Code professionell zu strukturieren.  
 + Wir haben gelernt, wie wichtig klares visuelles Feedback ist. Farbcodes je nach Authentifizierungsstatus sorgen für eine eindeutige Kommunikation mit dem User (UX).  
 + Durch das DRY-Prinzip ("Don't Repeat Yourself") und das Schreiben eigener Funktionen halten wir unseren Code sauber und effizient.  
-+ Wir haben die praktische Anwendung von Befehlen wie setTimeout, getElementById und Math.random() (als Zufallsgenerator zur Simulation des biometrischen Scans) gelernt.
++ Wir haben die praktische Anwendung von Befehlen wie `setTimeout`, `getElementById` und `Math.random()` (als Zufallsgenerator zur Simulation des biometrischen Scans) gelernt.
 + Bei der Implementierung von JavaScript fällt oft auf, dass man noch Details in HTML oder CSS anpassen muss – bei uns war es beispielsweise das Schloss-Icon in der Status section.
 
 ---  
