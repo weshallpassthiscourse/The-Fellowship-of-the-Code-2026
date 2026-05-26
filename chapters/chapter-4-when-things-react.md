@@ -60,3 +60,4 @@ Zuletzt hat uns die KI bei der Umsetzung unseres UX-Gedankens unterstützt: Mith
 + Teamwork: Die Kommunikation innerhalb der Gruppe ist essenziell. Gerade bei logischen Problemen im Code (Debugging) hilft es enorm, wenn vier Augen auf den Bildschirm schauen.
 + Wir haben uns gefragt, ob WET dann das Gegenteil von DRY ist und Gemini hat das bestätigt!
 + Mit Backticks kann man Code-Schnipsel grau hinterlegen.
++ Mit CMD und Z kann man retour machen in GitHub.
