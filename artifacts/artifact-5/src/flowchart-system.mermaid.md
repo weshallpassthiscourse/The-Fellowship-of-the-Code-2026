@@ -1,6 +1,6 @@
 ``` mermaid
 graph TD
-    Start([Aktionsmenü]) --> A[Nutzer verwalten]
+    Start([Aktion wählen]) --> A[Nutzer verwalten]
     
     %% Authentifizierungsprozess
     A --> B[Admin Finger scannen]
@@ -9,7 +9,7 @@ graph TD
     
     %% Strang: Zugriff verweigert
     D -- Nein --> E[Zugriff verweigern]
-    E --> A
+    E --> Start
     
     %% Strang: Zugriff gestattet
     D -- Ja --> F[Zugriff gestatten]
