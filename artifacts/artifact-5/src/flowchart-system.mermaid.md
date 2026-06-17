@@ -13,7 +13,7 @@ graph TD
     
     %% Strang: Zugriff gestattet
     D -- Ja --> F[Zugriff gestatten]
-    F --> G[Nutzerverwaltung Dashboard]
+    F --> G[Übersicht]
     
     %% NEUE ENTSCHEIDUNG: Was auf dem Dashboard tun?
     G --> V{Profilaktion wählen}
@@ -38,8 +38,8 @@ graph TD
     %% Prozess: Neuen Nutzer hinzufügen
     I --> J[Eingabe: Name]
     J --> K[Auswahl: Geschlecht]
-    K --> L[Auswahl: Spezies/Rasse]
-    L --> T[Eingabe/Berechnung: Bedarf]
+    K --> L[Auswahl: Spezies]
+    L --> T[Berechnung: Bedarf]
     T --> M[Profil speichern]
     M --> G
 
