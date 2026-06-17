@@ -32,7 +32,8 @@
 ---  
 
 ## 2. Static Interface Implementation
- 
+> **[Mermaid](src/flowchart-system.mermaid.md)**  
+> **[Wireframe](src/wireframe-system.jpg)**  
 > **[HTML](src/interface.html)**  
 > **[Stylesheet](src/style.css)**  
 > **[JavaScript](src/logic.js)**
