@@ -84,6 +84,9 @@ The Red Book of Westmark (README.md + chapters/) is our reflection log and livin
 "Who knows? Have patience. Go where you must go, and hope!” - Gandalf  
 [Go to Artifact IV](artifacts/artifact-4/artifact-4-logic-state.md)  
 
+*Artifact IV - Integration & Extension*  
+"The world is not in your books and maps. It's out there." – Gandalf  
+[Go to Artifact V](artifacts/artifact-5/artifact-5-integration-extension.md)  
 
 
 ---  
@@ -114,8 +117,9 @@ This is our general changelog (e.g., new chapter contents added, rules changed, 
 | 04.05.2026  | Decided on HTML and CSS Code. Changed it's path into the artifact-3 folder. Updated Red Book Chapter 3. Explained Design Rationale.|
 | 05.05.2026  | Elaborated on and made corrections to Design Rationale. Added iFrame. Handed assignment 3 in. |
 | 25.05.2026  | created folders and docuents fpr assignment 3 and sidequest. Tested code in test folder. Created artifact 4, chapter 4 and reading the runes.  |
-| 26.05.2026  | nd   | Made minor changes to formatting. Corrected mistakes. Polished sentences. Handed assignment 4 and sidequest in.|
-| nd   | nd   |
+| 26.05.2026  | Made minor changes to formatting. Corrected mistakes. Polished sentences. Handed assignment 4 and sidequest in.|
+| 15.05.2026  | Decided on capability. Made a todo list. Talked about what we want to do and how. Created 3 Teams of 2 to create wireframe and mermaid.|
+| 17.06.2026  | Created files and folders. Started last assignment. Designed mermaid flowchart and wireframes.   |
 | nd   | nd   |  
 
 ---  
