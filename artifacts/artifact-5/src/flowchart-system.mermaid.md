@@ -16,7 +16,7 @@ graph TD
     F --> G[Nutzerverwaltung Dashboard]
     
     %% NEUE ENTSCHEIDUNG: Was auf dem Dashboard tun?
-    G --> V{Aktion wählen}
+    G --> V{Profilaktion wählen}
     
     %% Dashboard-Optionen
     V -- Nutzer ansehen --> N[Nutzer anklicken]
@@ -24,21 +24,22 @@ graph TD
     
     %% Prozess: Bestehende Nutzer verwalten
     N --> O[Nutzerdetails ansehen]
-    O --> U{Profilaktion wählen}
+    O --> U{Bearbeitungsart auswählen}
     
     %% Bearbeiten/Löschen-Entscheidungen
     U -- Zurück --> G
     U -- Ändern --> P[Nutzerprofil bearbeiten]
     P --> R[Änderungen speichern]
-    R --> G
+    R --> U
     U -- Löschen --> Q[Nutzerprofil löschen]
-    Q --> R
+    Q --> H[Löschung speichern]
+    H --> G
     
     %% Prozess: Neuen Nutzer hinzufügen
     I --> J[Eingabe: Name]
     J --> K[Auswahl: Geschlecht]
     K --> L[Auswahl: Spezies/Rasse]
     L --> T[Eingabe/Berechnung: Bedarf]
-    T --> M([Profil speichern])
+    T --> M[Profil speichern]
     M --> G
 
