@@ -1,17 +1,66 @@
+# The Fellowship Companion - Artifact V: Integration & Extension  
+
+> "The world is not in your books and maps. It's out there." – Gandalf
+
+---
+
+## Table of Contents
+
+**[1. System Capability](#1-system-capability)**  
+**[2. Static Interface Implementation](#2-static-interface-implementation)**  
+**[3. Design Rationale](#3-design-rationale)**  
+**[4. Reflection On System Evolution](#4-reflection-on-system-evolution)**  
+
+---
+
+## 1. System Capability  
+
+> **Profilverwaltung**
+
+### Capability Description  
+<br>
+
+### Why this capability?  
+
+### What state this capability depends on or modifies?  
 
 
-1. Selected system capabilities (1)  
-2. System flow (Mermaid)
-3. System wireframe (low fidelity)
-4. Implementation snapshot
-   a. Basic HTML structure + CSS styling
-   b. Minimal JS logic  
-5. Meaningful Extension - Add exactly one extension to your system  
+### Why this capability matters for the Fellowship at this stage of the journey?  
+
+<br>
+
+---  
+
+## 2. Static Interface Implementation
+ 
+> **[HTML](src/interface.html)**  
+> **[Stylesheet](src/style.css)**  
+> **[JavaScript](src/logic.js)**
+
+Meaningful Extension - Add exactly one extension to your system  
    a. An API call (e.g., weather influencing the quest) or  
-   b. A library (e.g., Bootstrap, DaisyUI, Moment.js, ...)
-6. Design Rationale - Explain your implementation decisions:  
-   a. How the integrated system still reflects the original intent and value?  
-   b. How individual slices connect meaningfully?  
-   c. Why your chosen extension makes sense?  
-   d. What you intentionally did not build?  
-8. Reflection on system evolution  
+   b. A library (e.g., Bootstrap, DaisyUI, Moment.js, ...)  
+   
+<br>
+
+---
+
+## 3. Design Rationale  
+
+### How the integrated system still reflects the original intent and value?  
+<br>  
+
+### How individual slices connect meaningfully?  
+<br>  
+
+### Why your chosen extension makes sense?  
+<br>  
+
+### What you intentionally did not build?  
+<br> 
+
+---
+
+## 4. Reflection on system evolution  
+Reflect on how your understanding of the system has changed since Phase 1.
+Think like a developer or architect near the end of a first iteration: "What did we actually build, how does it fit together, and what changed along the way?" 
