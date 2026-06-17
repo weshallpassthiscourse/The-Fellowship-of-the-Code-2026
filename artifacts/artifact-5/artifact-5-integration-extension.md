@@ -32,7 +32,9 @@
 ---  
 
 ## 2. Static Interface Implementation
-> **[Mermaid](src/flowchart-system.mermaid.md)**  
+> **[Mermaid](src/flowchart-system.mermaid.md)**
+In worte nochmal erklären
+
 > **[Wireframe](src/wireframe-system.jpg)**  
 > **[HTML](src/interface.html)**  
 > **[Stylesheet](src/style.css)**  
