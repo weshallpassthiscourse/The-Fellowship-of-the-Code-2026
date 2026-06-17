@@ -15,33 +15,30 @@ graph TD
     D -- Ja --> F[Zugriff gestatten]
     F --> G[Nutzerverwaltung Dashboard]
     
-    %% Ansicht im Dashboard
-    G --> H[Bestehende Nutzerliste anzeigen]
-    G --> I[Neuen Nutzer hinzufügen]
+    %% NEUE ENTSCHEIDUNG: Was auf dem Dashboard tun?
+    G --> V{Aktion wählen}
     
-    %% Prozess: Bestehende Nutzer ansehen & bearbeiten
-    H --> N[Nutzer anklicken]
+    %% Dashboard-Optionen
+    V -- Nutzer ansehen --> N[Nutzer anklicken]
+    V -- Nutzer hinzufügen --> I[Neuen Nutzer hinzufügen]
+    
+    %% Prozess: Bestehende Nutzer verwalten
     N --> O[Nutzerdetails ansehen]
+    O --> U{Profilaktion wählen}
     
-    %% ENTSCHEIDUNG: Was soll mit dem Profil passieren?
-    O --> U{Aktion wählen}
-    
-    %% Die 3 Auswahlmöglichkeiten
+    %% Bearbeiten/Löschen-Entscheidungen
     U -- Zurück --> G
-    
     U -- Ändern --> P[Nutzerprofil bearbeiten]
     P --> R[Änderungen speichern]
     R --> G
+    U -- Löschen --> Q[Nutzerprofil löschen]
+    Q --> R
     
-    U -- Löschen --> Q[Löschen bestätigen] --> R
-
-    
-    %% Prozess: Nutzer hinzufügen
+    %% Prozess: Neuen Nutzer hinzufügen
     I --> J[Eingabe: Name]
     J --> K[Auswahl: Geschlecht]
     K --> L[Auswahl: Spezies/Rasse]
     L --> T[Eingabe/Berechnung: Bedarf]
     T --> M([Profil speichern])
-    
-    %% Zurück zur Übersicht nach dem Speichern (Neuer Nutzer)
     M --> G
+
