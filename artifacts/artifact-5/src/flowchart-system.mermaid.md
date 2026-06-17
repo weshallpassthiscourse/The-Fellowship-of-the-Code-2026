@@ -40,6 +40,7 @@ graph TD
     J --> K[Auswahl: Geschlecht]
     K --> L[Auswahl: Spezies]
     L --> T[Berechnung: Bedarf]
-    T --> M[Profil speichern]
+    T --> Z[Fingerabdruck anlegen]
+    Z --> M[Profil speichern]
     M --> G
 
