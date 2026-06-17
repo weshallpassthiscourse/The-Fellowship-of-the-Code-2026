@@ -1,6 +1,6 @@
 ``` mermaid
 graph TD
-    Start([Aktion wählen]) --> A[Nutzer verwalten]
+    Start([Aktion wählen]) --> A[Profile verwalten]
     
     %% Authentifizierungsprozess
     A --> B[Admin Finger scannen]
@@ -13,17 +13,17 @@ graph TD
     
     %% Strang: Zugriff gestattet
     D -- Ja --> F[Zugriff gestatten]
-    F --> G[Übersicht]
+    F --> G[Profileübersicht]
     
     %% NEUE ENTSCHEIDUNG: Was auf dem Dashboard tun?
     G --> V{Profilaktion wählen}
     
     %% Dashboard-Optionen
-    V -- Nutzer ansehen --> N[Nutzer anklicken]
-    V -- Nutzer hinzufügen --> I[Neuen Nutzer hinzufügen]
+    V -- Profil ansehen --> N[Profil anklicken]
+    V -- Profil hinzufügen --> I[Neues Profil hinzufügen]
     
-    %% Prozess: Bestehende Nutzer verwalten
-    N --> O[Nutzerdetails ansehen]
+    %% Prozess: Bestehende Profile verwalten
+    N --> O[Profildetails ansehen]
     O --> U{Bearbeitungsart auswählen}
     
     %% Bearbeiten/Löschen-Entscheidungen
