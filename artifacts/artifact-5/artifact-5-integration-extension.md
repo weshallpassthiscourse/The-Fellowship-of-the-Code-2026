@@ -35,7 +35,7 @@
 > **[Mermaid](src/flowchart-system.mermaid.md)**
 In worte nochmal erklären
 
-> **[Wireframe](src/wireframe-system.jpg)**  
+> **[Wireframes](src/wireframes-system.jpg)**  
 > **[HTML](src/interface.html)**  
 > **[Stylesheet](src/style.css)**  
 > **[JavaScript](src/logic.js)**
