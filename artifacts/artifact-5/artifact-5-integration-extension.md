@@ -55,15 +55,25 @@ Meaningful Extension - Add exactly one extension to your system
 
 ### How the integrated system still reflects the original intent and value?  
 <br>  
+Der Hauptnutzen unseres Rucksacks ist es, einen gesicherten Rucksack mit automatischer Bedarfsrechnung und Verwaltung für uns Gefährten zur Verfügung zu stellen. Die neue System Capability erlaubt es uns, die Reise einfacher zu gestalten, da wir nach dem Hinzufügen der Profile alle Zugriff auf den Rucksack und unseren Proviant haben. Wir als Gruppe können gemeinsam entscheiden, wer Zugriff auf den Rucksack bekommt und nur der Systemadmin darf das Profil hinzufügen. Das schützt uns vor ungewollten MitbenutzerInnen und DiebInnen. Mit den erhobenen Daten bei der Anlage der Profile können in weiterer Folge die Features "Inventarverwaltung" und "automatische Bedarfsberechnung" implementiert werden.
 
 ### How individual slices connect meaningfully?  
 <br>  
+Im Zentrum unserer Anwendung steht, nachdem man auf "Profile verwalten" klickt, unsere Profilliste (Dashboard). Dort wird eine Übersicht über die angelegten Profile gegeben, es gibt die Möglichkeit für den Systemadministrator, ein Profil hinzuzufügen und bereits angelegte Profile können in der Detailansicht bearbeitet werden. Durch die Toast-Messages, die die Anwendung anzeigt, wenn Funktionen erfolgreich durchgeführt werden, gibt es klares Feedback für den User. Wenn ein User hinzugefügt wurde, kommt man zurück in die Listenansicht und kann das neue Profil sehen. Wenn ein Profil bearbeitet wurde, gibt es die Erfolgsmeldung im Toast und man wird in die Detailansicht des Profils zurückgeleitet. Ein wichtiges Feature der System Capability ist die Bearbeitung der Profile, um Daten zu ändern, aber um insbesondere auch den Fingerabdruck neu aufzunehmen (sollte dies erforderlich sein). Von dort aus kommt man per "Zurück"-Button in die Profilverwaltung zurück. Wenn ein Profil gelöscht wurde, wird man in die Listenansicht weitergeleitet und per Toast-Message über den Erfolg informiert.
 
 ### Why your chosen extension makes sense?  
 <br>  
+NOCH PRÜFEN 
+Wir haben uns für die API "The One API" (https://the-one-api.dev/) entschieden, da sie uns wertvolle Daten über die Spezies liefert, die wir im Zuge unserer Reise anlegen könnten.
+Die API enthält eine umfangreiche Datenbank zu den LotR-Charakteren, die uns bei der Profilanlage unterstützt. Die API kann nach der Einbindung in unsere System Capability Profile ausfüllen, sodass Mehraufwand für uns minimiert wird. 
 
 ### What you intentionally did not build?  
 <br> 
+Wir haben absichtlich noch keine Möglichkeit erstellt, weitere Admins hinzuzufügen, da wir uns im ersten Schritt darauf fokussieren wollten, dass alle Gefährten, die Zugriff auf den Rucksack brauchen, diesen schnellstmöglich bekommen. Im Zuge der Reise wird sich herauskristallisieren, welcher Gefährte/in noch das Zeug zum Admin hat. Mit einem Button, der Adminrechte vergibt, wollen wir dem Admin in der Zukunft die Möglichkeit geben, Admin-AnwärterInnen die entsprechnenden Rechte zuweisen können. 
+
+Außerdem haben wir die Startseite nach erfolgreichem Login noch nicht implementiert, da diese erst notwendig ist, wenn mindestens zwei unserer Haupt-Features erstellt sind. Hier haben wir uns bisher auf YAGNI bezogen. Was nicht ist, kann später immer noch werden. 
+
+Wir haben uns auch aktiv gegen Profilbilder entschieden, die wir ursprünglich einbauen wollten. Unser Rucksack verfügt weder über eine Kamera, noch über eine Bilder-Datenbank, daher ist das Feature für uns nicht nutzbar.
 
 ---
 
