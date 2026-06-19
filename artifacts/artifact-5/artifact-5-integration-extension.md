@@ -78,5 +78,5 @@ Wir haben uns auch aktiv gegen Profilbilder entschieden, die wir ursprünglich e
 ---
 
 ## 4. Reflection on system evolution  
-Reflect on how your understanding of the system has changed since Phase 1.
-Think like a developer or architect near the end of a first iteration: "What did we actually build, how does it fit together, and what changed along the way?" 
+
+Wie bereits in den anderen Punkten erwähnt, ist die Profilverwaltung der nächste logische Schritt nach unserer GollumProofing-Funktion. Access-Management über die Profilverwaltung ist ein zentraler Kernbestandteil des WayBread-Watchers, ohne die die anderen Capabilites (Inventarverwaltung, Bedarfsrechnung) auch keinen Sinn machen würden. Der erste Bestandteil unserer Applikation war der Login, der uns ermöglicht, einen Admin mit dem Erst-Login festzulegen. Dieser Admin darf im Nachgang neue Mitglieder hinzufügen, die ebenfalls den Rucksack benutzen dürfen. Somit erweitert diese Capability die Nutzbarkeit für die Gruppe eindeutig. 
