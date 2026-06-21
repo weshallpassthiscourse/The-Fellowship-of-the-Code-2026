@@ -21,7 +21,12 @@ Hierbei haben wir eindeutig am meisten Zeit dafür verwendet, Fehler, Auslassung
 
 Learning Outcomes  
 
-+ Wireframe ist ein gutes Visualisierungstool aber muss nicht den fertigen Endzustand zeigen. In der Implementierung kommt man auf einige Sachen die noch abgeändert werden.
++	Wireframe ist ein gutes Visualisierungstool aber muss nicht den fertigen Endzustand zeigen. In der Implementierung kommt man auf einige Sachen die noch abgeändert werden.
++	In den letzten Aufgaben haben wir uns vorgenommen die Tasks  besser aufzuteilen und die Arbeit auf kleinere Gruppen zu verteilen. Dies haben wir diesmal geschafft umzusetzen und wir haben uns damit viel Zeit und Aufwand erspart.
++	Vibe-Coding funktioniert sehr gut. Auch wenn die AI gerne viele seltsame Fehler macht.
++	Wir haben einen ersten Einblick in den debugging-Prozess bekommen und mussten viele KI-Fehler beheben. Wir haben gesehen das rigoröses Testing essenziell ist um alle Fehler zu finden.
++	Wir haben gelernt wie man eine single-page-application erstellt, auf der mehrere Seiten angezeigt werden und wie wir die Navigation zwischen den Seiten ermöglichen.
+
 
 
 ---  
