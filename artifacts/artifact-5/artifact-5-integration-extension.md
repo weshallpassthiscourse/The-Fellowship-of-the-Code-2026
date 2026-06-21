@@ -21,9 +21,9 @@
 <br>
 Für unsere Aufgabe zu "Integration & Ext." haben wir uns die System Capability "Profilverwaltung" ausgesucht. Unsere erste Funktionalität war der Login, daher war der nächste logische Schritt, die Profilverwaltung zu implementieren. So können wir alle auf den Rucksack zugreifen, nachdem uns Maxwise, der Admin des WayBread Watchers, hinzugefügt hat.<br>
 
-Unsere Capability kann eine Profilübersicht darstellen, User hinzufügen, bearbeiten und löschen. <br>
+Unsere Capability kann eine Profilübersicht darstellen, Profile hinzufügen, bearbeiten und löschen. <br>
 
-Um einen User hinzuzufügen, muss im allerersten Schritt der Admin seinen Fingerprint registrieren. Danach kann der Admin nach dem biometrischen Login ein neues Profil anlegen. Dazu sammeln wir den Namen, das Geschlecht, die Spezies und den Fingerardruck. Darauf wird automatisch der durchschnittliche Bedarf der Person berechnet (out of scope). Diese Daten erfassen wir, damit sie uns in Zukunft für die Übersicht und bei weiteren Capabilites (Inventarverwaltung, Bedarfsberechnung) helfen können. <br>
+Um ein Profil hinzuzufügen, muss im allerersten Schritt der Admin seinen Fingerprint registrieren, um sich als Admin zu speichern. Danach kann der Admin nach erneutem biometrischen Login ein neues Profil anlegen. Dazu sammeln wir den Namen, das Geschlecht, die Spezies und den Fingerabdruck. Darauf wird automatisch der durchschnittliche Bedarf der Person berechnet (out of scope). Diese Daten erfassen wir, damit sie uns in Zukunft für die Übersicht und bei weiteren Capabilites (Inventarverwaltung, Bedarfsberechnung) helfen können. <br>
 
 Hinzugefügte Profile werden in einer Listenansicht auf der Übersichtsseite angezeigt. Dort ist es möglich, mit einem Klick auf das Augen-Icon in die Detailansicht des Profils zu wechseln. Dort gibt es die Möglichkeiten, das Profil zu bearbeiten oder zu löschen.<br>
 
@@ -43,9 +43,6 @@ In worte nochmal erklären
 > **[Stylesheet](src/style.css)**  
 > **[JavaScript](src/logic.js)**
 
-Meaningful Extension - Add exactly one extension to your system  
-   a. An API call (e.g., weather influencing the quest) or  
-   b. A library (e.g., Bootstrap, DaisyUI, Moment.js, ...)  
    
 <br>
 
@@ -59,21 +56,22 @@ Der Hauptnutzen unseres Rucksacks ist es, einen gesicherten Rucksack mit automat
 
 ### How individual slices connect meaningfully?  
 <br>  
-Im Zentrum unserer Anwendung steht, nachdem man auf "Profile verwalten" klickt, unsere Profilliste (Dashboard). Dort wird eine Übersicht über die angelegten Profile gegeben, es gibt die Möglichkeit für den Systemadministrator, ein Profil hinzuzufügen und bereits angelegte Profile können in der Detailansicht bearbeitet werden. Durch die Toast-Messages, die die Anwendung anzeigt, wenn Funktionen erfolgreich durchgeführt werden, gibt es klares Feedback für den User. Wenn ein User hinzugefügt wurde, kommt man zurück in die Listenansicht und kann das neue Profil sehen. Wenn ein Profil bearbeitet wurde, gibt es die Erfolgsmeldung im Toast und man wird in die Detailansicht des Profils zurückgeleitet. Ein wichtiges Feature der System Capability ist die Bearbeitung der Profile, um Daten zu ändern, aber um insbesondere auch den Fingerabdruck neu aufzunehmen (sollte dies erforderlich sein). Von dort aus kommt man per "Zurück"-Button in die Profilverwaltung zurück. Wenn ein Profil gelöscht wurde, wird man in die Listenansicht weitergeleitet und per Toast-Message über den Erfolg informiert.
+Im Zentrum unserer Anwendung steht, nachdem man auf "Profile verwalten" klickt, unsere Profilliste (Dashboard). Dort wird eine Übersicht über die angelegten Profile gegeben. Es gibt die Möglichkeit für den Systemadmin, ein Profil hinzuzufügen und bereits angelegte Profile können in der Detailansicht bearbeitet werden. Durch die Toast-Messages, die die Anwendung anzeigt, wenn Funktionen erfolgreich durchgeführt werden, gibt es klares Feedback für den User. Wenn ein Profil hinzugefügt wurde, kommt man zurück in die Listenansicht und kann das neue Profil sehen. Wenn ein Profil bearbeitet wurde, gibt es die Erfolgsmeldung im Toast und man wird in die Detailansicht des Profils zurückgeleitet. Ein wichtiges Feature der System Capability ist die Bearbeitung der Profile, um Daten zu ändern, aber um insbesondere auch den Fingerabdruck neu aufzunehmen (sollte dies erforderlich sein). Von dort aus kommt man per "Zurück"-Button in die Profilverwaltung zurück. Wenn ein Profil gelöscht wurde, wird man in die Listenansicht weitergeleitet und per Toast-Message über den Erfolg informiert.
 
 ### Why your chosen extension makes sense?  
 <br>  
 NOCH PRÜFEN 
-Wir haben uns für die API "The One API" (https://the-one-api.dev/) entschieden, da sie uns wertvolle Daten über die Spezies liefert, die wir im Zuge unserer Reise anlegen könnten.
-Die API enthält eine umfangreiche Datenbank zu den LotR-Charakteren, die uns bei der Profilanlage unterstützt. Die API kann nach der Einbindung in unsere System Capability Profile ausfüllen, sodass Mehraufwand für uns minimiert wird. 
+Wir haben uns für die API "The One API" (https://the-one-api.dev/) entschieden, da wir nicht alle Gefährten und Gefährtinnen in den HTML-Code zu schreiben. Wir holen uns die Namen und andere Daten von dieser API. Es wäre so auch leichter und schneller, andere Charaktere hinzuzufügen, falls sie zu Gefährten werden sollten. Die API enthält eine umfangreiche Datenbank zu den LotR-Charakteren, die uns bei der Profilanlage unterstützt. Die API kann nach der Einbindung in unsere System Capability Profile ausfüllen, sodass Mehraufwand für uns minimiert wird. 
 
 ### What you intentionally did not build?  
 <br> 
 Wir haben absichtlich noch keine Möglichkeit erstellt, weitere Admins hinzuzufügen, da wir uns im ersten Schritt darauf fokussieren wollten, dass alle Gefährten, die Zugriff auf den Rucksack brauchen, diesen schnellstmöglich bekommen. Im Zuge der Reise wird sich herauskristallisieren, welcher Gefährte/in noch das Zeug zum Admin hat. Mit einem Button, der Adminrechte vergibt, wollen wir dem Admin in der Zukunft die Möglichkeit geben, Admin-AnwärterInnen die entsprechnenden Rechte zuweisen können.  
 
+Außerdem haben wir die erneute Admin Authentifizierung, die benötigt wird, um in die Profilverwaltung zu gelangen, weggelassen, weil wir das Feature mit der Verwaltung zeigen wollten und wir den Fingerabdruck scan schon im vorherigen Feature behandelt haben und der Einfachheit wegen weggelassen haben.
+
 Außerdem haben wir die Startseite nach erfolgreichem Login noch nicht implementiert, da diese erst notwendig ist, wenn mindestens zwei unserer Haupt-Features erstellt sind. Hier haben wir uns bisher auf YAGNI bezogen. Was nicht ist, kann später immer noch werden.  
 
-Wir haben uns auch aktiv gegen Profilbilder entschieden, die wir ursprünglich einbauen wollten. Unser Rucksack verfügt weder über eine Kamera, noch über eine Bilder-Datenbank, daher ist das Feature für uns nicht nutzbar.  
+Wir haben uns auch aktiv gegen Profilbilder entschieden, die wir ursprünglich einbauen wollten. Unser Rucksack verfügt weder über eine Kamera, noch über eine Bilder-Datenbank, daher ist das Feature für uns nicht nutzbar. Die Profilbilder haben auch keinen Mehrwert für unsere Anwendung.  
 
 ---
 
