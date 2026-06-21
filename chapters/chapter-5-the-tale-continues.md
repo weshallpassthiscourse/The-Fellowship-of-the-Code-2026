@@ -21,7 +21,8 @@ Hierbei haben wir eindeutig am meisten Zeit dafür verwendet, Fehler, Auslassung
 
 Learning Outcomes  
 
-+ 
++ Wireframe ist ein gutes Visualisierungstool aber muss nicht den fertigen Endzustand zeigen. In der Implementierung kommt man auf einige Sachen die noch abgeändert werden.
+
 
 ---  
 
