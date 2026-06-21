@@ -11,7 +11,7 @@
 
 ---
 
-### 📝 Summary
+### 📝 Summary  
 Im Artifact V haben wir zum ersten mal eine ganze System-Capability erstellt. Dafür haben wir zu Beginn die Entscheidung getroffen, welche Capability sich für die Aufgabe am besten eignet. Einstimmig haben wir uns für die Profilverwaltung entschieden, da  das Feature der nächste logische Schrittinnerhalb der Anwendung ist. Unsere Capability kann eine Profilübersicht darstellen, Profile hinzufügen, bearbeiten und löschen.  
 Danach haben wir mit Hilfe eines Wireframes und eines Flow-Charts das grobe Design sowie den logischen Ablauf festgelegt. Dieser Schritt ist uns recht leicht gefallen, da wir das schon einmal gemacht haben und wussten, worauf wir uns konzentrieren müssen.  
 Als nächstes ging es an die Umsetzung, wir haben im ersten Schritt AI verwendet, um 3 Erstversionen von Codes zu erstellen, die alle unsere gewünschen Funktionen beinhaltet. Im Anschluss folgten mehrere Grupperntermine, in welchen wir den Code mehrfach durchgegangen sind, um auf die Prinzipen DRY & YAGNI einzugehen und sicherzustellen, dass die klare Trennung von Struktur, Styling und Funktion in HTML, CSS und Java Script eingehalten wird.  
