@@ -116,14 +116,10 @@ This is our general changelog (e.g., new chapter contents added, rules changed, 
 | 03.05.2026  | Designed 3 different HTML and CSS documents in test folder.|
 | 04.05.2026  | Decided on HTML and CSS Code. Changed it's path into the artifact-3 folder. Updated Red Book Chapter 3. Explained Design Rationale.|
 | 05.05.2026  | Elaborated on and made corrections to Design Rationale. Added iFrame. Handed assignment 3 in. |
-| 25.05.2026  | created folders and docuents fpr assignment 3 and sidequest. Tested code in test folder. Created artifact 4, chapter 4 and reading the runes.  |
+| 25.05.2026  | created folders and docuents for assignment 3 and sidequest. Tested code in test folder. Created artifact 4, chapter 4 and reading the runes.  |
 | 26.05.2026  | Made minor changes to formatting. Corrected mistakes. Polished sentences. Handed assignment 4 and sidequest in.|
 | 15.05.2026  | Decided on capability. Made a todo list. Talked about what we want to do and how. Created 3 Teams of 2 to create wireframe and mermaid.|
 | 17.06.2026  | Created files and folders. Started last assignment. Designed mermaid flowchart and wireframes.   |
-| nd   | nd   |  
-
----  
-links  
-[Go timon max test](test/src/Timon_Max_Test/Seite_2.html)  
-[Go to runes](misc/reading-the-correct-runes.html)
+| 21.06.2026  | Created HTML, CSS and JS.  Started with text. |  
+| 22.06.2026  | Updated HTML, CSS and JS. Explained Design Rationale. Created Chapter 5.  Handed in Assignment. | 
 
