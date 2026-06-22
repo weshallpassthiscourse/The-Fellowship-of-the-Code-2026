@@ -1,4 +1,4 @@
-# The Red Book of Westmarch - Chapter 4: The Tale continiues
+# The Red Book of Westmarch - Chapter 5: The Tale continiues
 > “I like less than half of you half as well as you deserve.” - Bilbo
 
 
