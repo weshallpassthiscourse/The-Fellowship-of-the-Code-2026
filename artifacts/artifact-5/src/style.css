@@ -1,34 +1,23 @@
-/* ============================================================================
-   WAYBREAD WATCHER - Stylesheet
-   ============================================================================ */
-
-/* --- FARBPALETTE (CSS VARIABLEN) ---
-   Zentrale Farbdefinition macht Theme-Änderungen trivial
-*/
 :root {
-    --bg-darkest:    #1a1b16;  /* Sehr dunkles Braun - Body Background */
-    --bg-app:        #3e4231;  /* App Container Background */
-    --bg-header:     #313526;  /* Header Background */
-    --bg-panel:      #2a2e20;  /* Panel/Card Hintergrund */
-    --surface:       #5a6148;  /* Button/Card Oberfläche */
-    --border:        #575c46;  /* Breiter Border */
-    --border-light:  #7a8266;  /* Leichterer Border */
-    --text-light:    #f0f0e0;  /* Haupt-Text Farbe */
-    --text-muted:    #a38a6b;  /* Schwächerer Text (Labels) */
-    --text-white:    #ffffff;  /* Reines Weiß für Kontrast */
-    --accent:        #4CAF50;  /* Grün für Positive Actions */
-    --danger:        #d32f2f;  /* Rot für Delete/Fehler */
-    --admin:         #b8860b;  /* Gold für Admin-Badge */
+    --bg-darkest:    #1a1b16;
+    --bg-app:        #3e4231;
+    --bg-header:     #313526;
+    --bg-panel:      #2a2e20;
+    --surface:       #5a6148;
+    --border:        #575c46;
+    --border-light:  #7a8266;
+    --text-light:    #f0f0e0;
+    --text-muted:    #a38a6b;
+    --text-white:    #ffffff;
+    --accent:        #4CAF50;
+    --danger:        #d32f2f;
+    --admin:         #b8860b;
 }
-
-/* ============================================================================
-   GRUND-LAYOUT
-   ============================================================================ */
 
 body {
     margin: 0;
-    height: 100dvh; /* Dynamic Viewport Height (mobil) */
-    overflow: hidden; /* Kein Body-Scroll */
+    height: 100dvh;
+    overflow: hidden;
     background-color: var(--bg-darkest);
     color: var(--text-white);
     font-family: Helvetica, Arial, sans-serif;
@@ -46,10 +35,9 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow: hidden; /* Kein Scroll außerhalb der definierten Areas */
+    overflow: hidden;
 }
 
-/* Desktop: Abgerundete Ecken und Schatteneffekt */
 @media (min-width: 450px) {
     .app-container {
         height: 750px;
@@ -60,15 +48,11 @@ body {
     }
 }
 
-/* Standard: Keine echten Cursor, alles sieht native aus */
 button, select, input, .user-card, .fingerprint-box {
     cursor: default !important;
 }
 
-/* ============================================================================
-   HEADER
-   ============================================================================ */
-
+/* Header */
 header {
     position: relative;
     min-height: 70px;
@@ -83,16 +67,15 @@ header {
 
 h1 {
     margin: 0;
-    max-width: 65%; /* Platz für Zurück-Button */
+    max-width: 65%;
     text-align: center;
     color: var(--text-light);
     font-size: 1.05rem;
     font-weight: bold;
-    line-height: 1.2; /* Für mehrzeilige Titel */
+    line-height: 1.2;
     letter-spacing: 1px;
 }
 
-/* Zurück-Button: Links im Header */
 .btn-back {
     position: absolute;
     left: 15px;
@@ -107,10 +90,6 @@ h1 {
     transition: transform 0.1s ease;
 }
 
-/* ============================================================================
-   MAIN CONTENT & SCREENS
-   ============================================================================ */
-
 main {
     flex-grow: 1;
     padding: 15px;
@@ -120,22 +99,16 @@ main {
     flex-direction: column;
 }
 
-/* Basis Screen-Struktur */
 .screen {
-    display: none; /* Standardmäßig versteckt */
+    display: none;
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
 
-/* Aktiver Screen wird sichtbar */
 .screen.active {
     display: flex;
 }
-
-/* ============================================================================
-   BUTTONS
-   ============================================================================ */
 
 .btn-top-action, .btn {
     padding: 16px;
@@ -147,14 +120,12 @@ main {
     transition: transform 0.1s ease;
 }
 
-/* "Neues Profil" Button am Top */
 .btn-top-action {
     width: 100%;
     margin-bottom: 15px;
     background-color: var(--accent);
 }
 
-/* Standard Buttons */
 .btn {
     flex: 1;
 }
@@ -175,20 +146,16 @@ main {
 .action-buttons {
     display: flex;
     gap: 12px;
-    margin-top: auto; /* Buttons am unteren Rand */
+    margin-top: auto;
 }
 
-/* Tap-Effekt: Beim Drücken wird Button kleiner + durchsichtig */
 .btn-top-action:active, .btn:active, .btn-back:active,
 .user-card:active, .fingerprint-box:active {
     transform: scale(0.96);
     opacity: 0.85;
 }
 
-/* ============================================================================
-   BENUTZERLISTE (SCREEN 1)
-   ============================================================================ */
-
+/* Liste */
 .user-list-container {
     flex-grow: 1;
     overflow-y: auto;
@@ -201,7 +168,6 @@ main {
     gap: 12px;
 }
 
-/* Einzelne Benutzerkarte */
 .user-card {
     position: relative;
     padding: 15px;
@@ -214,18 +180,24 @@ main {
     transition: transform 0.1s ease;
 }
 
-/* Augen-Emoji rechts auf der Card */
+/* Eye Icon als ::after mit SVG */
 .user-card::after {
-    content: "👀";
+    content: "";
     position: absolute;
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23f0f0e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .user-card-info {
     width: 100%;
-    padding-right: 30px; /* Platz für Augen-Emoji */
+    padding-right: 30px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -237,7 +209,6 @@ main {
     color: var(--text-light);
 }
 
-/* Admin Badge */
 .admin-badge {
     margin-bottom: 4px;
     color: var(--admin) !important;
@@ -245,7 +216,6 @@ main {
     font-weight: bold;
 }
 
-/* Loading-Text */
 .loading-text {
     margin-top: 20px;
     text-align: center;
@@ -253,7 +223,6 @@ main {
     font-style: italic;
 }
 
-/* Scrollbars (Webkit Browser) */
 .user-list-container::-webkit-scrollbar,
 .form-screen::-webkit-scrollbar {
     width: 5px;
@@ -270,12 +239,9 @@ main {
     border-radius: 10px;
 }
 
-/* ============================================================================
-   FORMULAR (SCREEN 2)
-   ============================================================================ */
-
+/* Formular */
 .form-screen {
-    overflow-y: auto; /* Vertical scroll wenn zu lang */
+    overflow-y: auto;
     justify-content: flex-start;
     padding-right: 5px;
 }
@@ -306,19 +272,16 @@ main {
     color: var(--text-white);
 }
 
-/* Read-only Inputs sind deaktiviert-Optik */
 .form-group input[readonly] {
     background-color: var(--bg-darkest);
     color: var(--text-muted);
-    border-style: dashed; /* Gestrichelt für Hinweis "Automatisch" */
+    border-style: dashed;
 }
 
-/* Fingerabdruck Section wächst mit */
 .fingerprint-group {
     flex-grow: 1;
 }
 
-/* Fingerabdruck Box - Anklickbar */
 .fingerprint-box {
     height: 100%;
     min-height: 110px;
@@ -335,9 +298,8 @@ main {
     transition: all 0.2s ease;
 }
 
-/* Wenn Fingerabdruck "gescannt" ist */
 .fingerprint-box.scanned {
-    background-color: rgba(76, 175, 80, 0.1); /* Grüner Hintergrund */
+    background-color: rgba(76, 175, 80, 0.1);
     border-color: var(--accent);
     color: var(--accent);
 }
@@ -348,15 +310,12 @@ main {
     color: inherit;
 }
 
-/* ============================================================================
-   DETAILANSICHT (SCREEN 3)
-   ============================================================================ */
-
+/* Detail */
 .detail-screen .detail-info {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; /* Felder verteilt sich gleich */
+    justify-content: space-evenly;
 }
 
 .detail-info {
@@ -381,7 +340,6 @@ main {
     border-bottom: 1px solid var(--bg-app);
 }
 
-/* Wichtige Werte hervorheben (z.B. Bedarf) */
 .detail-value.highlight {
     font-weight: bold;
     border: none;
@@ -394,10 +352,42 @@ main {
     justify-content: center;
 }
 
-/* ============================================================================
-   TOAST (Benachrichtigungen)
-   ============================================================================ */
+/* Fingerabdruck Display */
+.fp-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
 
+.fp-display::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23a38a6b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4"/><path d="M14 13.12c0 2.38 0 6.38-1 8.88"/><path d="M17.29 21.02c.12-.6.43-2.3.5-3.02"/><path d="M2 12a10 10 0 0 1 18-6"/><path d="M2 16h.01"/><path d="M21.8 16c.2-2 .131-5.354 0-6"/><path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2"/><path d="M8.65 22c.21-.66.45-1.32.57-2"/><path d="M9 6.8a6 6 0 0 1 9 5.2v2"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fp-display.scanned::before {
+    filter: drop-shadow(0 0 2px #4CAF50);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%234CAF50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4"/><path d="M14 13.12c0 2.38 0 6.38-1 8.88"/><path d="M17.29 21.02c.12-.6.43-2.3.5-3.02"/><path d="M2 12a10 10 0 0 1 18-6"/><path d="M2 16h.01"/><path d="M21.8 16c.2-2 .131-5.354 0-6"/><path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2"/><path d="M8.65 22c.21-.66.45-1.32.57-2"/><path d="M9 6.8a6 6 0 0 1 9 5.2v2"/></svg>');
+}
+
+.fp-display::after {
+    content: "Nicht erfasst";
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: var(--text-muted);
+}
+
+.fp-display.scanned::after {
+    content: "Erfasst";
+    color: var(--accent);
+}
+
+/* Toast */
 .toast {
     visibility: hidden;
     opacity: 0;
@@ -410,7 +400,7 @@ main {
     padding: 25px;
     text-align: center;
     background-color: var(--bg-darkest);
-    color: var(--accent); /* Standardmäßig grün */
+    color: var(--accent);
     border: 2px solid var(--accent);
     border-radius: 12px;
     font-size: 1.1rem;
@@ -419,29 +409,24 @@ main {
     transition: opacity 0.2s, transform 0.2s;
 }
 
-/* Toast wird angezeigt */
 .toast.show {
     visibility: visible;
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
 
-/* Fehler-Toast ist rot */
 .toast.error {
     color: var(--danger);
     border-color: var(--danger);
 }
 
-/* ============================================================================
-   MODAL (Bestätigungsdialoge)
-   ============================================================================ */
-
+/* Modal */
 .modal-overlay {
     display: none;
     position: absolute;
-    inset: 0; /* Füllt den ganzen Screen aus */
+    inset: 0;
     z-index: 200;
-    background-color: rgba(0, 0, 0, 0.8); /* Dunkler Overlay */
+    background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
 }
@@ -473,4 +458,3 @@ main {
     display: flex;
     gap: 15px;
 }
-
