@@ -121,5 +121,5 @@ This is our general changelog (e.g., new chapter contents added, rules changed, 
 | 15.05.2026  | Decided on capability. Made a todo list. Talked about what we want to do and how. Created 3 Teams of 2 to create wireframe and mermaid.|
 | 17.06.2026  | Created files and folders. Started last assignment. Designed mermaid flowchart and wireframes.   |
 | 21.06.2026  | Created HTML, CSS and JS.  Started with text. |  
-| 22.06.2026  | Updated HTML, CSS and JS. Explained Design Rationale. Created Chapter 5.  Handed in Assignment. | 
+| 22.06.2026  | Updated HTML, CSS and JS. Explained Design Rationale. Created Chapter 5.  Handed in Assignment. |  
 
