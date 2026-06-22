@@ -8,27 +8,23 @@
 </head>
 <body>
     <div class="app-container">
-        <!-- ========== HEADER ========== -->
         <header>
             <button class="btn-back" id="backBtn">← Zurück</button>
             <h1 id="headerTitle">PROFILE<br>VERWALTEN</h1>
         </header>
         
         <main>
-            <!-- ========== SCREEN 1: LISTE ========== -->
-            <!-- Zeigt alle Charaktere (Admin + API + lokale) -->
+            <!-- Liste -->
             <div id="screen-list" class="screen active">
                 <button class="btn-top-action" id="goToAddBtn">Neues Profil hinzufügen</button>
                 <div class="user-list-container scrollable">
                     <div class="user-list" id="fellowshipList">
-                        <!-- Hier werden die Charaktere als Cards eingefügt -->
                         <div class="loading-text">Gefährten werden aus Mittelerde gerufen...</div>
                     </div>
                 </div>
             </div>
 
-            <!-- ========== SCREEN 2: FORMULAR ========== -->
-            <!-- Für neue Profile oder zum Bearbeiten -->
+            <!-- Formular -->
             <div id="screen-form" class="screen form-screen scrollable">
                 <div class="form-group">
                     <label>NAME:</label>
@@ -56,13 +52,11 @@
                 </div>
                 <div class="form-group">
                     <label>BEDARF PRO TAG:</label>
-                    <!-- readonly: Wird automatisch berechnet basierend auf Spezies -->
                     <input type="text" id="formRation" readonly placeholder="Wird berechnet">
                 </div>
                 
                 <div class="form-group fingerprint-group">
                     <label>FINGERABDRUCK:</label>
-                    <!-- Anklickbar: Simuliert einen Fingerabdruck-Scan -->
                     <div class="fingerprint-box" id="formFingerprint">
                         <svg class="fp-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4" />
@@ -84,10 +78,8 @@
                 </div>
             </div>
 
-            <!-- ========== SCREEN 3: DETAILANSICHT ========== -->
-            <!-- Zeigt alle Infos eines Charakters + Bearbeiten/Löschen Buttons -->
+            <!-- Detail -->
             <div id="screen-detail" class="screen detail-screen">
-                <!-- Hier werden die Detailfelder dynamisch eingefügt -->
                 <div class="detail-info" id="detailInfo"></div>
                 <div class="action-buttons">
                     <button class="btn btn-submit" id="editBtn">BEARBEITEN</button>
@@ -96,12 +88,8 @@
             </div>
         </main>
 
-        <!-- ========== BENACHRICHTIGUNG (TOAST) ========== -->
-        <!-- Kurze Pop-up Nachricht oben/unten oder Fehlermeldung -->
         <div id="toast" class="toast">Nachricht hier</div>
 
-        <!-- ========== MODAL (Bestätigungsdialog) ========== -->
-        <!-- Universal für Bestätigungen (Löschen, Verwerfen, etc.) -->
         <div id="modal" class="modal-overlay">
             <div class="modal-box">
                 <h2 id="modalTitle"></h2>
@@ -118,3 +106,4 @@
     <script src="logic.js"></script>
 </body>
 </html>
+
