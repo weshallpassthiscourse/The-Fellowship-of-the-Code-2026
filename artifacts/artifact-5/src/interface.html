@@ -8,28 +8,34 @@
 </head>
 <body>
     <div class="app-container">
+        <!-- ========== HEADER ========== -->
         <header>
-            <button class="btn-back" id="backBtn" style="display: none;">← Zurück</button>
+            <button class="btn-back" id="backBtn">← Zurück</button>
             <h1 id="headerTitle">PROFILE<br>VERWALTEN</h1>
         </header>
         
         <main>
+            <!-- ========== SCREEN 1: LISTE ========== -->
+            <!-- Zeigt alle Charaktere (Admin + API + lokale) -->
             <div id="screen-list" class="screen active">
                 <button class="btn-top-action" id="goToAddBtn">Neues Profil hinzufügen</button>
-                <div class="user-list-container">
+                <div class="user-list-container scrollable">
                     <div class="user-list" id="fellowshipList">
+                        <!-- Hier werden die Charaktere als Cards eingefügt -->
                         <div class="loading-text">Gefährten werden aus Mittelerde gerufen...</div>
                     </div>
                 </div>
             </div>
 
-            <div id="screen-form" class="screen form-screen">
+            <!-- ========== SCREEN 2: FORMULAR ========== -->
+            <!-- Für neue Profile oder zum Bearbeiten -->
+            <div id="screen-form" class="screen form-screen scrollable">
                 <div class="form-group">
-                    <label>1. NAME:</label>
+                    <label>NAME:</label>
                     <input type="text" id="formName" placeholder="Name">
                 </div>
                 <div class="form-group">
-                    <label>2. GESCHLECHT:</label>
+                    <label>GESCHLECHT:</label>
                     <select id="formGender">
                         <option value="">-- Wählen --</option>
                         <option value="Männlich">Männlich</option>
@@ -38,7 +44,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>3. SPEZIES:</label>
+                    <label>SPEZIES:</label>
                     <select id="formSpecies">
                         <option value="">-- Wählen --</option>
                         <option value="Hobbit">Hobbit</option>
@@ -49,12 +55,14 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>4. BEDARF PRO TAG:</label>
+                    <label>BEDARF PRO TAG:</label>
+                    <!-- readonly: Wird automatisch berechnet basierend auf Spezies -->
                     <input type="text" id="formRation" readonly placeholder="Wird berechnet">
                 </div>
                 
                 <div class="form-group fingerprint-group">
-                    <label>5. FINGERABDRUCK:</label>
+                    <label>FINGERABDRUCK:</label>
+                    <!-- Anklickbar: Simuliert einen Fingerabdruck-Scan -->
                     <div class="fingerprint-box" id="formFingerprint">
                         <svg class="fp-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4" />
@@ -67,7 +75,7 @@
                             <path d="M8.65 22c.21-.66.45-1.32.57-2" />
                             <path d="M9 6.8a6 6 0 0 1 9 5.2v2" />
                         </svg>
-                        <span id="fpText" style="text-align: center;">Zum erfassen Finger anlegen</span>
+                        <span id="fpText">Zum erfassen Finger anlegen</span>
                     </div>
                 </div>
                 
@@ -76,24 +84,11 @@
                 </div>
             </div>
 
+            <!-- ========== SCREEN 3: DETAILANSICHT ========== -->
+            <!-- Zeigt alle Infos eines Charakters + Bearbeiten/Löschen Buttons -->
             <div id="screen-detail" class="screen detail-screen">
-                <div class="detail-info">
-                    <div class="detail-label">Name:</div>
-                    <div class="detail-value" id="viewName"></div>
-                    
-                    <div class="detail-label">Geschlecht:</div>
-                    <div class="detail-value" id="viewGender"></div>
-                    
-                    <div class="detail-label">Spezies:</div>
-                    <div class="detail-value" id="viewSpecies"></div>
-                    
-                    <div class="detail-label">Lembas-Bedarf pro Tag:</div>
-                    <div class="detail-value highlight" id="viewRation"></div>
-
-                    <div class="detail-label">Fingerabdruck:</div>
-                    <div class="detail-value" id="viewFingerprint"></div>
-                </div>
-                
+                <!-- Hier werden die Detailfelder dynamisch eingefügt -->
+                <div class="detail-info" id="detailInfo"></div>
                 <div class="action-buttons">
                     <button class="btn btn-submit" id="editBtn">BEARBEITEN</button>
                     <button class="btn btn-delete" id="deleteBtn">LÖSCHEN</button>
@@ -101,25 +96,19 @@
             </div>
         </main>
 
+        <!-- ========== BENACHRICHTIGUNG (TOAST) ========== -->
+        <!-- Kurze Pop-up Nachricht oben/unten oder Fehlermeldung -->
         <div id="toast" class="toast">Nachricht hier</div>
 
-        <div id="confirmModal" class="modal-overlay">
+        <!-- ========== MODAL (Bestätigungsdialog) ========== -->
+        <!-- Universal für Bestätigungen (Löschen, Verwerfen, etc.) -->
+        <div id="modal" class="modal-overlay">
             <div class="modal-box">
-                <h2>Bist du sicher?</h2>
-                <p>Möchtest du dieses Profil wirklich löschen?</p>
+                <h2 id="modalTitle"></h2>
+                <p id="modalText"></p>
                 <div class="modal-buttons">
-                    <button class="btn btn-submit" id="confirmYesBtn">Ja</button>
-                    <button class="btn btn-delete" id="confirmNoBtn">Nein</button>
-                </div>
-            </div>
-        </div>
-
-        <div id="discardModal" class="modal-overlay">
-            <div class="modal-box">
-                <h2 id="discardTitle">Änderung verwerfen?</h2>
-                <div class="modal-buttons">
-                    <button class="btn btn-submit" id="discardYesBtn">Ja</button>
-                    <button class="btn btn-delete" id="discardNoBtn">Nein</button>
+                    <button class="btn btn-submit" id="modalYesBtn">Ja</button>
+                    <button class="btn btn-delete" id="modalNoBtn">Nein</button>
                 </div>
             </div>
         </div>
