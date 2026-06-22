@@ -31,8 +31,7 @@ Learning Outcomes
 
 ---  
 
-### 💎 Artifact
-
+### 💎 Artifact  
 
 File: [Artifact 5](../artifacts/artifact-5/artifact-5-integration-extension.md)  
 
@@ -40,21 +39,21 @@ File: [Artifact 5](../artifacts/artifact-5/artifact-5-integration-extension.md)
 Build: [Mermaid flow / wireframe / HTML + CSS page / JavaScript page / low-code extension]
 
 
-Focus: Nicht nur Teile einer Capability, sondern eine Capability komplett.
+Focus: Nicht nur Teile einer Capability, sondern eine Capability komplett von Anfang bis Ende gebaut.
  
 
 ---
 
 ### 🤖 AI Assistance  
-Wir wollten, dass unser Projekt nicht nur gut aussieht, sondern auch richtig was kann, wie gefordert wurde. Deshalb haben wir uns passend zum Thema für „The One API“ entschieden. Weil wir vorher noch nie mit einer API gearbeitet hatten, mussten wir uns von der KI erst einmal Schritt für Schritt erklären lassen, wie das überhaupt funktioniert, vom Access-Token bis zur eigentlichen Abfrage. Diesmal sind wir das Ganze komplett anders angegangen als bei der letzten Abgabe. Statt uns selbst durch den Code zu quälen, haben wir den Spieß umgedreht: Die KI hat programmiert, und wir haben Regie geführt. Wir haben ihr genau vorgegeben, wie die Logik und das Design unserer Wireframes aussehen sollen, das Ergebnis im Browser getestet und ihr dann in mehreren Runden gesagt, was sie noch anpassen muss. So haben wir auch gelernt, eine echte Single Page Application zu bauen. Statt drei separater, fehleranfälliger HTML-Seiten läuft jetzt alles über JavaScript, das die Container einfach dynamisch ein- und ausblendet. Nach und nach haben wir mit Hilfe von Vibe-Coding hilfreiche Funktionen hinzugefügt bzw. unnötige entfernt: Sie berechnet jetzt automatisch den Lembas-Bedarf je nach Spezies, übersetzt die englischen API-Daten ins Deutsche und nutzt schöne kleine Pop-up-Toasts statt klobiger Browser-Warnungen. Dass Theorie und Praxis oft weit auseinanderliegen, haben wir beim ersten Live-Test gemerkt. Unsere Gefährten-Liste blieb nämlich einfach leer. Statt blind herumzuraten, haben wir uns von der KI zeigen lassen, wie man über die Browser-Konsole gezielt auf Fehlersuche geht. Der Übeltäter war am Ende ein einziger falscher Buchstabe im Bearer-Token.
+Wir wollten, dass unser Projekt nicht nur gut aussieht, sondern auch richtig was kann, wie gefordert wurde. Deshalb haben wir uns passend zum Thema für „The One API“ entschieden. Weil wir vorher noch nie mit einer API gearbeitet hatten, mussten wir uns von der KI erst einmal Schritt für Schritt erklären lassen, wie das überhaupt funktioniert, vom Access-Token bis zur eigentlichen Abfrage.  
+Diesmal sind wir das Ganze komplett anders angegangen als bei der letzten Abgabe. Statt uns selbst durch den Code zu quälen, haben wir den Spieß umgedreht: Die KI hat programmiert, und wir haben Regie geführt. Wir haben ihr genau vorgegeben, wie die Logik und das Design unserer Wireframes aussehen sollen, das Ergebnis im Browser getestet und ihr dann in mehreren Runden gesagt, was sie noch anpassen muss. So haben wir auch gelernt, eine echte Single Page Application zu bauen. Statt drei separater, fehleranfälliger HTML-Seiten läuft jetzt alles über JavaScript, das die Container einfach dynamisch ein- und ausblendet. Nach und nach haben wir mit Hilfe von Vibe-Coding hilfreiche Funktionen hinzugefügt bzw. unnötige entfernt: Sie berechnet jetzt automatisch den Lembas-Bedarf je nach Spezies, übersetzt die englischen API-Daten ins Deutsche und nutzt schöne kleine Pop-up-Toasts statt klobiger Browser-Warnungen.  
+Dass Theorie und Praxis oft weit auseinanderliegen, haben wir beim ersten Live-Test gemerkt. Unsere Gefährten-Liste blieb nämlich einfach leer. Statt blind herumzuraten, haben wir uns von der KI zeigen lassen, wie man über die Browser-Konsole gezielt auf Fehlersuche geht. Der Übeltäter war am Ende ein einziger falscher Buchstabe im Bearer-Token.
 
 
 ---
 
 ### 🤓 Lessons Learned  
-
 + Testen des Features von Freunden war besonders wertvoll, um die App mehr User-Centric zu gestalten.
 + Man muss nicht zu sechst an jedem Schritt des Projekts arbeiten, aber auf jeden Fall gemeinsam am Ende all Schritte durchgehen, um etwaige Fehler zu beheben.
 + Programmieren ist weniger Scary als erwartet.
 + Einhaltung der Prinzipien (YAGNI, KISS, SOC, DRY) ist wichtig.
-+ 
