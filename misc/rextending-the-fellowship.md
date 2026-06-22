@@ -16,12 +16,17 @@ Der Flow sendet automatisch eine E-Mail mit einer Erinnerung an die Mitglieder d
 
 Die E-Mail enthält folgende Nachricht:
 
-> 📜 Fellowship Quest Reminder
-> The Fellowship continues its journey.
-> Have you completed today's quest?
-> Have you committed your changes to GitHub?
-> Have you updated your Fellowship Companion?
-> ⚔️ Keep moving towards Mount Graduation!
+>  📜 Fellowship Quest Reminder
+> 
+>  The Fellowship continues its journey.
+> 
+>  Have you completed today's quest?
+> 
+>  Have you committed your changes to GitHub?
+> 
+>  Have you updated your Fellowship Companion?
+> 
+>  ⚔️ Keep moving towards Mount Graduation! 
 
 **Bezug zum Kurs:**
 Die Automatisierung orientiert sich am Narrativ von *The Fellowship of the Code*, in dem das Semester als gemeinsame Reise mit Quests und Lernmeilensteinen dargestellt wird. Die tägliche Erinnerungs-E-Mail dient als automatisches Quest-Update und motiviert dazu, kontinuierlich an den Kursaufgaben zu arbeiten.
