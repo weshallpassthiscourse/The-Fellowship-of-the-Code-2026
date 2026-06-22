@@ -67,6 +67,7 @@ function showScreen(screenName, title) {
     screenForm.classList.remove("active");
     screenDetail.classList.remove("active");
 
+    // Zurück-Button nur auf List-Screen verstecken
     backBtn.style.display = screenName === "list" ? "none" : "block";
 
     if (screenName === "list") {
@@ -166,6 +167,9 @@ function renderCards() {
     });
 }
 
+// Zurück-Button initial verstecken
+backBtn.style.display = "none";
+
 const detailFields = [
     { label: "Name",                  key: "name" },
     { label: "Geschlecht",            key: "gender" },
@@ -188,6 +192,7 @@ function openUserDetails(user) {
     showScreen("detail", "PROFIL<br>DETAILS");
 }
 
+// Zurück-Button Handler
 backBtn.onclick = () => {
     if (screenForm.classList.contains("active")) {
         showModal({
@@ -206,6 +211,7 @@ backBtn.onclick = () => {
         showScreen("list", "PROFILE<br>VERWALTEN");
     }
 };
+
 document.getElementById("goToAddBtn").onclick = () => {
     isEditMode = false;
     formName.value = formGender.value = formSpecies.value = formRation.value = "";
