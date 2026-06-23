@@ -7,22 +7,25 @@ graph TD
     B --> C[Identität prüfen]
     C --> D{Identität bestätigen}
     
-    %% Strang: Zugriff verweigert
-    D -- Nein --> E[Zugriff verweigern]
-    E --> Start
+    %% DEINE IPHONE-SPERRE (Zähler + Lockout)
+    D -- Nein --> Fehlversuch[Fehlversuch registrieren]
+    Fehlversuch --> Limit{Max. 3 Versuche<br>erreicht?}
+    Limit -- Nein --> B
+    Limit -- Ja --> Lock[System für 5 Min. sperren]
+    Lock --> Start
     
     %% Strang: Zugriff gestattet
     D -- Ja --> F[Zugriff gestatten]
     F --> G[Profileübersicht]
     
-    %% Dashboard-Optionen (Korrektur: Gehen direkt von G ab, ohne Raute)
+    %% Dashboard-Optionen (Inklusive deines fehlenden "Notausgangs")
     G -- Profil ansehen --> N[Profil anklicken]
     G -- Profil hinzufügen --> I[Neues Profil hinzufügen]
+    G -- "Logout / Zurück" --> Start
     
     %% Prozess: Bestehende Profile verwalten
     N --> O[Profildetails ansehen]
     
-    %% Bearbeiten/Löschen (Korrektur: Gehen direkt von O ab, ohne Raute)
     O -- Zurück --> G
     O -- Ändern --> P[Nutzerprofil bearbeiten]
     O -- Löschen --> Q[Nutzerprofil löschen]
@@ -34,10 +37,10 @@ graph TD
     L --> T[Berechnung: Bedarf]
     T --> Z[Fingerabdruck anlegen]
     
-    %% DRY-PRINZIP: Alle drei Wege nutzen denselben Speicher-Knoten M
+    %% DRY-PRINZIP: Speichern
     Z --> M[Profil speichern]
     P --> M
     Q --> M
     
-    %% Nach dem Speichern springen alle zurück auf die Übersicht
     M --> G
+
