@@ -1,27 +1,27 @@
 ``` mermaid
 graph TD
-    %% --- VORGELAGERTER STRANG: Admin-Login ---
-    Start([System gestartet]) --> Req[Admin-Login anfordern]
+    %% --- EINSTIEG AUS DEM HAUPTMENÜ ---
+    Menu([Hauptmenü: Aktion wählen]) --> Req[Admin-Login anfordern]
+    
     Req --> Scan[Admin-Finger scannen]
     Scan --> CheckAuth{Ist User ein Admin?}
     
-    %% 1. DIE IPHONE-SPERRE (Brute-Force Schutz)
-    CheckAuth -- Nein --> Fail[Fehlversuch registrieren]
-    Fail --> CheckLimit{Max. 3 Versuche erreicht?}
+    %% 1. ÄNDERUNG: Direkt zur 3er-Prüfung (ohne Zähler-Kachel)
+    CheckAuth -- Nein --> CheckLimit{Max. 3 Versuche erreicht?}
     
     CheckLimit -- Nein --> Req
-    CheckLimit -- Ja --> Lock[System für 5 Min. sperren]
-    Lock --> Start
+    %% 2. ÄNDERUNG: Bei 3 Fehlversuchen Abbruch & zurück ins Hauptmenü
+    CheckLimit -- Ja --> Menu
     
-    CheckAuth -- Ja --> MainMenu[Dashboard: Profilübersicht]
+    CheckAuth -- Ja --> Dash[Dashboard: Profilübersicht]
 
-    %% --- HAUPTMENÜ ---
+    %% --- ADMIN-DASHBOARD ---
     
-    %% 2. DER NOTAUSGANG (Logout)
-    MainMenu -- "Klick: Abmelden" --> Start
+    %% 3. ÄNDERUNG: Abmelden führt exakt ans selbe Ziel wie der Abbruch oben
+    Dash -- "Klick: Abmelden" --> Menu
 
-    MainMenu -- "Klick: + Neues Profil" --> ActionNew[Eingabemaske öffnen]
-    MainMenu -- "Klick: Bestehendes Profil" --> ActionView[Profildetails anzeigen]
+    Dash -- "Klick: + Neues Profil" --> ActionNew[Eingabemaske öffnen]
+    Dash -- "Klick: Bestehendes Profil" --> ActionView[Profildetails anzeigen]
     
     %% STRANG A: NEUES PROFIL
     ActionNew --> J[Eingabe: Name]
@@ -34,10 +34,10 @@ graph TD
     %% STRANG B: BESTEHENDES PROFIL 
     ActionView -- "Klick: Bearbeiten" --> Edit[Nutzerprofil bearbeiten]
     ActionView -- "Klick: Löschen" --> Delete[Nutzerprofil löschen]
-    ActionView -- "Klick: Zurück" --> MainMenu
+    ActionView -- "Klick: Zurück" --> Dash
     
-    %% DRY-PRINZIP: Zusammenführung der Speicher-Wege
+    %% DRY-PRINZIP
     Edit --> SaveDB[Datenbank aktualisieren]
     Delete --> SaveDB
     
-    SaveDB --> MainMenu
+    SaveDB --> Dash
