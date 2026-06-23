@@ -1,6 +1,24 @@
 ``` mermaid
 graph TD
-    MainMenu[Dashboard: Profilübersicht]
+    %% --- VORGELAGERTER STRANG: Admin-Login ---
+    Start([System gestartet]) --> Req[Admin-Login anfordern]
+    Req --> Scan[Admin-Finger scannen]
+    Scan --> CheckAuth{Ist User ein Admin?}
+    
+    %% 1. DIE IPHONE-SPERRE (Brute-Force Schutz)
+    CheckAuth -- Nein --> Fail[Fehlversuch registrieren]
+    Fail --> CheckLimit{Max. 3 Versuche erreicht?}
+    
+    CheckLimit -- Nein --> Req
+    CheckLimit -- Ja --> Lock[System für 5 Min. sperren]
+    Lock --> Start
+    
+    CheckAuth -- Ja --> MainMenu[Dashboard: Profilübersicht]
+
+    %% --- HAUPTMENÜ ---
+    
+    %% 2. DER NOTAUSGANG (Logout)
+    MainMenu -- "Klick: Abmelden" --> Start
 
     MainMenu -- "Klick: + Neues Profil" --> ActionNew[Eingabemaske öffnen]
     MainMenu -- "Klick: Bestehendes Profil" --> ActionView[Profildetails anzeigen]
@@ -23,13 +41,3 @@ graph TD
     Delete --> SaveDB
     
     SaveDB --> MainMenu
-
-    %% VORGELAGERTER STRANG: Admin-Login
-    Start([System gestartet]) --> Req[Admin-Login anfordern]
-    Req --> Scan[Admin-Finger scannen]
-    Scan --> CheckAuth{Ist User ein Admin?}
-    
-    CheckAuth -- Nein --> Deny[Zugriff verweigern]
-    Deny --> Req
-    
-    CheckAuth -- Ja --> MainMenu
