@@ -143,6 +143,7 @@ async function fetchAndRenderList() {
         console.error("API Fehler:", error);
         allDisplayedCompanions = [...localCompanions];
         renderCards();
+        showToast("API nicht erreichbar - nur Admin geladen", true);
     }
 }
 
