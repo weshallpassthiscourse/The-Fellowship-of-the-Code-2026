@@ -216,7 +216,7 @@ document.getElementById("goToAddBtn").onclick = () => {
     isEditMode = false;
     formName.value = formGender.value = formSpecies.value = formRation.value = "";
     resetFingerprintBox();
-    saveUserBtn.textContent = "PROFIL SPEICHERN";
+    saveUserBtn.textContent = "PROFIL HINZUFÜGEN";
     showScreen("form", "NEUES<br>PROFIL");
 };
 
@@ -288,7 +288,7 @@ saveUserBtn.onclick = () => {
         };
         localCompanions.push(newUser);
         allDisplayedCompanions.push(newUser);
-        showToast("Profil erfolgreich angelegt");
+        showToast("Profil erfolgreich hinzugefügt");
         showScreen("list", "PROFILE<br>VERWALTEN");
     }
 };
