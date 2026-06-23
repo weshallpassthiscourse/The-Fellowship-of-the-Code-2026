@@ -92,7 +92,7 @@ graph TD
     L --> T[Berechnung: Bedarf]
     T --> Z[Fingerabdruck scannen]
     
-    Z --> SaveNew[Neues Profil in DB anlegen]
+    Z --> SaveNew[Neues Profil in DB hinzufügen]
     SaveNew --> Dash
     
     %% --- STRANG B: BESTEHENDES PROFIL ---
