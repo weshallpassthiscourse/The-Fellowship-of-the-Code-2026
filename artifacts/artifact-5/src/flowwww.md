@@ -6,20 +6,15 @@ graph TD
     Req --> Scan[Admin-Finger scannen]
     Scan --> CheckAuth{Ist User ein Admin?}
     
-    %% 1. ÄNDERUNG: Direkt zur 3er-Prüfung (ohne Zähler-Kachel)
     CheckAuth -- Nein --> CheckLimit{Max. 3 Versuche erreicht?}
-    
     CheckLimit -- Nein --> Req
-    %% 2. ÄNDERUNG: Bei 3 Fehlversuchen Abbruch & zurück ins Hauptmenü
     CheckLimit -- Ja --> Menu
     
     CheckAuth -- Ja --> Dash[Dashboard: Profilübersicht]
 
     %% --- ADMIN-DASHBOARD ---
     
-    %% 3. ÄNDERUNG: Abmelden führt exakt ans selbe Ziel wie der Abbruch oben
     Dash -- "Klick: Abmelden" --> Menu
-
     Dash -- "Klick: + Neues Profil" --> ActionNew[Eingabemaske öffnen]
     Dash -- "Klick: Bestehendes Profil" --> ActionView[Profildetails anzeigen]
     
@@ -29,15 +24,23 @@ graph TD
     K --> L[Auswahl: Spezies]
     L --> T[Berechnung: Bedarf]
     T --> Z[Fingerabdruck scannen]
-    Z --> SaveDB
     
-    %% STRANG B: BESTEHENDES PROFIL 
+    %% DRY-Knoten 1: Erstellen und Bearbeiten nutzen denselben Speicher-Befehl
+    Z --> SaveProfile[Profil-Datenbank aktualisieren]
+    
+    %% STRANG B: BESTEHENDES PROFIL (Die Detailansicht)
+    ActionView -- "Klick: Zurück" --> Dash
     ActionView -- "Klick: Bearbeiten" --> Edit[Nutzerprofil bearbeiten]
     ActionView -- "Klick: Löschen" --> Delete[Nutzerprofil löschen]
-    ActionView -- "Klick: Zurück" --> Dash
     
-    %% DRY-PRINZIP
-    Edit --> SaveDB[Datenbank aktualisieren]
-    Delete --> SaveDB
+    Edit --> SaveProfile
     
-    SaveDB --> Dash
+    %% NACH DEM SPEICHERN: Zurück in die Detailansicht des Profils
+    SaveProfile --> ActionView
+    
+    %% DRY-Knoten 2: Der Lösch-Befehl (muss das Profil zerstören)
+    Delete --> DeleteDB[Profil aus DB entfernen]
+    
+    %% NACH DEM LÖSCHEN: Gezwungenermaßen zurück aufs Dashboard
+    DeleteDB --> Dash
+
