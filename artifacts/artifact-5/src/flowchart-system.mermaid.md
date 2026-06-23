@@ -70,7 +70,7 @@ graph TD
     subgraph Legende ["Farb- & Symbollegende"]
         direction TB
         L1([System-Einstieg]):::menu
-        L2[Modul-Zentrum / Hub]:::menu
+        L2[Dashboard]:::menu
         L3{System-Prüfung}:::check
         L4[Datenbank-Eingriff]:::db
         L5[Sicherheits-Sperre]:::mordor
