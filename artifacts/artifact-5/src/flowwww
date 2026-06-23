@@ -1,8 +1,7 @@
+``` mermaid
 graph TD
-    %% 1. KORREKTUR: Das Dashboard ist ein Zustand, keine Raute!
     MainMenu[Dashboard: Profilübersicht]
 
-    %% 2. KORREKTUR: Ausgehende Pfeile definieren die Handlung des Users
     MainMenu -- "Klick: + Neues Profil" --> ActionNew[Eingabemaske öffnen]
     MainMenu -- "Klick: Bestehendes Profil" --> ActionView[Profildetails anzeigen]
     
@@ -14,21 +13,18 @@ graph TD
     T --> Z[Fingerabdruck scannen]
     Z --> SaveDB
     
-    %% STRANG B: BESTEHENDES PROFIL (Wieder: Das Detail-Fenster ist ein Zustand!)
-    ActionView -- "Klick: Bearbeiten" --> Edit[Profil bearbeiten]
-    ActionView -- "Klick: Löschen" --> Delete[Löschung bestätigen]
+    %% STRANG B: BESTEHENDES PROFIL 
+    ActionView -- "Klick: Bearbeiten" --> Edit[Nutzerprofil bearbeiten]
+    ActionView -- "Klick: Löschen" --> Delete[Nutzerprofil löschen]
     ActionView -- "Klick: Zurück" --> MainMenu
     
-    %% 3. KORREKTUR (DRY-Prinzip): Beide Wege nutzen exakt denselben Speicher-Knoten
+    %% DRY-PRINZIP: Zusammenführung der Speicher-Wege
     Edit --> SaveDB[Datenbank aktualisieren]
     Delete --> SaveDB
     
-    %% Nach dem Speichern springt das System automatisch zurück auf die Übersicht
     SaveDB --> MainMenu
 
-    %% ------------------------------------------------------------
-    %% VORGELAGERTER STRANG: Der Admin-Login (Autorisierungs-Check)
-    
+    %% VORGELAGERTER STRANG: Admin-Login
     Start([System gestartet]) --> Req[Admin-Login anfordern]
     Req --> Scan[Admin-Finger scannen]
     Scan --> CheckAuth{Ist User ein Admin?}
