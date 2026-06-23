@@ -29,7 +29,7 @@ graph TD
     
     %% --- DER POSITIVE WEG ---
     CheckAuth -- Ja --> Grant[Zugriff gestatten]:::grant
-    Grant --> Dash[Dashboard: Profilübersicht]:::menu
+    Grant --> Dash[Profilübersicht]:::menu
 
     %% --- ADMIN-DASHBOARD ---
     Dash -- "Klick: Abmelden" --> Menu
