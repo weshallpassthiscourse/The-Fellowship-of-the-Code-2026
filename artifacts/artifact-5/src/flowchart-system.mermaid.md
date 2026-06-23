@@ -1,46 +1,85 @@
 ``` mermaid
 graph TD
-    Start([Aktion wählen]) --> A[Profile verwalten]
+    %% === FARB-THEMES (LotR Palette: Salbei, Mithril-Blau & Mordor-Rot) ===
+    classDef default fill:#f4f7f5,stroke:#84a98c,stroke-width:1px,color:#2f3e46;
+    classDef menu fill:#2d4a3e,stroke:#a2e8dd,stroke-width:2px,color:#ffffff;
+    classDef check fill:#fefae0,stroke:#d4af37,stroke-width:2px,color:#283618;
+    classDef db fill:#1e3a8a,stroke:#7dd3fc,stroke-width:2px,color:#ffffff;
+    classDef mordor fill:#991b1b,stroke:#fca5a5,stroke-width:2px,color:#ffffff;
+    classDef grant fill:#065f46,stroke:#6ee7b7,stroke-width:2px,color:#ffffff;
+
+    %% --- EINSTIEG AUS DEM HAUPTMENÜ ---
+    Menu([Hauptmenü]):::menu -- "Klick: Profile verwalten" --> Req[Admin-Login anfordern]
     
-    %% Authentifizierungsprozess
-    A --> B[Admin Finger scannen]
-    B --> C[Identität prüfen]
-    C --> D{Identität bestätigen}
+    Req -- "Klick: Abbrechen" --> Menu
     
-    %% Strang: Zugriff verweigert
-    D -- Nein --> E[Zugriff verweigern]
-    E --> Start
+    Req --> Scan[Admin-Finger scannen]
+    Scan --> CheckAuth{Ist User ein Admin?}:::check
     
-    %% Strang: Zugriff gestattet
-    D -- Ja --> F[Zugriff gestatten]
-    F --> G[Profileübersicht]
+    %% --- DER NEGATIVE WEG ---
+    CheckAuth -- Nein --> Deny[Zugriff verweigern]:::mordor
+    Deny --> CheckLimit{Max. 3 Versuche erreicht?}:::check
     
-    %% NEUE ENTSCHEIDUNG: Was auf dem Dashboard tun?
-    G --> V{Profilaktion wählen}
+    CheckLimit -- Nein --> Req
     
-    %% Dashboard-Optionen
-    V -- Profil ansehen --> N[Profil anklicken]
-    V -- Profil hinzufügen --> I[Neues Profil hinzufügen]
+    CheckLimit -- Ja --> Block[Zugang sperren]:::mordor
+    Block --> LogLock[Sperrung in DB protokollieren]:::db
+    LogLock --> Cooldown[3 Min. Cooldown abwarten]:::mordor
+    Cooldown --> Menu
     
-    %% Prozess: Bestehende Profile verwalten
-    N --> O[Profildetails ansehen]
-    O --> U{Bearbeitungsart auswählen}
+    %% --- DER POSITIVE WEG ---
+    CheckAuth -- Ja --> Grant[Zugriff gestatten]:::grant
+    Grant --> Dash[Dashboard: Profilübersicht]:::menu
+
+    %% --- ADMIN-DASHBOARD ---
+    Dash -- "Klick: Abmelden" --> Menu
+    Dash -- "Klick: + Neues Profil" --> ActionNew[Eingabemaske öffnen]
+    Dash -- "Klick: Bestehendes Profil" --> ActionView[Profildetails anzeigen]
     
-    %% Bearbeiten/Löschen-Entscheidungen
-    U -- Zurück --> G
-    U -- Ändern --> P[Nutzerprofil bearbeiten]
-    P --> R[Änderungen speichern]
-    R --> U
-    U -- Löschen --> Q[Nutzerprofil löschen]
-    Q --> H[Löschung speichern]
-    H --> G
+    %% --- STRANG A: NEUES PROFIL ---
+    ActionNew -- "Klick: Abbrechen" --> Dash
     
-    %% Prozess: Neuen Nutzer hinzufügen
-    I --> J[Eingabe: Name]
+    ActionNew --> J[Eingabe: Name]
     J --> K[Auswahl: Geschlecht]
     K --> L[Auswahl: Spezies]
     L --> T[Berechnung: Bedarf]
-    T --> Z[Fingerabdruck anlegen]
-    Z --> M[Profil speichern]
-    M --> G
+    T --> Z[Fingerabdruck scannen]
+    
+    Z --> SaveNew[Neues Profil in DB hinzufügen]:::db
+    SaveNew --> Dash
+    
+    %% --- STRANG B: BESTEHENDES PROFIL ---
+    ActionView -- "Klick: Zurück" --> Dash
+    ActionView -- "Klick: Bearbeiten" --> Edit[Nutzerprofil bearbeiten]
+    ActionView -- "Klick: Löschen" --> Delete[Nutzerprofil löschen]
+    
+    %% FLUCHTWEGE
+    Edit -- "Klick: Abbrechen" --> ActionView
+    Delete -- "Klick: Abbrechen" --> ActionView
+    
+    %% SPEICHER-WEGE
+    Edit --> UpdateDB[Änderungen in DB speichern]:::db
+    UpdateDB --> ActionView
+    
+    Delete --> DeleteDB[Profil aus DB entfernen]:::db
+    DeleteDB --> Dash
 
+    %% ========================================================
+    %% --- LEGENDE (Nach unten verschoben + Rechts-Anker) ---
+    
+    subgraph Legende ["Farb- & Symbollegende"]
+        direction TB
+        L1([System-Einstieg]):::menu
+        L2[Modul-Zentrum / Hub]:::menu
+        L3{System-Prüfung}:::check
+        L4[Datenbank-Eingriff]:::db
+        L5[Sicherheits-Sperre]:::mordor
+        L6[Zugriff gestattet]:::grant
+        L7[Reguläre User-Aktion]
+
+        L1 ~~~ L2 ~~~ L3 ~~~ L4 ~~~ L5 ~~~ L6 ~~~ L7
+    end
+
+    %% Der unsichtbare Abstandshalter zwingt die Legende nach rechts:
+    Menu ~~~ L1
+```
