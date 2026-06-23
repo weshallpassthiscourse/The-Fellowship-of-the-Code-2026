@@ -1,0 +1,39 @@
+graph TD
+    %% 1. KORREKTUR: Das Dashboard ist ein Zustand, keine Raute!
+    MainMenu[Dashboard: Profilübersicht]
+
+    %% 2. KORREKTUR: Ausgehende Pfeile definieren die Handlung des Users
+    MainMenu -- "Klick: + Neues Profil" --> ActionNew[Eingabemaske öffnen]
+    MainMenu -- "Klick: Bestehendes Profil" --> ActionView[Profildetails anzeigen]
+    
+    %% STRANG A: NEUES PROFIL
+    ActionNew --> J[Eingabe: Name]
+    J --> K[Auswahl: Geschlecht]
+    K --> L[Auswahl: Spezies]
+    L --> T[Berechnung: Bedarf]
+    T --> Z[Fingerabdruck scannen]
+    Z --> SaveDB
+    
+    %% STRANG B: BESTEHENDES PROFIL (Wieder: Das Detail-Fenster ist ein Zustand!)
+    ActionView -- "Klick: Bearbeiten" --> Edit[Profil bearbeiten]
+    ActionView -- "Klick: Löschen" --> Delete[Löschung bestätigen]
+    ActionView -- "Klick: Zurück" --> MainMenu
+    
+    %% 3. KORREKTUR (DRY-Prinzip): Beide Wege nutzen exakt denselben Speicher-Knoten
+    Edit --> SaveDB[Datenbank aktualisieren]
+    Delete --> SaveDB
+    
+    %% Nach dem Speichern springt das System automatisch zurück auf die Übersicht
+    SaveDB --> MainMenu
+
+    %% ------------------------------------------------------------
+    %% VORGELAGERTER STRANG: Der Admin-Login (Autorisierungs-Check)
+    
+    Start([System gestartet]) --> Req[Admin-Login anfordern]
+    Req --> Scan[Admin-Finger scannen]
+    Scan --> CheckAuth{Ist User ein Admin?}
+    
+    CheckAuth -- Nein --> Deny[Zugriff verweigern]
+    Deny --> Req
+    
+    CheckAuth -- Ja --> MainMenu
