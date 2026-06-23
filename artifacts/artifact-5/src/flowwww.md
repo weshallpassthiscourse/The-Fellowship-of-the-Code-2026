@@ -1,7 +1,7 @@
 ``` mermaid
 graph TD
     %% --- EINSTIEG AUS DEM HAUPTMENÜ ---
-    Menu([Hauptmenü: Aktion wählen]) --> Req[Admin-Login anfordern]
+    Menu([Hauptmenü]) -- "Klick: Profile verwalten" --> Req[Admin-Login anfordern]
     
     Req --> Scan[Admin-Finger scannen]
     Scan --> CheckAuth{Ist User ein Admin?}
@@ -25,7 +25,7 @@ graph TD
     L --> T[Berechnung: Bedarf]
     T --> Z[Fingerabdruck scannen]
     
-    %% DRY-Knoten 1: Erstellen und Bearbeiten nutzen denselben Speicher-Befehl
+    %% DRY-Knoten 1: Erstellen und Bearbeiten 
     Z --> SaveProfile[Profil-Datenbank aktualisieren]
     
     %% STRANG B: BESTEHENDES PROFIL (Die Detailansicht)
@@ -34,13 +34,9 @@ graph TD
     ActionView -- "Klick: Löschen" --> Delete[Nutzerprofil löschen]
     
     Edit --> SaveProfile
-    
-    %% NACH DEM SPEICHERN: Zurück in die Detailansicht des Profils
     SaveProfile --> ActionView
     
-    %% DRY-Knoten 2: Der Lösch-Befehl (muss das Profil zerstören)
+    %% DRY-Knoten 2: Der Lösch-Befehl 
     Delete --> DeleteDB[Profil aus DB entfernen]
-    
-    %% NACH DEM LÖSCHEN: Gezwungenermaßen zurück aufs Dashboard
     DeleteDB --> Dash
 
